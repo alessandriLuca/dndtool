@@ -80,4 +80,40 @@ function App() {
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
-    if (file)
+    if (file) {
+      const imageUrl = URL.createObjectURL(file);
+      setImageUrl(imageUrl);
+    }
+  };
+
+  useEffect(() => {
+    try {
+      const parsedYaml = YAML.load(defaultYaml);
+      setYamlData(parsedYaml);
+    } catch (error) {
+      console.error('Errore nel parsing YAML:', error);
+      setYamlData(null);
+    }
+  }, []);
+
+  return (
+    <div className="app-container">
+      <textarea
+        rows="16"
+        placeholder="Inserisci del testo YAML qui..."
+        value={inputText}
+        onChange={handleInputChange}
+        className="text-input"
+      />
+      <input
+        type="file"
+        accept="image/*"
+        onChange={handleImageChange}
+        className="image-input"
+      />
+      {yamlData && imageUrl && <Preview yamlData={yamlData} imageUrl={imageUrl} />}
+    </div>
+  );
+}
+
+export default App;
