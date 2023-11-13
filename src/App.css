@@ -80,3 +80,12 @@
   font-size: 14px;
   margin: 0;
 }
+
+.preview-container {
+  color: #000000; /* Testo nero per contrasto */
+}
+
+.preview-container p,
+.preview-container h2 {
+  color: #000000; /* Testo nero per contrasto */
+}
