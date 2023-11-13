@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import YAML from 'js-yaml';
+import html2pdf from 'html2pdf.js';
 
 const defaultYaml = `title: Goblin
 subtitle: Small humanoid (goblinoid), neutral evil
-artist: Public Domain
-image_path: Goblin.png
+challenge_rating: 1/4
+experience_points: 50
 armor_class: 15 (Leather armor, shield)
 max_hit_points: 7 (2d6)
 speed: 30 ft.
@@ -14,7 +15,27 @@ dexterity: 14 (+2)
 constitution: 10 (+0)
 intelligence: 10 (+0)
 wisdom: 8 (-1)
-charisma: 8 (-1)`;
+charisma: 8 (-1)
+
+actions:
+  - name: Scimitar
+    description: "Slashes with a sharp scimitar."
+    attack_bonus: +4
+    reach: "5 ft."
+    damage: "5 (1d6 + 2) slashing damage."
+
+  - name: Shortbow
+    description: "Shoots a shortbow arrow."
+    attack_bonus: +4
+    range: "80/320 ft."
+    damage: "5 (1d6 + 2) piercing damage."
+
+loot:
+  - name: Gold Pouch
+    description: "A small pouch containing 10 gold pieces."
+  - name: Rusty Key
+    description: "An old key with a rusty appearance."
+`;
 
 function Preview({ yamlData, imageUrl }) {
   return (
@@ -25,40 +46,77 @@ function Preview({ yamlData, imageUrl }) {
       </div>
       <div className="info-container">
         <p>{yamlData.subtitle}</p>
-        <p>Artist: {yamlData.artist}</p>
-        <p>Armor Class: {yamlData.armor_class}</p>
-        <p>Max Hit Points: {yamlData.max_hit_points}</p>
-        <p>Speed: {yamlData.speed}</p>
-        <div className="attributes">
-          <div>
-            <strong>Strength</strong>
-            <p>{yamlData.strength}</p>
+        <p><strong>Challenge Rating:</strong> {yamlData.challenge_rating}</p>
+        <p><strong>Experience Points:</strong> {yamlData.experience_points}</p>
+        <p><strong>Armor Class:</strong> {yamlData.armor_class}</p>
+        <p><strong>Speed:</strong> {yamlData.speed}</p>
+        <p><strong>Max Hit Points:</strong> {yamlData.max_hit_points}</p>
+
+        <div className="attributes-container">
+          <div className="attribute">
+            <div className="attribute-name"><strong>Strength</strong></div>
+            <div className="attribute-value">{yamlData.strength}</div>
           </div>
-          <div>
-            <strong>Dexterity</strong>
-            <p>{yamlData.dexterity}</p>
+          <div className="attribute">
+            <div className="attribute-name"><strong>Dexterity</strong></div>
+            <div className="attribute-value">{yamlData.dexterity}</div>
           </div>
-          <div>
-            <strong>Constitution</strong>
-            <p>{yamlData.constitution}</p>
+          <div className="attribute">
+            <div className="attribute-name"><strong>Constitution</strong></div>
+            <div className="attribute-value">{yamlData.constitution}</div>
           </div>
-          <div>
-            <strong>Intelligence</strong>
-            <p>{yamlData.intelligence}</p>
+          <div className="attribute">
+            <div className="attribute-name"><strong>Intelligence</strong></div>
+            <div className="attribute-value">{yamlData.intelligence}</div>
           </div>
-          <div>
-            <strong>Wisdom</strong>
-            <p>{yamlData.wisdom}</p>
+          <div className="attribute">
+            <div className="attribute-name"><strong>Wisdom</strong></div>
+            <div className="attribute-value">{yamlData.wisdom}</div>
           </div>
-          <div>
-            <strong>Charisma</strong>
-            <p>{yamlData.charisma}</p>
+          <div className="attribute">
+            <div className="attribute-name"><strong>Charisma</strong></div>
+            <div className="attribute-value">{yamlData.charisma}</div>
           </div>
         </div>
       </div>
+
+      {yamlData.actions && (
+        <div className="actions-container">
+          <h3>Actions</h3>
+          {yamlData.actions.map((action, index) => (
+            <div key={index} className="action">
+              <p><strong>{action.name}</strong></p>
+              <p>{action.description}</p>
+              <p><strong>Attack Bonus:</strong> {action.attack_bonus}</p>
+              <p><strong>Reach:</strong> {action.reach}</p>
+              <p><strong>Damage:</strong> {action.damage}</p>
+              {index < yamlData.actions.length - 1 && <hr />}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {yamlData.loot && (
+        <div className="loot-container">
+          <h3>Loot</h3>
+          {yamlData.loot.map((loot, index) => (
+            <div key={index} className="loot">
+              <p><strong>{loot.name}</strong></p>
+              <p>{loot.description}</p>
+              {index < yamlData.loot.length - 1 && <hr />}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
+
+
+
+
+
+
 
 
 
@@ -102,20 +160,22 @@ function App() {
 
   return (
     <div className="app-container">
-      <textarea
-        rows="16"
-        placeholder="Inserisci del testo YAML qui..."
-        value={inputText}
-        onChange={handleInputChange}
-        className="text-input"
-      />
+      <div className="text-input-container">
+        <textarea
+          rows="16"
+          placeholder="Inserisci del testo YAML qui..."
+          value={inputText}
+          onChange={handleInputChange}
+          className="text-input"
+        />
+      </div>
       <input
         type="file"
         accept="image/*"
         onChange={handleImageChange}
         className="image-input"
       />
-      {yamlData && (
+      {yamlData && imageUrl && (
         <div className="preview-container background-container">
           <Preview yamlData={yamlData} imageUrl={imageUrl} />
         </div>
@@ -123,6 +183,4 @@ function App() {
     </div>
   );
 }
-
-
 export default App;

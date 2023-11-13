@@ -1,22 +1,83 @@
-.app-container {
+/* Nel tuo file CSS (App.css) */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+}
+
+#title {
+  text-align: center;
   padding: 20px;
-  color: #000000; /* Testo nero */
+  background-color: #333;
+  color: #fff;
+  width: 100%;
 }
 
-.background-container {
-  background-image: url('./assets/background.png');
-  background-size: cover;
-  background-position: center;
+#logo {
+  max-width: 100%;
+  height: auto;
 }
 
+#root {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Nuovi stili per le statistiche */
+.preview-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.image-title-container {
+  max-width: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-title-container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.info-container {
+  max-width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Cambiato da flex-direction: row a column */
+}
+
+.attributes-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.attribute {
+  flex: 1;
+  text-align: center;
+  margin: 5px;
+}
+
+.attribute-name {
+  font-weight: bold;
+}
+
+.attribute-value {
+  margin-top: 5px;
+}
+
+/* Altri stili (puoi personalizzare ulteriormente se necessario) */
 .text-input {
   width: 80%;
-  max-width: 500px;
+  max-width: 8000px; /* Imposta questo valore in base alle tue preferenze */
   padding: 10px;
   font-size: 16px;
   box-sizing: border-box;
@@ -27,48 +88,7 @@
   margin-top: 10px;
 }
 
-.preview-container {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.preview-container .image-title-container {
-  max-width: 50%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.preview-container .image-title-container img {
-  width: 100%;
-  max-width: 100%; /* Imposta un'ampiezza massima del 100% */
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.preview-container .image-title-container h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.preview-container .info-container {
-  max-width: 50%;
-  padding: 20px;
-}
-
 .preview-container p {
-  margin-bottom: 10px;
-}
-
-.preview-container .attributes {
-  display: flex;
-  flex-direction: column;
-}
-
-.preview-container .attributes div {
   margin-bottom: 10px;
 }
 
@@ -81,3 +101,16 @@
   font-size: 14px;
   margin: 0;
 }
+/* Nel tuo file CSS (App.css) */
+
+.preview-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Modificato questo valore */
+  justify-content: center;
+  height: 100vh;
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-position: center;
+}
+
