@@ -43,7 +43,7 @@
 }
 
 .preview-container .image-title-container img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
@@ -79,13 +79,4 @@
 .preview-container .attributes p {
   font-size: 14px;
   margin: 0;
-}
-
-.preview-container {
-  color: #000000; /* Testo nero per contrasto */
-}
-
-.preview-container p,
-.preview-container h2 {
-  color: #000000; /* Testo nero per contrasto */
 }
