@@ -60,8 +60,3 @@ img {
   height: auto;
   margin-bottom: 10px;
 }
-
-.image-container {
-  max-width: 100%;
-  overflow: hidden;
-}

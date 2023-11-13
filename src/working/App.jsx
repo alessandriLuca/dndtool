@@ -22,9 +22,7 @@ function Preview({ yamlData, imageUrl }) {
       <h2>{yamlData.title}</h2>
       <p>{yamlData.subtitle}</p>
       <p>Artist: {yamlData.artist}</p>
-      <div className="image-container">
-        {imageUrl && <img src={imageUrl} alt={yamlData.title} />}
-      </div>
+      {imageUrl && <img src={imageUrl} alt={yamlData.title} />}
       <p>Armor Class: {yamlData.armor_class}</p>
       <p>Max Hit Points: {yamlData.max_hit_points}</p>
       <p>Speed: {yamlData.speed}</p>
