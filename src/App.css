@@ -20,11 +20,14 @@
   margin-top: 10px;
 }
 
-.preview-container {
-  margin-top: 20px;
+.background-container {
   background-image: url('../assets/background.png');
   background-size: cover;
   background-position: center;
+}
+
+.preview-container {
+  margin-top: 20px;
   display: flex;
   flex-direction: row; /* Imposta il layout a riga */
   align-items: flex-start; /* Allinea i figli a sinistra */
