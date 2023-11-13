@@ -80,16 +80,3 @@
   font-size: 14px;
   margin: 0;
 }
-
-/* Regole CSS per il logo */
-.logo-container {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 999; /* Assicura che il logo sia sopra gli altri elementi */
-}
-
-.logo-container img {
-  width: 50px; /* Imposta la larghezza desiderata per il logo */
-  height: auto;
-}
