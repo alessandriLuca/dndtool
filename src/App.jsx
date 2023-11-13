@@ -4,8 +4,8 @@ import YAML from 'js-yaml';
 
 const defaultYaml = `title: Goblin
 subtitle: Small humanoid (goblinoid), neutral evil
-artist: Public Domain
-image_path: Goblin.png
+challenge_rating: 1/4
+experience_points: 50
 armor_class: 15 (Leather armor, shield)
 max_hit_points: 7 (2d6)
 speed: 30 ft.
@@ -18,47 +18,54 @@ charisma: 8 (-1)`;
 
 function Preview({ yamlData, imageUrl }) {
   return (
-    <div className="preview-container background-container">
+    <div className="preview-container">
       <div className="image-title-container">
         <h2>{yamlData.title}</h2>
         {imageUrl && <img src={imageUrl} alt={yamlData.title} />}
       </div>
       <div className="info-container">
         <p>{yamlData.subtitle}</p>
-        <p>Artist: {yamlData.artist}</p>
-        <p>Armor Class: {yamlData.armor_class}</p>
-        <p>Max Hit Points: {yamlData.max_hit_points}</p>
+        <p>Challenge Rating: {yamlData.challenge_rating}</p>
+        <p>Experience Points: {yamlData.experience_points}</p>
+                <p>Armor class: {yamlData.armor_class}</p>
         <p>Speed: {yamlData.speed}</p>
-        <div className="attributes">
-          <div>
-            <strong>Strength</strong>
-            <p>{yamlData.strength}</p>
+        <p>Max hit points: {yamlData.max_hit_points}</p>
+
+        <div className="attributes-container">
+          <div className="attribute">
+            <div className="attribute-name">Strength</div>
+            <div className="attribute-value">{yamlData.strength}</div>
           </div>
-          <div>
-            <strong>Dexterity</strong>
-            <p>{yamlData.dexterity}</p>
+          <div className="attribute">
+            <div className="attribute-name">Dexterity</div>
+            <div className="attribute-value">{yamlData.dexterity}</div>
           </div>
-          <div>
-            <strong>Constitution</strong>
-            <p>{yamlData.constitution}</p>
+          <div className="attribute">
+            <div className="attribute-name">Constitution</div>
+            <div className="attribute-value">{yamlData.constitution}</div>
           </div>
-          <div>
-            <strong>Intelligence</strong>
-            <p>{yamlData.intelligence}</p>
+          <div className="attribute">
+            <div className="attribute-name">Intelligence</div>
+            <div className="attribute-value">{yamlData.intelligence}</div>
           </div>
-          <div>
-            <strong>Wisdom</strong>
-            <p>{yamlData.wisdom}</p>
+          <div className="attribute">
+            <div className="attribute-name">Wisdom</div>
+            <div className="attribute-value">{yamlData.wisdom}</div>
           </div>
-          <div>
-            <strong>Charisma</strong>
-            <p>{yamlData.charisma}</p>
+          <div className="attribute">
+            <div className="attribute-name">Charisma</div>
+            <div className="attribute-value">{yamlData.charisma}</div>
           </div>
         </div>
       </div>
     </div>
   );
 }
+
+
+
+
+
 
 function App() {
   const [inputText, setInputText] = useState(defaultYaml);

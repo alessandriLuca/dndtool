@@ -1,38 +1,37 @@
-.app-container {
+/* Nel tuo file CSS (App.css) */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+}
+
+#title {
+  text-align: center;
   padding: 20px;
-  color: #000000; /* Testo nero */
+  background-color: #333;
+  color: #fff;
+  width: 100%;
 }
 
-.background-container {
-  background-image: url('./assets/background.png');
-  background-size: cover;
-  background-position: center;
+#logo {
+  max-width: 100%;
+  height: auto;
 }
 
-.text-input {
-  width: 300;
-  height: auto; /* Lascia che l'altezza si adatti al contenuto */
-  padding: 10px;
-  font-size: 16px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  overflow-y: auto; /* Abilita lo scrolling verticale in caso di testo lungo */
+#root {
+  text-align: center;
+  padding: 20px;
 }
 
-.image-input {
-  margin-top: 10px;
-}
-
+/* Nuovi stili per le statistiche */
 .preview-container {
-  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  margin-top: 20px;
 }
 
 .image-title-container {
@@ -44,50 +43,74 @@
 }
 
 .image-title-container img {
-  max-width: 100%; /* Imposta la larghezza massima al 100% dell'elemento padre */
-  max-height: 300px; /* Imposta l'altezza massima desiderata */
+  width: 100%;
   height: auto;
-  margin-bottom: 10px;
-}
-
-.image-title-container h2 {
-  font-size: 24px;
   margin-bottom: 10px;
 }
 
 .info-container {
   max-width: 50%;
   padding: 20px;
-  margin-left: 10px;
+  display: flex;
+  flex-direction: column; /* Cambiato da flex-direction: row a column */
+}
+
+.attributes-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.attribute {
+  flex: 1;
+  text-align: center;
+  margin: 5px;
+}
+
+.attribute-name {
+  font-weight: bold;
+}
+
+.attribute-value {
+  margin-top: 5px;
+}
+
+/* Altri stili (puoi personalizzare ulteriormente se necessario) */
+.text-input {
+  width: 80%;
+  max-width: 8000px; /* Imposta questo valore in base alle tue preferenze */
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.image-input {
+  margin-top: 10px;
 }
 
 .preview-container p {
   margin-bottom: 10px;
 }
 
-.attributes {
-  display: flex;
-  flex-direction: column;
-}
-
-.attributes div {
-  margin-bottom: 10px;
-}
-
-.attributes strong {
+.preview-container .attributes strong {
   font-size: 16px;
   font-weight: bold;
 }
 
-.attributes p {
+.preview-container .attributes p {
   font-size: 14px;
   margin: 0;
 }
-#logo {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 10px;
-  width: 100px; /* Imposta la larghezza desiderata */
-  height: auto; /* Lascia che l'altezza si adatti proporzionalmente */
+/* Nel tuo file CSS (App.css) */
+
+.preview-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Modificato questo valore */
+  justify-content: center;
+  height: 100vh;
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-position: center;
 }
+

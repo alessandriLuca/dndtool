@@ -1,26 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        position: relative;
-      }
 
-      #logo {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin: 10px;
-      }
-    </style>
-    <title>ASDRECINE: Dungeon and dragons Resource for Entities Creation Interactive Experiences</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #title {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      width: 100%;
+    }
+
+    #logo-container {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #logo {
+      max-width: 20%;
+      height: auto;
+    }
+
+    #root {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+  <title>DRECINE: Dungeon and Dragons Resource for Entities Creation Interactive Experiences</title>
+</head>
+
+<body>
+  <div id="title">
+    <h1>AADRECINE: Dungeon and Dragons Resource for Entities Creation Interactive Experiences</h1>
+  </div>
+  <div id="logo-container">
     <img id="logo" src="/logo.png" alt="Logo" />
-  </body>
+  </div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
