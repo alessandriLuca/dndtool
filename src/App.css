@@ -5,7 +5,7 @@
   justify-content: center;
   height: 100vh;
   padding: 20px;
-  color: #000000; /* Testo nero per la preview */
+  color: #000000; /* Testo nero */
 }
 
 .background-container {
@@ -14,17 +14,13 @@
   background-position: center;
 }
 
-.text-input-container {
+.text-input {
   width: 80%;
   max-width: 500px;
-  margin-bottom: 20px;
-}
-
-.text-input {
-  width: 100%;
   padding: 10px;
   font-size: 16px;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .image-input {
@@ -33,11 +29,14 @@
 
 .preview-container {
   margin-top: 20px;
-  display: flex; /* Imposta il layout a riga */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Distribuisci gli elementi lungo la riga */
+  align-items: flex-start;
   overflow: auto;
 }
 
-.image-title-container {
+.preview-container .image-title-container {
   max-width: 50%;
   overflow: hidden;
   display: flex;
@@ -45,18 +44,18 @@
   align-items: center;
 }
 
-.image-title-container img {
+.preview-container .image-title-container img {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
 
-.image-title-container h2 {
+.preview-container .image-title-container h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.info-container {
+.preview-container .info-container {
   max-width: 50%;
   padding: 20px;
 }
@@ -65,21 +64,21 @@
   margin-bottom: 10px;
 }
 
-.attributes {
+.preview-container .attributes {
   display: flex;
   flex-direction: column;
 }
 
-.attributes div {
+.preview-container .attributes div {
   margin-bottom: 10px;
 }
 
-.attributes strong {
+.preview-container .attributes strong {
   font-size: 16px;
   font-weight: bold;
 }
 
-.attributes p {
+.preview-container .attributes p {
   font-size: 14px;
   margin: 0;
 }
