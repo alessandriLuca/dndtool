@@ -20,8 +20,8 @@ function Preview({ yamlData, imageUrl }) {
   return (
     <div className="preview-container">
       <div className="image-title-container">
-        {imageUrl && <img src={imageUrl} alt={yamlData.title} />}
         <h2>{yamlData.title}</h2>
+        {imageUrl && <img src={imageUrl} alt={yamlData.title} />}
       </div>
       <div className="info-container">
         <p>{yamlData.subtitle}</p>
@@ -59,6 +59,7 @@ function Preview({ yamlData, imageUrl }) {
     </div>
   );
 }
+
 
 
 
