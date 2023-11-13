@@ -15,9 +15,7 @@
 }
 
 .text-input {
-  width: 80%;
-  max-width: 500px;
-  min-height: 100px; /* Altezza minima desiderata */
+  width: auto;
   height: auto; /* Lascia che l'altezza si adatti al contenuto */
   padding: 10px;
   font-size: 16px;
@@ -84,4 +82,12 @@
 .attributes p {
   font-size: 14px;
   margin: 0;
+}
+#logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  width: 50px; /* Imposta la larghezza desiderata */
+  height: auto; /* Lascia che l'altezza si adatti proporzionalmente */
 }
