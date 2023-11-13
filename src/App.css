@@ -25,10 +25,12 @@
   background-color: #ff0000; /* Rosso */
   color: #ffffff; /* Testo bianco per contrasto */
   display: flex;
+  flex-direction: column; /* Cambiato da 'row' a 'column' */
+  align-items: flex-start; /* Allinea i figli a sinistra */
 }
 
 .image-container {
-  max-width: 50%;
+  max-width: 100%;
   overflow: hidden;
 }
 
@@ -39,7 +41,7 @@
 }
 
 .info-container {
-  max-width: 50%;
+  width: 100%; /* Occupa tutta la larghezza del container */
   padding: 20px;
 }
 

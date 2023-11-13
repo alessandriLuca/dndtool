@@ -19,11 +19,11 @@ charisma: 8 (-1)`;
 function Preview({ yamlData, imageUrl }) {
   return (
     <div className="preview-container">
+      <h2>{yamlData.title}</h2>
       <div className="image-container">
         {imageUrl && <img src={imageUrl} alt={yamlData.title} />}
       </div>
       <div className="info-container">
-        <h2>{yamlData.title}</h2>
         <p>{yamlData.subtitle}</p>
         <p>Artist: {yamlData.artist}</p>
         <p>Armor Class: {yamlData.armor_class}</p>
@@ -59,6 +59,7 @@ function Preview({ yamlData, imageUrl }) {
     </div>
   );
 }
+
 
 
 function App() {
