@@ -5,7 +5,7 @@
   justify-content: center;
   height: 100vh;
   padding: 20px;
-  color: #ffffff; /* Testo bianco per contrasto */
+  color: #000000; /* Testo nero */
 }
 
 .background-container {
@@ -44,6 +44,7 @@
 
 .preview-container .image-title-container img {
   width: 100%;
+  max-width: 100%; /* Imposta un'ampiezza massima del 100% */
   height: auto;
   margin-bottom: 10px;
 }

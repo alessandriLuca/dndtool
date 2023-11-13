@@ -18,7 +18,7 @@ charisma: 8 (-1)`;
 
 function Preview({ yamlData, imageUrl }) {
   return (
-    <div className="preview-container">
+    <div className="preview-container background-container">
       <div className="image-title-container">
         <h2>{yamlData.title}</h2>
         {imageUrl && <img src={imageUrl} alt={yamlData.title} />}
@@ -60,10 +60,6 @@ function Preview({ yamlData, imageUrl }) {
   );
 }
 
-
-
-
-
 function App() {
   const [inputText, setInputText] = useState(defaultYaml);
   const [yamlData, setYamlData] = useState(null);
@@ -84,45 +80,4 @@ function App() {
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
-    if (file) {
-      const imageUrl = URL.createObjectURL(file);
-      setImageUrl(imageUrl);
-    }
-  };
-
-  useEffect(() => {
-    try {
-      const parsedYaml = YAML.load(defaultYaml);
-      setYamlData(parsedYaml);
-    } catch (error) {
-      console.error('Errore nel parsing YAML:', error);
-      setYamlData(null);
-    }
-  }, []);
-
-  return (
-    <div className="app-container">
-      <textarea
-        rows="16"
-        placeholder="Inserisci del testo YAML qui..."
-        value={inputText}
-        onChange={handleInputChange}
-        className="text-input"
-      />
-      <input
-        type="file"
-        accept="image/*"
-        onChange={handleImageChange}
-        className="image-input"
-      />
-      {yamlData && (
-        <div className="preview-container background-container">
-          <Preview yamlData={yamlData} imageUrl={imageUrl} />
-        </div>
-      )}
-    </div>
-  );
-}
-
-
-export default App;
+    if (file)
