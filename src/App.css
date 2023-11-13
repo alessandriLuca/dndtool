@@ -44,6 +44,7 @@
 
 .preview-container .image-title-container img {
   width: 100%;
+  max-width: 100%; /* Imposta un'ampiezza massima del 100% */
   height: auto;
   margin-bottom: 10px;
 }
