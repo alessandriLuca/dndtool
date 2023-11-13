@@ -101,7 +101,7 @@ function App() {
     }
   }, []);
 
-return (
+ return (
     <div className="app-container">
       <textarea
         rows="16"
@@ -121,6 +121,7 @@ return (
           <Preview yamlData={yamlData} imageUrl={imageUrl} />
         </div>
       )}
+      {/* Nuovo div per il logo fuori dalla preview */}
       <div className="logo-container">
         <img src={logoImage} alt="Logo" />
       </div>
