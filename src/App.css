@@ -33,7 +33,7 @@
 
 .preview-container {
   margin-top: 20px;
-  max-width: 100%;
+  display: flex; /* Imposta il layout a riga */
   overflow: auto;
 }
 
