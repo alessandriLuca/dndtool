@@ -112,5 +112,6 @@ body {
   background-image: url('./assets/background.png');
   background-size: cover;
   background-position: center;
+    color: #000; /* Imposta il colore del testo a nero */
 }
 
