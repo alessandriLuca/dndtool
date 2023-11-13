@@ -21,6 +21,7 @@
   font-size: 16px;
   box-sizing: border-box;
   margin-bottom: 20px;
+  overflow-y: auto; /* Abilita lo scrolling verticale in caso di testo lungo */
 }
 
 .image-input {
@@ -43,7 +44,8 @@
 }
 
 .image-title-container img {
-  width: 100%;
+  max-width: 100%; /* Imposta la larghezza massima al 100% dell'elemento padre */
+  max-height: 300px; /* Imposta l'altezza massima desiderata */
   height: auto;
   margin-bottom: 10px;
 }
@@ -56,7 +58,7 @@
 .info-container {
   max-width: 50%;
   padding: 20px;
-  margin-left: 10px; /* Aggiunto margine a sinistra per separare l'immagine dal testo */
+  margin-left: 10px;
 }
 
 .preview-container p {
