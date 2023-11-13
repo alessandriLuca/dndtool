@@ -32,6 +32,9 @@
 .image-title-container {
   max-width: 50%; /* Occupa la metà del container */
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra i figli orizzontalmente */
 }
 
 .image-title-container img {
@@ -72,4 +75,3 @@
   font-size: 14px;
   margin: 0;
 }
-
