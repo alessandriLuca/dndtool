@@ -5,15 +5,26 @@
   justify-content: center;
   height: 100vh;
   padding: 20px;
-  background-image: url('./assets/background.png'); /* Percorso relativo all'immagine di sfondo */
-  background-size: cover;
-  background-position: center;
-  color: #ffffff; /* Testo bianco per contrasto */
 }
 
-/* Rimuovi la regola background-color per il .preview-container */
+.text-input {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.image-input {
+  margin-top: 10px;
+}
+
 .preview-container {
   margin-top: 20px;
+  background-image: url('../assets/background.png');
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: row; /* Imposta il layout a riga */
   align-items: flex-start; /* Allinea i figli a sinistra */
@@ -36,11 +47,13 @@
 .image-title-container h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: #000000; /* Nero */
 }
 
 .info-container {
   max-width: 50%; /* Occupa la metà del container */
   padding: 20px;
+  color: #000000; /* Nero */
 }
 
 .preview-container p {
