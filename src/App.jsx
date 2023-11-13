@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import YAML from 'js-yaml';
+import logoImage from './assets/logo.png';
 
 const defaultYaml = `title: Goblin
 subtitle: Small humanoid (goblinoid), neutral evil
@@ -100,7 +101,7 @@ function App() {
     }
   }, []);
 
-  return (
+return (
     <div className="app-container">
       <textarea
         rows="16"
@@ -120,6 +121,9 @@ function App() {
           <Preview yamlData={yamlData} imageUrl={imageUrl} />
         </div>
       )}
+      <div className="logo-container">
+        <img src={logoImage} alt="Logo" />
+      </div>
     </div>
   );
 }

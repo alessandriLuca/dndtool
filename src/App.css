@@ -1,4 +1,5 @@
 .app-container {
+  position: relative; /* Aggiunta: Per rendere i figli posizionati in base a questo contenitore */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,4 +80,10 @@
 .preview-container .attributes p {
   font-size: 14px;
   margin: 0;
+}
+
+.logo-container {
+  position: absolute; /* Aggiunta: Per posizionare l'immagine in base alla finestra */
+  bottom: 10px; /* Aggiunta: Distanza dal basso */
+  right: 10px; /* Aggiunta: Distanza dalla destra */
 }

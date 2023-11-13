@@ -115,9 +115,14 @@ function App() {
         onChange={handleImageChange}
         className="image-input"
       />
-      {yamlData && <Preview yamlData={yamlData} imageUrl={imageUrl} />}
+      {yamlData && (
+        <div className="preview-container background-container">
+          <Preview yamlData={yamlData} imageUrl={imageUrl} />
+        </div>
+      )}
     </div>
   );
 }
+
 
 export default App;

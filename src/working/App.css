@@ -5,41 +5,56 @@
   justify-content: center;
   height: 100vh;
   padding: 20px;
-  background-image: url('./assets/background.png'); /* Percorso relativo all'immagine di sfondo */
-  background-size: cover;
-  background-position: center;
   color: #ffffff; /* Testo bianco per contrasto */
 }
 
-/* Rimuovi la regola background-color per il .preview-container */
+.background-container {
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.text-input {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.image-input {
+  margin-top: 10px;
+}
+
 .preview-container {
   margin-top: 20px;
   display: flex;
-  flex-direction: row; /* Imposta il layout a riga */
-  align-items: flex-start; /* Allinea i figli a sinistra */
+  flex-direction: row;
+  align-items: flex-start;
 }
 
-.image-title-container {
-  max-width: 50%; /* Occupa la metà del container */
+.preview-container .image-title-container {
+  max-width: 50%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra i figli orizzontalmente */
+  align-items: center;
 }
 
-.image-title-container img {
-  width: 100%; /* Rendi l'immagine larga quanto il suo contenitore */
+.preview-container .image-title-container img {
+  width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
 
-.image-title-container h2 {
+.preview-container .image-title-container h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.info-container {
-  max-width: 50%; /* Occupa la metà del container */
+.preview-container .info-container {
+  max-width: 50%;
   padding: 20px;
 }
 
@@ -47,21 +62,21 @@
   margin-bottom: 10px;
 }
 
-.attributes {
+.preview-container .attributes {
   display: flex;
   flex-direction: column;
 }
 
-.attributes div {
+.preview-container .attributes div {
   margin-bottom: 10px;
 }
 
-.attributes strong {
+.preview-container .attributes strong {
   font-size: 16px;
   font-weight: bold;
 }
 
-.attributes p {
+.preview-container .attributes p {
   font-size: 14px;
   margin: 0;
 }
