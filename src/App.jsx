@@ -122,11 +122,10 @@ function App() {
       )}
       {/* Aggiungi il div per il logo fuori dalla preview */}
       <div className="logo-container">
-        <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Logo" />
+        <img src="./assets/logo.png" alt="Logo" />
       </div>
     </div>
   );
 }
-
 
 export default App;
