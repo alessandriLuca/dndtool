@@ -1,14 +1,57 @@
 .app-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;  // Altezza al 100% della viewport
+  height: 100vh;
+  padding: 20px;
 }
 
 .text-input {
-  width: 80%;  // Larghezza del 80% rispetto al genitore
-  max-width: 500px;  // Larghezza massima di 500px
+  width: 80%;
+  max-width: 500px;
   padding: 10px;
   font-size: 16px;
   box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.preview-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.preview-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.preview-container p {
+  margin-bottom: 10px;
+}
+
+.attributes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.attributes div {
+  text-align: center;
+}
+
+.attributes strong {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.attributes p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
