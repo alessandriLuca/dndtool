@@ -19,9 +19,9 @@ charisma: 8 (-1)`;
 function Preview({ yamlData, imageUrl }) {
   return (
     <div className="preview-container">
-      <h2>{yamlData.title}</h2>
-      <div className="title-image-container">
+      <div className="image-title-container">
         {imageUrl && <img src={imageUrl} alt={yamlData.title} />}
+        <h2>{yamlData.title}</h2>
       </div>
       <div className="info-container">
         <p>{yamlData.subtitle}</p>

@@ -29,25 +29,25 @@
   align-items: flex-start; /* Allinea i figli a sinistra */
 }
 
-.title-image-container {
+.image-title-container {
   max-width: 50%; /* Occupa la metà del container */
   overflow: hidden;
 }
 
-.title-image-container img {
+.image-title-container img {
   width: 100%; /* Rendi l'immagine larga quanto il suo contenitore */
   height: auto;
+  margin-bottom: 10px;
+}
+
+.image-title-container h2 {
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
 .info-container {
   max-width: 50%; /* Occupa la metà del container */
   padding: 20px;
-}
-
-.preview-container h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
 }
 
 .preview-container p {
