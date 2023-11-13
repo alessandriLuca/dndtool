@@ -19,42 +19,50 @@ charisma: 8 (-1)`;
 function Preview({ yamlData, imageUrl }) {
   return (
     <div className="preview-container">
-      <h2>{yamlData.title}</h2>
-      <p>{yamlData.subtitle}</p>
-      <p>Artist: {yamlData.artist}</p>
-      {imageUrl && <img src={imageUrl} alt={yamlData.title} />}
-      <p>Armor Class: {yamlData.armor_class}</p>
-      <p>Max Hit Points: {yamlData.max_hit_points}</p>
-      <p>Speed: {yamlData.speed}</p>
-      <div className="attributes">
-        <div>
-          <strong>Strength</strong>
-          <p>{yamlData.strength}</p>
-        </div>
-        <div>
-          <strong>Dexterity</strong>
-          <p>{yamlData.dexterity}</p>
-        </div>
-        <div>
-          <strong>Constitution</strong>
-          <p>{yamlData.constitution}</p>
-        </div>
-        <div>
-          <strong>Intelligence</strong>
-          <p>{yamlData.intelligence}</p>
-        </div>
-        <div>
-          <strong>Wisdom</strong>
-          <p>{yamlData.wisdom}</p>
-        </div>
-        <div>
-          <strong>Charisma</strong>
-          <p>{yamlData.charisma}</p>
+      <div className="image-title-container">
+        <h2>{yamlData.title}</h2>
+        {imageUrl && <img src={imageUrl} alt={yamlData.title} />}
+      </div>
+      <div className="info-container">
+        <p>{yamlData.subtitle}</p>
+        <p>Artist: {yamlData.artist}</p>
+        <p>Armor Class: {yamlData.armor_class}</p>
+        <p>Max Hit Points: {yamlData.max_hit_points}</p>
+        <p>Speed: {yamlData.speed}</p>
+        <div className="attributes">
+          <div>
+            <strong>Strength</strong>
+            <p>{yamlData.strength}</p>
+          </div>
+          <div>
+            <strong>Dexterity</strong>
+            <p>{yamlData.dexterity}</p>
+          </div>
+          <div>
+            <strong>Constitution</strong>
+            <p>{yamlData.constitution}</p>
+          </div>
+          <div>
+            <strong>Intelligence</strong>
+            <p>{yamlData.intelligence}</p>
+          </div>
+          <div>
+            <strong>Wisdom</strong>
+            <p>{yamlData.wisdom}</p>
+          </div>
+          <div>
+            <strong>Charisma</strong>
+            <p>{yamlData.charisma}</p>
+          </div>
         </div>
       </div>
     </div>
   );
 }
+
+
+
+
 
 function App() {
   const [inputText, setInputText] = useState(defaultYaml);

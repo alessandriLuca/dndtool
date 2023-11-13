@@ -5,31 +5,42 @@
   justify-content: center;
   height: 100vh;
   padding: 20px;
+  background-image: url('./assets/background.png'); /* Percorso relativo all'immagine di sfondo */
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; /* Testo bianco per contrasto */
 }
 
-.text-input {
-  width: 80%;
-  max-width: 500px;
-  padding: 10px;
-  font-size: 16px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-.image-input {
-  margin-top: 10px;
-}
-
+/* Rimuovi la regola background-color per il .preview-container */
 .preview-container {
   margin-top: 20px;
-  background-color: #ff0000; /* Rosso */
-  color: #ffffff; /* Testo bianco per contrasto */
-  padding: 20px;
+  display: flex;
+  flex-direction: row; /* Imposta il layout a riga */
+  align-items: flex-start; /* Allinea i figli a sinistra */
 }
 
-.preview-container h2 {
+.image-title-container {
+  max-width: 50%; /* Occupa la metà del container */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra i figli orizzontalmente */
+}
+
+.image-title-container img {
+  width: 100%; /* Rendi l'immagine larga quanto il suo contenitore */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.image-title-container h2 {
   font-size: 24px;
   margin-bottom: 10px;
+}
+
+.info-container {
+  max-width: 50%; /* Occupa la metà del container */
+  padding: 20px;
 }
 
 .preview-container p {
@@ -53,10 +64,4 @@
 .attributes p {
   font-size: 14px;
   margin: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
 }
