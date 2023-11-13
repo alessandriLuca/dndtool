@@ -16,12 +16,13 @@ intelligence: 10 (+0)
 wisdom: 8 (-1)
 charisma: 8 (-1)`;
 
-function Preview({ yamlData }) {
+function Preview({ yamlData, imageUrl }) {
   return (
     <div className="preview-container">
       <h2>{yamlData.title}</h2>
       <p>{yamlData.subtitle}</p>
       <p>Artist: {yamlData.artist}</p>
+      {imageUrl && <img src={imageUrl} alt={yamlData.title} />}
       <p>Armor Class: {yamlData.armor_class}</p>
       <p>Max Hit Points: {yamlData.max_hit_points}</p>
       <p>Speed: {yamlData.speed}</p>
@@ -54,9 +55,11 @@ function Preview({ yamlData }) {
     </div>
   );
 }
+
 function App() {
   const [inputText, setInputText] = useState(defaultYaml);
   const [yamlData, setYamlData] = useState(null);
+  const [imageUrl, setImageUrl] = useState(null);
 
   const handleInputChange = (event) => {
     const newText = event.target.value;
@@ -71,7 +74,14 @@ function App() {
     }
   };
 
-  // Effetto useEffect per caricare il testo di default all'avvio
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const imageUrl = URL.createObjectURL(file);
+      setImageUrl(imageUrl);
+    }
+  };
+
   useEffect(() => {
     try {
       const parsedYaml = YAML.load(defaultYaml);
@@ -85,13 +95,19 @@ function App() {
   return (
     <div className="app-container">
       <textarea
-        rows="16"  // Aumentato il numero di righe per visualizzare meglio il testo di default
+        rows="16"
         placeholder="Inserisci del testo YAML qui..."
         value={inputText}
         onChange={handleInputChange}
         className="text-input"
       />
-      {yamlData && <Preview yamlData={yamlData} />}
+      <input
+        type="file"
+        accept="image/*"
+        onChange={handleImageChange}
+        className="image-input"
+      />
+      {yamlData && <Preview yamlData={yamlData} imageUrl={imageUrl} />}
     </div>
   );
 }
