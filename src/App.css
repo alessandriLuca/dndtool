@@ -25,23 +25,23 @@
   background-color: #ff0000; /* Rosso */
   color: #ffffff; /* Testo bianco per contrasto */
   display: flex;
-  flex-direction: column; /* Cambiato da 'row' a 'column' */
+  flex-direction: row; /* Imposta il layout a riga */
   align-items: flex-start; /* Allinea i figli a sinistra */
 }
 
-.image-container {
-  max-width: 100%;
+.title-image-container {
+  max-width: 50%; /* Occupa la metà del container */
   overflow: hidden;
 }
 
-.image-container img {
-  max-width: 100%;
+.title-image-container img {
+  width: 100%; /* Rendi l'immagine larga quanto il suo contenitore */
   height: auto;
   margin-bottom: 10px;
 }
 
 .info-container {
-  width: 100%; /* Occupa tutta la larghezza del container */
+  max-width: 50%; /* Occupa la metà del container */
   padding: 20px;
 }
 
