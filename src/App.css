@@ -5,7 +5,7 @@
   justify-content: center;
   height: 100vh;
   padding: 20px;
-  color: #000000; /* Cambiato a nero per il testo della preview */
+  color: #000000; /* Testo nero per la preview */
 }
 
 .background-container {
@@ -14,13 +14,17 @@
   background-position: center;
 }
 
-.text-input {
+.text-input-container {
   width: 80%;
   max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.text-input {
+  width: 100%;
   padding: 10px;
   font-size: 16px;
   box-sizing: border-box;
-  margin-bottom: 20px;
 }
 
 .image-input {
@@ -29,9 +33,8 @@
 
 .preview-container {
   margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  max-width: 100%;
+  overflow: auto;
 }
 
 .image-title-container {
@@ -44,7 +47,6 @@
 
 .image-title-container img {
   width: 100%;
-  max-width: 100%; /* Imposta un'ampiezza massima del 100% */
   height: auto;
   margin-bottom: 10px;
 }

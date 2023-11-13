@@ -98,22 +98,27 @@ function App() {
 
   return (
     <div className="app-container">
-      <textarea
-        rows="16"
-        placeholder="Inserisci del testo YAML qui..."
-        value={inputText}
-        onChange={handleInputChange}
-        className="text-input"
-      />
+      <div className="text-input-container">
+        <textarea
+          rows="16"
+          placeholder="Inserisci del testo YAML qui..."
+          value={inputText}
+          onChange={handleInputChange}
+          className="text-input"
+        />
+      </div>
       <input
         type="file"
         accept="image/*"
         onChange={handleImageChange}
         className="image-input"
       />
-      {yamlData && imageUrl && <Preview yamlData={yamlData} imageUrl={imageUrl} />}
+      {yamlData && imageUrl && (
+        <div className="preview-container background-container">
+          <Preview yamlData={yamlData} imageUrl={imageUrl} />
+        </div>
+      )}
     </div>
   );
 }
-
 export default App;
