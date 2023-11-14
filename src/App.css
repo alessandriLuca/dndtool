@@ -1,117 +1,156 @@
-/* Nel tuo file CSS (App.css) */
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0.5rem;
 }
 
-#title {
+.text-input-container {
+  margin-bottom: 0.25rem;
+}
+
+.text-input {
+  width: 80vw;
+  min-width: 50vw;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.input-container {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.custom-file-upload,
+.custom-button {
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0.3125rem;
   text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
+}
+.custom-file-upload:hover {
+    transform: scale(1.05); /* Slight increase in size on hover */
+  }
+.custom-button:hover {
+    transform: scale(1.05); /* Slight increase in size on hover */
+  }
+
+#logo-container {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #logo {
+  width: 25vw;
   max-width: 100%;
   height: auto;
 }
 
-#root {
-  text-align: center;
-  padding: 20px;
-}
-
-/* Nuovi stili per le statistiche */
 .preview-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  margin-top: 20px;
+  max-width: 1024px;
+  margin: auto;
+  padding: 0.5rem;
+  gap: 0.25rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.image-title-container {
-  max-width: 50%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.left-section,
+.right-section {
+  background-color: #f8f8f8;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.image-title-container img {
-  width: 100%;
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.125rem;
+}
+
+.character-image {
+  max-width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 0.25rem;
 }
 
-.info-container {
-  max-width: 50%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column; /* Cambiato da flex-direction: row a column */
+.character-stats,
+.attributes-container,
+.actions-container,
+.loot-container,
+.special-actions-container {
+  text-align: center;
+  margin-bottom: 0.25rem;
 }
 
 .attributes-container {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .attribute {
-  flex: 1;
-  text-align: center;
-  margin: 5px;
-}
-
-.attribute-name {
-  font-weight: bold;
-}
-
-.attribute-value {
-  margin-top: 5px;
-}
-
-/* Altri stili (puoi personalizzare ulteriormente se necessario) */
-.text-input {
-  width: 80%;
-  max-width: 8000px; /* Imposta questo valore in base alle tue preferenze */
-  padding: 10px;
-  font-size: 16px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-.image-input {
-  margin-top: 10px;
-}
-
-.preview-container p {
-  margin-bottom: 10px;
-}
-
-.preview-container .attributes strong {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.preview-container .attributes p {
-  font-size: 14px;
-  margin: 0;
-}
-/* Nel tuo file CSS (App.css) */
-
-.preview-container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start; /* Modificato questo valore */
-  justify-content: center;
-  height: 100vh;
-  background-image: url('./assets/background.png');
-  background-size: cover;
-  background-position: center;
-    color: #000; /* Imposta il colore del testo a nero */
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.125rem;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+}
+
+h4 {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.action,
+.loot,
+.special-action {
+  background-color: #fff;
+  padding: 0.125rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.125rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.character-image {
+  max-width: 100%;
+  max-height: 20rem;
+  height: auto;
+  margin-bottom: 0.25rem;
+}
