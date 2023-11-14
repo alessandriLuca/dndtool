@@ -98,7 +98,7 @@ const openChatGPTWindow = () => {
         <div className="additional-text-container">
           <textarea
             rows="8"
-            placeholder="Write here what kind of entity you want to create click on Copy to Clipboard and then visit chatgpt and just paste (i know, you didn't copy anything but that was the Copy to Clipboard job). Press enter and let chatgpt do the job. Copy the YAML provided by chatgpt and past it in the input box below."
+            placeholder="Write here what kind of entity you want to create click on Copy to Clipboard and then visit chatgpt and just paste (i know, you didn't copy anything but that was the Copy to Clipboard job). Press enter and let chatgpt do the job. Copy the YAML provided by chatgpt and paste it in the input box below. An example of what you can write here is 'a character that fights using his hairs.' "
             value={additionalText}
             onChange={(e) => setAdditionalText(e.target.value)}
             className="additional-text-input"
