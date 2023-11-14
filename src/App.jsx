@@ -122,7 +122,7 @@ return (
         <div className="additional-text-container">
           <textarea
             rows="8"
-            placeholder="Describe what kind of entity you want to create, click on the Copy To clipboard button and paste directly to chatGPT. Take then his result (The one in the code section) and paste it in the text area above. Feel free to chat with chatGPT to adjust your character, adding loot, actions, special actions ecc.. There it is your new brand entity!"
+            placeholder="Write here what kind of entity you want to create, click on the Copy To clipboard button and paste directly to chatGPT. Take then his result (The one in the code section) and paste it in the text area above. Feel free to chat with chatGPT to adjust your character, adding loot, actions, special actions ecc.. There it is your new brand entity!"
             value={additionalText}
             onChange={(e) => setAdditionalText(e.target.value)}
             className="additional-text-input"
