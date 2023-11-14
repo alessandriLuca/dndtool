@@ -3,6 +3,7 @@ import './App.css';
 import YAML from 'js-yaml';
 import html2canvas from 'html2canvas';
 import ClipboardJS from 'clipboard';
+import copy from 'copy-to-clipboard';
 
 import { defaultYaml } from './character.js';
 import Preview from './Preview';
@@ -68,30 +69,28 @@ const handleDownloadAsPng = () => {
   }
 };
 
-const handleCopyToClipboardAndOpen = () => {
+const handleCopyToClipboard = () => {
   fetch('./header.txt')
     .then((response) => response.text())
     .then((headerText) => {
       const textWithHeader = headerText + '\n' + additionalText;
 
-      navigator.clipboard.writeText(textWithHeader)
-        .then(() => {
-          console.log('Testo copiato nella clipboard con successo:', textWithHeader);
-          openChatGPT(); // Apri ChatGPT dopo la copia
-        })
-        .catch((error) => {
-          console.error('Errore nella copia nella clipboard:', error);
-        });
+      copy(textWithHeader); // Usa copy-to-clipboard per copiare il testo
+      console.log('Testo copiato nella clipboard con successo:', textWithHeader);
+
+      openChatGPTWindow(); // Chiamata per aprire una nuova scheda
     })
     .catch((error) => {
-      console.error('Error reading header.txt:', error);
+      console.error('Error reading header.txt or copying to clipboard:', error);
     });
 };
 
-const openChatGPT = () => {
-  const chatGPTURL = "https://chat.openai.com/chat"; // Sostituisci con l'URL corretto di ChatGPT
-  window.open(chatGPTURL, '_blank');
+const openChatGPTWindow = () => {
+  const windowReference = window.open(); // Apri prima una nuova finestra
+  windowReference.location = "https://chat.openai.com/chat"; // Imposta l'URL su ChatGPT
 };
+
+
  return (
     <div className="app-container">
       <div className="section">
@@ -105,9 +104,9 @@ const openChatGPT = () => {
             className="additional-text-input"
           />
         </div>
-          <button onClick={handleCopyToClipboardAndOpen} className="custom-file-upload">
-            Copy to Clipboard
-          </button>
+        <button onClick={handleCopyToClipboard} className="custom-file-upload">
+          Copy to Clipboard
+        </button>
       </div>
 
       <div className="section">
