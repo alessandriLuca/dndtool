@@ -4,36 +4,37 @@ body {
   font-size: 16px;
 }
 
-.app-container {
+.app-container, #root {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.5rem;
 }
 
-.text-input-container {
+.text-input-container, .input-container, .additional-text-container, .button-container {
   margin-bottom: 0.25rem;
 }
 
-.text-input {
-  width: 80vw;
-  min-width: 50vw;
-  margin-bottom: 0.25rem;
-  padding: 0.25rem;
-  font-size: 1rem;
+.text-input, .additional-text-input {
+  width: 95vw;  /* Larghezza aumentata */
+  max-width: 800px; /* Larghezza massima aumentata */
+  padding: 0.5rem; /* Padding aumentato */
+  font-size: 1.2rem; /* Dimensione del font aumentata */
   box-sizing: border-box;
   resize: vertical;
+  margin-bottom: 0.25rem;
 }
 
 .input-container {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 0.25rem;
-  margin-bottom: 0.25rem;
 }
 
-.custom-file-upload,
-.custom-button {
-  padding: 0.25rem 0.5rem;
+.custom-file-upload, .custom-button {
+  padding: 0.5rem 1rem; /* Padding aumentato */
+  font-size: 1.2rem; /* Dimensione del font aumentata */
   cursor: pointer;
   background-color: #4CAF50;
   color: white;
@@ -41,12 +42,10 @@ body {
   border-radius: 0.3125rem;
   text-align: center;
 }
-.custom-file-upload:hover {
-    transform: scale(1.05); /* Slight increase in size on hover */
-  }
-.custom-button:hover {
-    transform: scale(1.05); /* Slight increase in size on hover */
-  }
+
+.custom-file-upload:hover, .custom-button:hover {
+  transform: scale(1.05);
+}
 
 #logo-container {
   width: 100%;
@@ -74,11 +73,10 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #000; /* Testo nero nella preview */
+  color: #1A1A1A; /* Colore quasi nero */
 }
 
-.left-section,
-.right-section {
+.left-section, .right-section {
   background-color: #f8f8f8;
   padding: 0.25rem;
   border-radius: 0.5rem;
@@ -93,15 +91,12 @@ body {
 
 .character-image {
   max-width: 100%;
+  max-height: 20rem;
   height: auto;
   margin-bottom: 0.25rem;
 }
 
-.character-stats,
-.attributes-container,
-.actions-container,
-.loot-container,
-.special-actions-container {
+.character-stats, .attributes-container, .actions-container, .loot-container, .special-actions-container {
   text-align: center;
   margin-bottom: 0.25rem;
 }
@@ -127,21 +122,20 @@ hr {
   margin-bottom: 0.125rem;
 }
 
-h3 {
-  font-size: 1rem;
+h3, h4 {
   font-weight: bold;
   color: #444;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 h4 {
   font-size: 0.875rem;
-  font-weight: bold;
-  color: #444;
 }
 
-.action,
-.loot,
-.special-action {
+.action, .loot, .special-action {
   background-color: #fff;
   padding: 0.125rem;
   border-radius: 0.25rem;
@@ -149,9 +143,29 @@ h4 {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
-.character-image {
-  max-width: 100%;
-  max-height: 20rem;
-  height: auto;
-  margin-bottom: 0.25rem;
+/* Modifiche specifiche per il colore del placeholder */
+.additional-text-input::placeholder {
+  color: red;
+    opacity: 0.5;
+
+}
+
+/* Per Webkit (Safari, Chrome, etc.) */
+.additional-text-input::-webkit-input-placeholder {
+  color: red;
+    opacity: 0.5;
+
+}
+
+/* Per Mozilla Firefox */
+.additional-text-input::-moz-placeholder {
+  color: red;
+  opacity: 0.5;
+}
+
+/* Per Internet Explorer */
+.additional-text-input:-ms-input-placeholder {
+  color: red;
+    opacity: 0.5;
+
 }
