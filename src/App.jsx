@@ -68,20 +68,16 @@ const handleDownloadAsPng = () => {
   }
 };
 
-
-
-const handleCopyToClipboard = () => {
-  // Leggi il contenuto del file header.txt
+const handleCopyToClipboardAndOpen = () => {
   fetch('./header.txt')
     .then((response) => response.text())
     .then((headerText) => {
-      // Combinare il testo del file header.txt con il contenuto del campo di input
       const textWithHeader = headerText + '\n' + additionalText;
 
-      // Copia il testo combinato nella clipboard
       navigator.clipboard.writeText(textWithHeader)
         .then(() => {
           console.log('Testo copiato nella clipboard con successo:', textWithHeader);
+          openChatGPT(); // Apri ChatGPT dopo la copia
         })
         .catch((error) => {
           console.error('Errore nella copia nella clipboard:', error);
@@ -91,10 +87,31 @@ const handleCopyToClipboard = () => {
       console.error('Error reading header.txt:', error);
     });
 };
-return (
-  <div className="app-container">
-    <div className="input-container">
-      <div className="left-column">
+
+const openChatGPT = () => {
+  const chatGPTURL = "https://chat.openai.com/chat"; // Sostituisci con l'URL corretto di ChatGPT
+  window.open(chatGPTURL, '_blank');
+};
+ return (
+    <div className="app-container">
+      <div className="section">
+        <div className="section-title">Create Your Entity</div>
+        <div className="additional-text-container">
+          <textarea
+            rows="8"
+            placeholder="Write here what kind of entity you want to create..."
+            value={additionalText}
+            onChange={(e) => setAdditionalText(e.target.value)}
+            className="additional-text-input"
+          />
+        </div>
+          <button onClick={handleCopyToClipboardAndOpen} className="custom-file-upload">
+            Copy to Clipboard
+          </button>
+      </div>
+
+      <div className="section">
+        <div className="section-title">YAML Configuration</div>
         <div className="text-input-container">
           <textarea
             rows="16"
@@ -115,38 +132,23 @@ return (
             onChange={handleImageChange}
             style={{ display: 'none' }}
           />
-          <button onClick={handleDownloadAsPng} className="custom-file-upload">
-            Download Preview as PNG
-          </button>
-        </div>
-        <div className="additional-text-container">
-          <textarea
-            rows="8"
-            placeholder="Write here what kind of entity you want to create, click on the Copy To clipboard button and paste directly to chatGPT. Take then his result (The one in the code section) and paste it in the text area above. Feel free to chat with chatGPT to adjust your character, adding loot, actions, special actions ecc.. There it is your new brand entity!"
-            value={additionalText}
-            onChange={(e) => setAdditionalText(e.target.value)}
-            className="additional-text-input"
-          />
         </div>
       </div>
-      <div className="right-column">
-        {/* Right column content, if any, can go here */}
+
+      <div className="section">
+        <div className="section-title">Preview and Download</div>
+        {yamlData && (
+          <div ref={previewRef} className="preview-container">
+            <Preview yamlData={yamlData} imageUrl={usingDefaultImage ? './larry.png' : imageUrl} />
+          </div>
+        )}
+        <button onClick={handleDownloadAsPng} className="custom-file-upload">
+          Download Preview as PNG
+        </button>
       </div>
     </div>
-    <button onClick={handleCopyToClipboard} className="custom-file-upload">
-      Copy to Clipboard
-    </button>
-    {yamlData && (
-      <div ref={previewRef} className="preview-container">
-        <Preview yamlData={yamlData} imageUrl={usingDefaultImage ? './larry.png' : imageUrl} />
-      </div>
-    )}
-  </div>
-);
-
-
-
-
+  );
 }
+
 
 export default App;

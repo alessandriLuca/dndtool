@@ -169,3 +169,23 @@ h4 {
     opacity: 0.5;
 
 }
+
+.section {
+  margin-bottom: 2rem; /* Aumenta il margine */
+  padding: 1rem; /* Più spazio interno */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Angoli più arrotondati */
+  background: linear-gradient(to right, #ffffff, #f1f1f1); /* Sfondo con gradiente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+  transition: box-shadow 0.3s; /* Transizione dell'ombra */
+}
+
+.section:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata al passaggio del mouse */
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Spazio tra il titolo e il contenuto */
+}
