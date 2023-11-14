@@ -94,11 +94,11 @@ const openChatGPTWindow = () => {
  return (
     <div className="app-container">
       <div className="section">
-        <div className="section-title">Create Your Entity</div>
+        <div className="section-title">YAML Generation</div>
         <div className="additional-text-container">
           <textarea
             rows="8"
-            placeholder="Write here what kind of entity you want to create..."
+            placeholder="Write here what kind of entity you want to create click on Copy to Clipboard and then visit chatgpt and just paste (i know, you didn't copy anything but that was the Copy to Clipboard job). Press enter and let chatgpt do the job. Copy the YAML provided by chatgpt and past it in the input box below."
             value={additionalText}
             onChange={(e) => setAdditionalText(e.target.value)}
             className="additional-text-input"
@@ -110,7 +110,7 @@ const openChatGPTWindow = () => {
       </div>
 
       <div className="section">
-        <div className="section-title">YAML Configuration</div>
+        <div className="section-title">YAML to Picture</div>
         <div className="text-input-container">
           <textarea
             rows="16"

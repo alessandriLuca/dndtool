@@ -46,4 +46,4 @@ loot:
     description: "A worn rabbit's foot that Larry believes brings him luck."
   - name: Lucky Coin
     description: "A tarnished coin that Larry flips for important decisions."
-Please follow the same scheme, do not change the "-" with dots, you have to make a yaml file. Also with every effect you have to be specific about dice and the effect. Make me a character that is like the following :
+Please follow the same scheme, do not change the "-" with dots, you have to make a yaml file. Also with every effect you have to be specific about dice and the effect. Do not make any question or write other stuff just write the YAML code. Make me a character that is like the following :

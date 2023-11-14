@@ -143,33 +143,6 @@ h4 {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Modifiche specifiche per il colore del placeholder */
-.additional-text-input::placeholder {
-  color: red;
-    opacity: 0.5;
-
-}
-
-/* Per Webkit (Safari, Chrome, etc.) */
-.additional-text-input::-webkit-input-placeholder {
-  color: red;
-    opacity: 0.5;
-
-}
-
-/* Per Mozilla Firefox */
-.additional-text-input::-moz-placeholder {
-  color: red;
-  opacity: 0.5;
-}
-
-/* Per Internet Explorer */
-.additional-text-input:-ms-input-placeholder {
-  color: red;
-    opacity: 0.5;
-
-}
-
 .section {
   margin-bottom: 2rem; /* Aumenta il margine */
   padding: 1rem; /* Più spazio interno */
@@ -188,4 +161,11 @@ h4 {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.5rem; /* Spazio tra il titolo e il contenuto */
+}
+
+.section-title {
+  color: #1A1A1A; /* Colore quasi nero */
+  /* Altri stili, come dimensione del font, peso, ecc., se necessario */
+  font-size: 1.5rem; /* Esempio di dimensione del font */
+  margin-bottom: 0.5rem; /* Spazio sotto il titolo */
 }
