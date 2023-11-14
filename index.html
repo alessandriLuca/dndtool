@@ -8,48 +8,70 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: #f5f5f5;
     }
 
     #title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 20px;
-      background-color: #333;
+      padding: 1.25rem; /* Changed from 20px to 1.25rem */
+      background: linear-gradient(135deg, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
       color: #fff;
       width: 100%;
+      gap: 1.25rem; /* Changed from 20px to 1.25rem */
     }
 
-    #logo-container {
-      width: 40%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+#logo {
+  max-width: 25rem !important;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+    #logo:hover {
+      transform: scale(1.05);
     }
 
-    #logo {
-      max-width: 20%;
-      height: auto;
+    #title h1 {
+      font-size: 4rem; /* Reduced from 2.25rem to 1.5rem */
+      letter-spacing: 0.05rem; /* Changed from 0.125rem to 0.05rem */
+      margin: 0;
+      text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.5); /* Changed from 0.125rem to 0.05rem */
+      transition: color 0.3s ease;
+    }
+
+    h1:hover {
+      color: #ccc;
+    }
+
+    #title h2 {
+      margin-left: 0.25rem; /* Changed from 0.625rem to 0.25rem */
+      font-size: 2rem; /* Added a font size for h2 */
     }
 
     #root {
       text-align: center;
-      padding: 20px;
+      padding: 1.25rem; /* Changed from 20px to 1.25rem */
     }
   </style>
-  <title>DRECINE: Dungeon and Dragons Resource for Entities Creation, Interactive Numb Experiences</title>
-  <script type="module" crossorigin src="/dndtool/assets/index-8a2423bc.js"></script>
-  <link rel="stylesheet" href="/dndtool/assets/index-44a687f5.css">
+  <title>DRECINE: Dungeon and Dragons Resource for Entities Creation, an Interactive Numb Experiences</title>
+  <script type="module" crossorigin src="/dndtool/assets/index-2e56cfb6.js"></script>
+  <link rel="stylesheet" href="/dndtool/assets/index-f370c41f.css">
 </head>
 
 <body>
   <div id="title">
-    <h1>DRECINE: Dungeon and Dragons Resource for Entities Creation, Interactive Numb Experiences</h1>
-  </div>
-  <div id="logo-container">
     <img id="logo" src="/dndtool/logo.png" alt="Logo" />
+    <div>
+      <h1>DRECINE</h1>
+      <h2>Dungeon and Dragons Resource for Entities</h2>
+      <h2>an Interactive Numb Experiences</h2>
+    </div>
   </div>
   <div id="root"></div>
   
