@@ -169,3 +169,52 @@ h4 {
   font-size: 1.5rem; /* Esempio di dimensione del font */
   margin-bottom: 0.5rem; /* Spazio sotto il titolo */
 }
+.navbar {
+  display: flex;
+  align-items: left;
+  background-color: #022c43; /* Blu scuro per il navbar */
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombra per profondità */
+}
+
+.hamburger {
+  cursor: pointer;
+  font-size: 30px; /* Dimensione dell'icona */
+  color: #4CAF50; /* Verde per l'icona, in tema con il logo */
+}
+
+.nav-links {
+  align-items: left;
+  display: none;
+  position: relative; /* Mantieni relative come nella tua versione funzionante */
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #013a63; /* Blu leggermente più chiaro per i link */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Ombra per dare profondità */
+  transition: max-height 0.3s ease; /* Transizione fluida */
+}
+
+.showNav {
+  display: block; /* Mostra il menu quando è attivo */
+}
+
+.nav-links li {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Bordi sottili per separare i link */
+  transition: background-color 0.3s; /* Effetto al passaggio del mouse */
+}
+
+.nav-links li:hover {
+  background-color: #022c43; /* Blu scuro al passaggio del mouse, in tema con il navbar */
+}
+
+.nav-links a {
+  color: white; /* Testo bianco per un buon contrasto */
+  text-decoration: none; /* Nessuna sottolineatura */
+  transition: color 0.3s; /* Transizione del colore */
+}
+
+.nav-links a:hover {
+  color: #4CAF50; /* Verde al passaggio del mouse, in tema con il logo */
+}
