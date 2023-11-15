@@ -98,7 +98,7 @@ const openChatGPTWindow = () => {
         <div className="additional-text-container">
           <textarea
             rows="8"
-            placeholder="Write here what kind of entity you want to create click on Copy to Clipboard and then visit chatgpt and just paste (i know, you didn't copy anything but that was the Copy to Clipboard job). Press enter and let chatgpt do the job. Copy the YAML provided by chatgpt and paste it in the input box below. An example of what you can write here is 'a character that fights using his hairs.' "
+            placeholder="This step is optional if you already have a yaml file or if you want to manually modify the yaml file in the next session. Write here what kind of entity you want to create click on Copy to Clipboard and then visit chatgpt and just paste (i know, you didn't copy anything but that was the Copy to Clipboard job). Press enter and let chatgpt do the job. Copy the YAML provided by chatgpt and paste it in the input box below. An example of what you can write here is 'a character that fights using his hairs.' "
             value={additionalText}
             onChange={(e) => setAdditionalText(e.target.value)}
             className="additional-text-input"
@@ -110,7 +110,7 @@ const openChatGPTWindow = () => {
       </div>
 
       <div className="section">
-        <div className="section-title">YAML to Picture</div>
+        <div className="section-title">YAML to Character sheet</div>
         <div className="text-input-container">
           <textarea
             rows="16"
