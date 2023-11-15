@@ -5,6 +5,22 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="/dndtool/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
+
+<!-- font header -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+
+<!-- font body -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -20,15 +36,17 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 1.25rem; /* Changed from 20px to 1.25rem */
-      background: linear-gradient(135deg, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+      padding: 10px; /* Changed from 20px to 1.25rem */
+	  box-sizing:border-box;
+      /*background: linear-gradient(174deg, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);*/
+	  background: linear-gradient(129deg, #1f5b9e,#00acd3, #1f5b9e,#00acd3, #1f5b9e);
       color: #fff;
       width: 100%;
-      gap: 1.25rem; /* Changed from 20px to 1.25rem */
+      gap: 3.25rem; /* Changed from 20px to 1.25rem */
     }
 
 #logo {
-  max-width: 25rem !important;
+  max-width: 276px !important;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -38,11 +56,13 @@
     }
 
     #title h1 {
-      font-size: 4rem; /* Reduced from 2.25rem to 1.5rem */
+      font-size: 73px; /* Reduced from 2.25rem to 1.5rem */
       letter-spacing: 0.05rem; /* Changed from 0.125rem to 0.05rem */
-      margin: 0;
+      margin: 0 0 10px 0;
       text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.5); /* Changed from 0.125rem to 0.05rem */
       transition: color 0.3s ease;
+	  color:#fff;
+	  font-family: 'Metamorphous', serif;
     }
 
     h1:hover {
@@ -50,14 +70,153 @@
     }
 
     #title h2 {
-      margin-left: 0.25rem; /* Changed from 0.625rem to 0.25rem */
-      font-size: 2rem; /* Added a font size for h2 */
+      margin:0; /* Changed from 0.625rem to 0.25rem */
+      font-size: 33px; /* Added a font size for h2 */
+	  font-family: 'Alegreya', serif;
+	  font-weight:normal;
+	  letter-spacing:1px;
     }
 
     #root {
       text-align: center;
-      padding: 1.25rem; /* Changed from 20px to 1.25rem */
+      padding: 0; /* Changed from 20px to 1.25rem */
+	  margin-top:35px;
+	  width:100%;
     }
+	
+	.app-container {
+		margin-top:20px;
+		padding:0;
+	}
+	
+	.button-group {
+		margin-top:10px;
+		font-family: 'Alegreya', serif;
+	}
+	
+	button.custom-file-upload {
+		margin-top:16px;
+		transition: transform 0.1s linear;
+		font-family: 'Alegreya', serif;
+	}
+	
+	.section {
+		width:90%;
+	}
+	
+	.section-title {
+		font-family: 'Alegreya', serif;
+	}
+	
+	.additional-text-input {
+		width:100%;
+		max-width:100%;
+	}
+	
+	.preview-container {
+		max-width:100%;
+	}
+	
+	/*responsive header*/
+	
+	@media screen and (max-width: 1100px) {
+	
+		#logo {
+			max-width: 245px !important;
+		}
+		
+		#title h1 {
+			font-size:61px;
+		}
+		
+		#title h2 {
+			font-size:29px;
+		}
+	
+	}
+	
+	@media screen and (max-width: 950px) {
+	
+		#logo {
+			max-width: 206px !important;
+		}
+		
+		#title h1 {
+			font-size:52px;
+		}
+		
+		#title h2 {
+			font-size:26px;
+		}
+	
+	}
+	
+	@media screen and (max-width: 800px) {
+	
+		#logo {
+			max-width: 179px !important;
+		}
+		
+		#title h1 {
+			font-size:46px;
+		}
+		
+		#title h2 {
+			font-size:24px;
+		}
+	
+	}
+	
+	@media screen and (max-width: 650px) {
+	
+		#title {
+			flex-direction:column;
+			gap: 2.25rem;
+			padding: 10px 10px 30px;
+		}
+	
+	}
+	
+	@media screen and (max-width: 450px) {
+	
+		#logo {
+			max-width: 156px !important;
+		}
+		
+		#title h1 {
+			font-size:39px;
+		}
+		
+		#title h2 {
+			font-size:22px;
+		}
+	
+	}
+	
+	/*responsive pagina*/
+	
+	@media screen and (max-width: 785px) {
+	
+		.attributes-container {
+			flex-direction: column;
+		}
+	
+	}
+	
+	@media screen and (max-width: 650px) {
+		.section {
+			width:80%;
+		}
+	}
+	
+	@media screen and (max-width: 450px) {
+	
+		.preview-container {
+			max-width:95%;
+		}
+	
+	}
+	
   </style>
   <title>DRECINE: Dungeon and Dragons Resource for Entities Creation, an Interactive Numb Experiences</title>
   <script type="module" crossorigin src="/dndtool/assets/index-f1289741.js"></script>
@@ -66,10 +225,10 @@
 
 <body>
   <div id="title">
-    <img id="logo" src="/dndtool/logo.png" alt="Logo" />
+    <img id="logo" src="/dndtool/logo2.png" alt="Logo" />
     <div>
       <h1>DRECINE</h1>
-      <h2>Dungeon and Dragons Resource for Entities Creation</h2>
+      <h2>Dungeon and Dragons Resource for Entities</h2>
       <h2>an Interactive Numb Experiences</h2>
     </div>
   </div>
