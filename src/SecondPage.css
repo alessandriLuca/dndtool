@@ -1,65 +1,69 @@
-/* Stile per il contenitore dei pulsanti */
+/* Style for the button container */
 .button-container {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Stile per i pulsanti */
+/* Style for buttons and custom file upload */
 .button-container button,
 .custom-file-upload {
-  background-color: #004d99; /* Colore di sfondo */
-  color: white; /* Colore del testo */
-  padding: 10px 20px;
+  background-color: #004d99;
+  color: white; /* White text color for buttons */
+  padding: 1rem 2rem;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
-  margin: 5px;
-  font-size: 16px;
-  transition: background-color 0.3s ease; /* Transizione fluida per hover */
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
-/* Stile per l'hover sui pulsanti */
+/* Style for button hover */
 .button-container button:hover,
 .custom-file-upload:hover {
   background-color: #0073e6;
 }
 
-/* Stile per il contenitore della tabella */
+/* Style for the table container */
 .table-container {
-  margin: 20px;
-  overflow-x: auto; /* Permette lo scroll orizzontale su dispositivi più piccoli */
+  margin: 2rem;
+  overflow-x: auto;
 }
 
-/* Stile per la tabella */
+/* Style for the table */
 .table-container table {
   width: 100%;
   border-collapse: collapse;
-  box-shadow: 0 6px 18px 0 rgba(0,0,0,0.2); /* Ombreggiatura per un effetto di profondità */
+  box-shadow: 0 0.375rem 1.125rem 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Stile per le intestazioni della tabella */
+/* Style for table headers */
 .table-container th {
   background-color: #004d99;
-  color: white;
-  padding: 8px;
+  color: white; /* White text color for table headers */
+  padding: 0.5rem;
   text-align: left;
 }
 
-/* Stile per le celle della tabella */
+/* Style for table cells */
 .table-container td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 0.5rem;
   text-align: left;
+  color: #111; /* Very dark gray text color inside table cells */
 }
 
-/* Stile per le righe alterne della tabella */
+/* Style for alternating table rows */
 .table-container tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-/* Stile per il messaggio di errore */
+/* Style for error message */
 .error-message {
   color: red;
-  margin-top: 10px;
+  margin-top: 1rem;
   text-align: center;
 }
