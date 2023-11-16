@@ -15,7 +15,7 @@ function SecondPage() {
     try {
       const response = await fetch('./database.txt');
       if (!response.ok) {
-        throw new Error('Impossible to load the default database');
+        throw new Error('Unable to load the default database');
       }
       const text = await response.text();
       processDatabaseText(text);
@@ -26,11 +26,14 @@ function SecondPage() {
 
   const handleRandomItem = () => {
     if (items.length === 0) {
-      setError('No item available in the database');
+      setError('No items available in the database');
       return;
     }
+
+    // Genera un numero casuale per selezionare un elemento casuale dall'array degli oggetti
     const randomIndex = Math.floor(Math.random() * items.length);
-    setCurrentItem(items[randomIndex]);
+    const selectedItem = items[randomIndex];
+    setCurrentItem(selectedItem);
   };
 
   const handleCustomDatabaseUpload = async (event) => {
@@ -60,10 +63,11 @@ function SecondPage() {
 
     const newItems = lines.slice(1).map(line => {
       const values = line.split('|');
-      return newHeaders.reduce((obj, header, index) => {
-        obj[header] = values[index];
-        return obj;
-      }, {});
+      const item = {};
+      newHeaders.forEach((header, index) => {
+        item[header] = values[index];
+      });
+      return item;
     });
 
     setHeaders(newHeaders);
@@ -90,7 +94,7 @@ function SecondPage() {
         {error && <div className="error-message">{error}</div>}
       </div>
       <div className="table-container">
-        {Object.keys(currentItem).length > 0 && (
+        {headers.length > 0 && Object.keys(currentItem).length > 0 && (
           <table>
             <thead>
               <tr>
