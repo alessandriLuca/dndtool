@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import YamlTool from './YamlTool';
 import SecondPage from './SecondPage';
 
@@ -19,14 +19,18 @@ function App() {
             <span>☰</span>
           </div>
           <ul className={isMenuOpen ? "nav-links showNav" : "nav-links"}>
-            <li><Link to="yamlTool" onClick={toggleMenu}>Yaml To Character Sheet</Link></li>
-            <li><Link to="secondPage" onClick={toggleMenu}>Seconda Pagina</Link></li>
+            {/* Aggiorna i Link per usare i percorsi relativi */}
+            <li><Link to="/yamlTool" onClick={toggleMenu}>Yaml To Character Sheet</Link></li>
+            <li><Link to="/secondPage" onClick={toggleMenu}>Seconda Pagina</Link></li>
           </ul>
         </nav>
         <main>
           <Routes>
-            <Route path="yamlTool" element={<YamlTool />} />
-            <Route path="secondPage" element={<SecondPage />} />
+            {/* Le Route per le tue pagine */}
+            <Route path="/yamlTool" element={<YamlTool />} />
+            <Route path="/secondPage" element={<SecondPage />} />
+            {/* Rotta di default che reindirizza a /yamlTool se l'URL è solo #/ */}
+            <Route path="/" element={<YamlTool />} />
           </Routes>
         </main>
       </div>
