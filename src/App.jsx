@@ -4,6 +4,7 @@ import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import YamlTool from './YamlTool';
 import SecondPage from './SecondPage';
 import ThirdPage from './ThirdPage';
+import FourthPage from './FourthPage';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,6 +25,7 @@ function App() {
             <li><Link to="/yamlTool" onClick={toggleMenu}>Yaml To Character Sheet</Link></li>
             <li><Link to="/itemDatabaseGen" onClick={toggleMenu}>Item DatabaseGen</Link></li>
             <li><Link to="/itemManager" onClick={toggleMenu}>Item Manager</Link></li>
+            <li><Link to="/CharacterManager" onClick={toggleMenu}>Character Manager</Link></li>
           </ul>
         </nav>
         <main>
@@ -32,6 +34,7 @@ function App() {
             <Route path="/yamlTool" element={<YamlTool />} />
             <Route path="/itemDatabaseGen" element={<ThirdPage />} />
             <Route path="/itemManager" element={<SecondPage />} />
+            <Route path="/CharacterManager" element={<FourthPage />} />
             {/* Rotta di default che reindirizza a /yamlTool se l'URL è solo #/ */}
             <Route path="/" element={<YamlTool />} />
           </Routes>
