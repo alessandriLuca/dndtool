@@ -1,4 +1,5 @@
 # **D**ungeons & **D**ragons **R**eact **E**ngine for **C**haracters, **I**tems, **N**PCs, & **E**quipment (DRECINE)
+![Logo DRECINE](https://github.com/alessandriLuca/dndtool/blob/main/public/logo2.png)
 
 ## Overview
 DRECINE is an innovative tool tailored for Dungeon Masters in Dungeons & Dragons, designed to streamline the management of NPCs, monsters, items, and player stats.
