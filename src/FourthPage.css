@@ -32,6 +32,8 @@
   max-width: 300px; /* Larghezza massima per le schede */
   width: 100%; /* Le schede si adattano al contenitore */
   overflow: hidden; /* Previeni il disordine se l'immagine è troppo grande */
+  color: #111; /* Colore del testo scuro vicino al nero */
+
 }
 
 .character-card label {
