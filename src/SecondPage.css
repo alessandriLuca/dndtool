@@ -1,0 +1,65 @@
+/* Stile per il contenitore dei pulsanti */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Stile per i pulsanti */
+.button-container button,
+.custom-file-upload {
+  background-color: #004d99; /* Colore di sfondo */
+  color: white; /* Colore del testo */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Transizione fluida per hover */
+}
+
+/* Stile per l'hover sui pulsanti */
+.button-container button:hover,
+.custom-file-upload:hover {
+  background-color: #0073e6;
+}
+
+/* Stile per il contenitore della tabella */
+.table-container {
+  margin: 20px;
+  overflow-x: auto; /* Permette lo scroll orizzontale su dispositivi più piccoli */
+}
+
+/* Stile per la tabella */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 6px 18px 0 rgba(0,0,0,0.2); /* Ombreggiatura per un effetto di profondità */
+}
+
+/* Stile per le intestazioni della tabella */
+.table-container th {
+  background-color: #004d99;
+  color: white;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Stile per le celle della tabella */
+.table-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Stile per le righe alterne della tabella */
+.table-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Stile per il messaggio di errore */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}

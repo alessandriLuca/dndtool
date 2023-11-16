@@ -1,0 +1,21 @@
+Name|Description|Rarity
+Eternal Lantern|A lantern that shines without the need for oil|Common
+Sword of Destiny|A sword that vibrates when danger is near|Rare
+Invisibility Hat|A hat that makes you invisible when worn|Very Rare
+Scroll of Truth|A scroll that reveals lies when read aloud|Rare
+Leap Ring|A ring that allows the wearer to jump three times the normal distance|Uncommon
+Starry Cloak|A cloak that shines like a night sky full of stars|Rare
+Spell Wand|A wand capable of casting a spell of your choice once a day|Uncommon
+Helm of Intuition|A helmet that enhances the wearer's perception|Common
+Dragon Shield|A shield forged from the scales of a dragon|Very Rare
+Return Stone|A stone that allows the user to teleport back to their starting point|Rare
+Thief's Gloves|Gloves that increase dexterity in stealth activities|Uncommon
+Djinn Bottle|A bottle that, when opened, summons a Djinn|Legendary
+Amulet of Health|An amulet that increases the user's constitution|Uncommon
+Pathwalker Boots|Boots that allow you to walk on any surface|Uncommon
+Command Necklace|A necklace that allows you to influence others with your words|Rare
+Night Vision Glasses|Glasses that allow you to see in the dark as if it were daylight|Common
+Book of Shadows|A book containing ancient and forgotten secrets|Very Rare
+Flask of Fire|A flask that sprays flames when opened|Dangerous
+Giant's Ring|A ring that grants superhuman strength to the wearer|Legendary
+Time Medallion|A medallion that can slow down or speed up time|Legendary

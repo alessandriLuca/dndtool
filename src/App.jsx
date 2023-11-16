@@ -21,14 +21,14 @@ function App() {
           <ul className={isMenuOpen ? "nav-links showNav" : "nav-links"}>
             {/* Aggiorna i Link per usare i percorsi relativi */}
             <li><Link to="/yamlTool" onClick={toggleMenu}>Yaml To Character Sheet</Link></li>
-            <li><Link to="/secondPage" onClick={toggleMenu}>Seconda Pagina</Link></li>
+            <li><Link to="/itemManager" onClick={toggleMenu}>Item Manager</Link></li>
           </ul>
         </nav>
         <main>
           <Routes>
             {/* Le Route per le tue pagine */}
             <Route path="/yamlTool" element={<YamlTool />} />
-            <Route path="/secondPage" element={<SecondPage />} />
+            <Route path="/itemManager" element={<SecondPage />} />
             {/* Rotta di default che reindirizza a /yamlTool se l'URL è solo #/ */}
             <Route path="/" element={<YamlTool />} />
           </Routes>
