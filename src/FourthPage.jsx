@@ -96,18 +96,17 @@ const clearCharacters = () => {
         <button onClick={addNewCharacter}>Add Character</button>
         <button onClick={downloadYaml}>Download YAML</button>
         <button onClick={() => fileInputRef.current.click()}>Upload YAML File</button>
-        <button onClick={clearCharacters}>Clear Characters</button> {/* Pulsante per ripulire i personaggi */}
+        <button onClick={clearCharacters}>Clear Characters</button>
         <input
           ref={fileInputRef}
           type="file"
           onChange={uploadYaml}
           style={{ display: 'none' }}
         />
-      </div>
-      <div className="characters-container">
+      </div>      <div className="characters-container">
         {characters.map((char, index) => (
           <div key={index} className="character-card">
-            <label>
+              <label>
               Name: <input type="text" value={char.name} onChange={(e) => handleCharacterChange(index, 'name', e.target.value)} />
             </label>
             <label>
@@ -116,50 +115,62 @@ const clearCharacters = () => {
             <label>
               Race: <input type="text" value={char.race} onChange={(e) => handleCharacterChange(index, 'race', e.target.value)} />
             </label>
-            <div className="stats">
-              <label>
-                Strength: <input type="number" value={char.stats.strength} onChange={(e) => handleCharacterChange(index, 'stats.strength', e.target.value)} />
-              </label>
-              <label>
-                Dexterity: <input type="number" value={char.stats.dexterity} onChange={(e) => handleCharacterChange(index, 'stats.dexterity', e.target.value)} />
-              </label>
-              <label>
-                Constitution: <input type="number" value={char.stats.constitution} onChange={(e) => handleCharacterChange(index, 'stats.constitution', e.target.value)} />
-              </label>
-              <label>
-                Intelligence: <input type="number" value={char.stats.intelligence} onChange={(e) => handleCharacterChange(index, 'stats.intelligence', e.target.value)} />
-              </label>
-              <label>
-                Wisdom: <input type="number" value={char.stats.wisdom} onChange={(e) => handleCharacterChange(index, 'stats.wisdom', e.target.value)} />
-              </label>
-              <label>
-                Charisma: <input type="number" value={char.stats.charisma} onChange={(e) => handleCharacterChange(index, 'stats.charisma', e.target.value)} />
-              </label>
+            <div className="stats-grid">
+              <div className="stat">
+                <label htmlFor={`str-${index}`}>STR</label>
+                <input id={`str-${index}`} type="number" value={char.stats.strength} /* ... */ />
+              </div>
+              <div className="stat">
+                <label htmlFor={`dex-${index}`}>DEX</label>
+                <input id={`dex-${index}`} type="number" value={char.stats.dexterity} /* ... */ />
+              </div>
+              <div className="stat">
+                <label htmlFor={`con-${index}`}>CON</label>
+                <input id={`con-${index}`} type="number" value={char.stats.constitution} /* ... */ />
+              </div>
             </div>
-            <label>
-              Passive Perception: <input type="number" value={char.passivePerception} onChange={(e) => handleCharacterChange(index, 'passivePerception', e.target.value)} />
-            </label>
-            <label>
-              Armor Class: <input type="number" value={char.armorClass} onChange={(e) => handleCharacterChange(index, 'armorClass', e.target.value)} />
-            </label>
-            <label>
-              Hit Points: <input type="number" value={char.hitPoints} onChange={(e) => handleCharacterChange(index, 'hitPoints', e.target.value)} />
-            </label>
-            <label>
-              Equipment:
-              <textarea
+            <div className="stats-grid">
+              <div className="stat">
+                <label htmlFor={`int-${index}`}>INT</label>
+                <input id={`int-${index}`} type="number" value={char.stats.intelligence} /* ... */ />
+              </div>
+              <div className="stat">
+                <label htmlFor={`wis-${index}`}>WIS</label>
+                <input id={`wis-${index}`} type="number" value={char.stats.wisdom} /* ... */ />
+              </div>
+              <div className="stat">
+                <label htmlFor={`cha-${index}`}>CHA</label>
+                <input id={`cha-${index}`} type="number" value={char.stats.charisma} /* ... */ />
+              </div>
+            </div>
+                        <div className="stats-grid">
+                        <div className="stat">
+                        <label htmlFor={`int-${index}`}>AC</label>
+                        <input id={`int-${index}`} type="number" value={char.armorClass} /* ... */ />
+                        </div>
+                         <div className="stat">
+                        <label htmlFor={`int-${index}`}>HP</label>
+                        <input id={`int-${index}`} type="number" value={char.hitPoints} /* ... */ />
+                        </div>
+                        <div className="stat">
+                        <label htmlFor={`int-${index}`}>Passive Perception</label>
+                        <input id={`int-${index}`} type="number" value={char.passivePerception} /* ... */ />
+                        </div>
+                        </div>
+                        <div className="stat">
+                        <label htmlFor={`int-${index}`}>Equipment</label>
+                        <textarea
                 value={char.equipment}
                 onChange={(e) => handleEquipmentChange(index, e.target.value)}
                 onKeyDown={(e) => handleEquipmentKeyDown(e, index)}
                 placeholder="List equipment here..."
                 rows={5}
               />
-            </label>
+                        </div>
           </div>
         ))}
       </div>
     </div>
   );
 }
-
 export default FourthPage;

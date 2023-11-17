@@ -47,7 +47,18 @@ function SecondPage() {
       reader.readAsText(file);
     }
   };
-
+  const handleMagicDatasetLoad = async () => {
+    try {
+      const response = await fetch('./magicDataset.txt'); // Assicurati che il percorso sia corretto
+      if (!response.ok) {
+        throw new Error('Unable to load the magic dataset');
+      }
+      const text = await response.text();
+      processDatabaseText(text);
+    } catch (error) {
+      setError(error.message);
+    }
+  };
   const processDatabaseText = (text) => {
     const lines = text.split('\n').filter(line => line.trim());
     if (lines.length === 0) {
@@ -80,7 +91,8 @@ function SecondPage() {
     <div>
       <div className="button-container">
         <button onClick={handleRandomItem}>Random Item</button>
-        <button onClick={loadDefaultDatabase}>Default Database</button>
+        <button onClick={loadDefaultDatabase}>Common Database</button>
+        <button onClick={handleMagicDatasetLoad}>Load Magic Database</button> {/* Aggiunto il nuovo bottone */}
         <label htmlFor="file-upload" className="custom-file-upload">
           Load Custom Database
         </label>
