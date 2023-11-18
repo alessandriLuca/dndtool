@@ -1,13 +1,16 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import YAML from 'js-yaml';
-import './FourthPage.css'; // Assicurati che il percorso del file CSS sia corretto
+import './FourthPage.css';
+import { useAppContext } from './AppContext'; // Importa useAppContext
 
 function FourthPage() {
-  const [characters, setCharacters] = useState([]);
+  const { data, updateData } = useAppContext(); // Accedi al contesto
+  const characters = data.characters || [];
+
   const fileInputRef = useRef(null);
 
   const addNewCharacter = () => {
-    setCharacters([...characters, {
+    const newCharacter = {
       name: '',
       class: '',
       race: '',
@@ -23,26 +26,32 @@ function FourthPage() {
       armorClass: 0,
       hitPoints: 0,
       equipment: '1) '
-    }]);
+    };
+
+    // Aggiorna i dati condivisi aggiungendo il nuovo personaggio
+    updateData({ characters: [...characters, newCharacter] });
   };
-const clearCharacters = () => {
-    setCharacters([]); // Resetta l'elenco dei personaggi
+
+  const clearCharacters = () => {
+    // Rimuovi tutti i personaggi impostando l'array vuoto
+    updateData({ characters: [] });
   };
+
   const handleCharacterChange = (index, field, value) => {
     const updatedCharacters = [...characters];
     if (field.includes('.')) {
       const [statsField, stat] = field.split('.');
-      updatedCharacters[index][statsField][stat] = parseInt(value, 10);
+      updatedCharacters[index][statsField][stat] = parseInt(value, 10) || 0;
     } else {
       updatedCharacters[index][field] = value;
     }
-    setCharacters(updatedCharacters);
+    updateData({ characters: updatedCharacters });
   };
 
   const handleEquipmentChange = (index, value) => {
     const updatedCharacters = [...characters];
     updatedCharacters[index].equipment = value;
-    setCharacters(updatedCharacters);
+    updateData({ characters: updatedCharacters });
   };
 
   const handleEquipmentKeyDown = (e, index) => {
@@ -58,7 +67,6 @@ const clearCharacters = () => {
       const newValue = `${textBeforeCaret}\n${newItemNumber}) ${textAfterCaret}`;
       handleEquipmentChange(index, newValue);
 
-      // Aggiorna la posizione del cursore dopo l'aggiunta del numero
       setTimeout(() => {
         textarea.selectionStart = textarea.selectionEnd = caretPos + newItemNumber.toString().length + 3;
       }, 0);
@@ -84,7 +92,7 @@ const clearCharacters = () => {
       const reader = new FileReader();
       reader.onload = (e) => {
         const chars = YAML.load(e.target.result);
-        setCharacters(chars.characters);
+        updateData({ characters: chars.characters || [] });
       };
       reader.readAsText(file);
     }
@@ -103,10 +111,11 @@ const clearCharacters = () => {
           onChange={uploadYaml}
           style={{ display: 'none' }}
         />
-      </div>      <div className="characters-container">
+      </div>
+      <div className="characters-container">
         {characters.map((char, index) => (
           <div key={index} className="character-card">
-              <label>
+            <label>
               Name: <input type="text" value={char.name} onChange={(e) => handleCharacterChange(index, 'name', e.target.value)} />
             </label>
             <label>
@@ -118,59 +127,61 @@ const clearCharacters = () => {
             <div className="stats-grid">
               <div className="stat">
                 <label htmlFor={`str-${index}`}>STR</label>
-                <input id={`str-${index}`} type="number" value={char.stats.strength} /* ... */ />
+                <input id={`str-${index}`} type="number" value={char.stats.strength} onChange={(e) => handleCharacterChange(index, 'stats.strength', e.target.value)} />
               </div>
               <div className="stat">
                 <label htmlFor={`dex-${index}`}>DEX</label>
-                <input id={`dex-${index}`} type="number" value={char.stats.dexterity} /* ... */ />
+                <input id={`dex-${index}`} type="number" value={char.stats.dexterity} onChange={(e) => handleCharacterChange(index, 'stats.dexterity', e.target.value)} />
               </div>
               <div className="stat">
                 <label htmlFor={`con-${index}`}>CON</label>
-                <input id={`con-${index}`} type="number" value={char.stats.constitution} /* ... */ />
+                <input id={`con-${index}`} type="number" value={char.stats.constitution} onChange={(e) => handleCharacterChange(index, 'stats.constitution', e.target.value)} />
               </div>
             </div>
             <div className="stats-grid">
               <div className="stat">
                 <label htmlFor={`int-${index}`}>INT</label>
-                <input id={`int-${index}`} type="number" value={char.stats.intelligence} /* ... */ />
+                <input id={`int-${index}`} type="number" value={char.stats.intelligence} onChange={(e) => handleCharacterChange(index, 'stats.intelligence', e.target.value)} />
               </div>
               <div className="stat">
                 <label htmlFor={`wis-${index}`}>WIS</label>
-                <input id={`wis-${index}`} type="number" value={char.stats.wisdom} /* ... */ />
+                <input id={`wis-${index}`} type="number" value={char.stats.wisdom} onChange={(e) => handleCharacterChange(index, 'stats.wisdom', e.target.value)} />
               </div>
               <div className="stat">
                 <label htmlFor={`cha-${index}`}>CHA</label>
-                <input id={`cha-${index}`} type="number" value={char.stats.charisma} /* ... */ />
+                <input id={`cha-${index}`} type="number" value={char.stats.charisma} onChange={(e) => handleCharacterChange(index, 'stats.charisma', e.target.value)} />
               </div>
             </div>
-                        <div className="stats-grid">
-                        <div className="stat">
-                        <label htmlFor={`int-${index}`}>AC</label>
-                        <input id={`int-${index}`} type="number" value={char.armorClass} /* ... */ />
-                        </div>
-                         <div className="stat">
-                        <label htmlFor={`int-${index}`}>HP</label>
-                        <input id={`int-${index}`} type="number" value={char.hitPoints} /* ... */ />
-                        </div>
-                        <div className="stat">
-                        <label htmlFor={`int-${index}`}>Passive Perception</label>
-                        <input id={`int-${index}`} type="number" value={char.passivePerception} /* ... */ />
-                        </div>
-                        </div>
-                        <div className="stat">
-                        <label htmlFor={`int-${index}`}>Equipment</label>
-                        <textarea
+            <div className="stats-grid">
+              <div className="stat">
+                <label htmlFor={`ac-${index}`}>AC</label>
+                <input id={`ac-${index}`} type="number" value={char.armorClass} onChange={(e) => handleCharacterChange(index, 'armorClass', e.target.value)} />
+              </div>
+              <div className="stat">
+                <label htmlFor={`hp-${index}`}>HP</label>
+                <input id={`hp-${index}`} type="number" value={char.hitPoints} onChange={(e) => handleCharacterChange(index, 'hitPoints', e.target.value)} />
+              </div>
+              <div className="stat">
+                <label htmlFor={`pp-${index}`}>Passive Perception</label>
+                <input id={`pp-${index}`} type="number" value={char.passivePerception} onChange={(e) => handleCharacterChange(index, 'passivePerception', e.target.value)} />
+              </div>
+            </div>
+            <div className="stat">
+              <label htmlFor={`equipment-${index}`}>Equipment</label>
+              <textarea
+                id={`equipment-${index}`}
                 value={char.equipment}
                 onChange={(e) => handleEquipmentChange(index, e.target.value)}
                 onKeyDown={(e) => handleEquipmentKeyDown(e, index)}
                 placeholder="List equipment here..."
                 rows={5}
               />
-                        </div>
+            </div>
           </div>
         ))}
       </div>
     </div>
   );
 }
+
 export default FourthPage;

@@ -1,6 +1,7 @@
 // Preview.js
 
 import React from 'react';
+import './YamlTool.css'; // Assicurati che il percorso del file CSS sia corretto
 
 function Preview({ yamlData, imageUrl }) {
   return (

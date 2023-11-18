@@ -1,0 +1,141 @@
+.app-container, #root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.section {
+  margin-bottom: 2rem; /* Aumenta il margine */
+  padding: 1rem; /* Più spazio interno */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Angoli più arrotondati */
+  background: linear-gradient(to right, #ffffff, #f1f1f1); /* Sfondo con gradiente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+  transition: box-shadow 0.3s; /* Transizione dell'ombra */
+}
+
+.section:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata al passaggio del mouse */
+}
+.section-title {
+  font-size: 1.5rem; /* Scegli il valore di font-size che preferisci */
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Spazio tra il titolo e il contenuto */
+  color: #1A1A1A; /* Colore quasi nero */
+  /* Altri stili, se necessari */
+}
+.text-input-container, .input-container, .additional-text-container, .button-container {
+  margin-bottom: 0.25rem;
+}
+
+.text-input, .additional-text-input {
+  width: 95vw;  /* Larghezza aumentata */
+  max-width: 800px; /* Larghezza massima aumentata */
+  padding: 0.5rem; /* Padding aumentato */
+  font-size: 1.2rem; /* Dimensione del font aumentata */
+  box-sizing: border-box;
+  resize: vertical;
+  margin-bottom: 0.25rem;
+}
+
+.custom-file-upload, .custom-button {
+  padding: 0.5rem 1rem; /* Padding aumentato */
+  font-size: 1.2rem; /* Dimensione del font aumentata */
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 0.3125rem;
+  text-align: center;
+}
+
+.custom-file-upload:hover, .custom-button:hover {
+  transform: scale(1.05);
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1024px;
+  margin: auto;
+  padding: 0.5rem;
+  gap: 0.25rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #1A1A1A; /* Colore quasi nero */
+}
+
+
+
+.character-image {
+  max-width: 100%;
+  max-height: 20rem;
+  height: auto;
+  margin-bottom: 0.25rem;
+}
+
+.character-stats, .attributes-container, .actions-container, .loot-container, .special-actions-container {
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.attributes-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.attribute {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.125rem;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+}
+
+h3, h4 {
+  font-weight: bold;
+  color: #444;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+.action, .loot, .special-action {
+  background-color: #fff;
+  padding: 0.125rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.125rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.left-section, .right-section {
+  background-color: #f8f8f8;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.125rem;
+}
+

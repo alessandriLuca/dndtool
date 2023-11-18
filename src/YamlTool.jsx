@@ -4,6 +4,8 @@ import html2canvas from 'html2canvas';
 import copy from 'copy-to-clipboard';
 import { defaultYaml } from './character.js';
 import Preview from './Preview';
+import './YamlTool.css'; // Assicurati che il percorso del file CSS sia corretto
+
 function YamlTool() {
   const [inputText, setInputText] = useState(defaultYaml);
   const [yamlData, setYamlData] = useState({});
@@ -116,7 +118,6 @@ const openChatGPTWindow = () => {
             className="text-input"
           />
         </div>
-        <div className="button-group">
           <label htmlFor="file-upload" className="custom-file-upload">
             Upload Image
           </label>
@@ -127,9 +128,7 @@ const openChatGPTWindow = () => {
             onChange={handleImageChange}
             style={{ display: 'none' }}
           />
-        </div>
       </div>
-
       <div className="section">
         <div className="section-title">Preview and Download</div>
         {yamlData && (

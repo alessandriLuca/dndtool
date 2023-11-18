@@ -2,7 +2,7 @@
 .fourth-page {
   padding: 2rem;
   background-color: #f5f5f5;
-  text-align: center; /* Aggiunto per centrare il contenuto */
+  text-align: center;
 }
 
 .button-container {
@@ -25,27 +25,27 @@
   border: 0.1rem solid #ccc;
   border-radius: 0.5rem;
   background-color: white;
-  background-image: url('./assets/background.png'); /* Sfondo per ogni scheda */
-  background-size: cover; /* Assicurati che l'immagine copra l'intera scheda */
-  background-position: center; /* Centra l'immagine di sfondo */
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   padding: 1rem;
-  max-width: 300px; /* Larghezza massima per le schede */
-  width: 100%; /* Le schede si adattano al contenitore */
-  overflow: hidden; /* Previeni il disordine se l'immagine è troppo grande */
-  color: #111; /* Colore del testo scuro vicino al nero */
-  position: relative; /* Permette posizionamento assoluto per gli pseudo-elementi o i figli */
-  text-align: left; /* Allinea il testo a sinistra */
+  max-width: 300px;
+  width: 100%;
+  overflow: hidden;
+  color: #111;
+  position: relative;
+  text-align: left;
 }
 
 .character-card label {
-  display: block; /* Utilizza display block per etichette */
+  display: block;
   margin-bottom: 0.5rem;
 }
 
 .character-card input,
 .character-card textarea {
-  margin: 0; /* Rimuovi margini per preciso controllo della disposizione */
+  margin: 0;
   padding: 0.5rem;
   border: 0.1rem solid #ccc;
   border-radius: 0.25rem;
@@ -84,43 +84,43 @@ button:hover {
 
   .character-card input,
   .character-card textarea {
-    width: auto; /* Per dispositivi mobili, prendi l'intera larghezza */
+    width: auto;
   }
 }
 
 /* Aggiunte per la griglia delle statistiche */
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* crea tre colonne */
-  gap: 10px; /* spazio tra le celle della griglia */
-  align-items: end; /* Allinea i campi di input alla parte inferiore */
-  padding-right: 1rem; /* Aggiunge spazio a destra all'interno della card */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: end;
+  padding-right: 1rem;
 }
 
 .stat {
   display: flex;
-  flex-direction: column; /* posiziona label sopra l'input */
+  flex-direction: column;
 }
 
 .stat label {
-  font-size: 0.8em; /* riduce la dimensione del font per le etichette */
+  font-size: 0.8em;
   margin-bottom: 1px;
-  margin-left: 35%;/* spazio tra l'etichetta e l'input */
+  margin-left: 35%;
 }
 
 .stat input {
-  padding: 0.5em; /* padding interno per l'input */
-  text-align: center; /* allinea il testo al centro */
-  width: 100%; /* l'input si espande per occupare tutto lo spazio disponibile */
+  padding: 0.5em;
+  text-align: center;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
   .stats-grid {
-    grid-template-columns: 1fr; /* una colonna per schermi più piccoli */
-    padding-right: 0; /* Rimuovi il padding a destra su schermi piccoli */
+    grid-template-columns: 1fr;
+    padding-right: 0;
   }
 
   .stat input {
-    width: 100%; /* gli input si espandono per prendere l'intera larghezza disponibile */
+    width: 100%;
   }
 }
