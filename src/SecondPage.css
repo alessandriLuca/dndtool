@@ -67,3 +67,20 @@
   margin-top: 1rem;
   text-align: center;
 }
+
+.fancy-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.fancy-label {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.fancy-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
