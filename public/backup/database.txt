@@ -1,0 +1,200 @@
+Item Name|Description|Value|Rarity
+A mummified goblin hand|A gruesome goblin hand preserved through mysterious means|10 gp|7
+A piece of crystal that faintly glows in the moonlight|A beautiful crystal that emits a soft, ethereal glow|15 gp|12
+A gold coin minted in an unknown land|A mysterious gold coin with strange markings|5 gp|5
+A diary written in a language you don't know|An old diary filled with unintelligible writings|3 gp|2
+A brass ring that never tarnishes|A shiny brass ring that retains its luster|8 gp|6
+An old chess piece made from glass|A delicate glass chess piece|7 gp|4
+A pair of knucklebone dice with skull symbols|Two dice with eerie skull symbols|6 gp|3
+A small idol depicting a nightmarish creature|A creepy idol that haunts your dreams|12 gp|10
+A rope necklace with mummified elf fingers|A macabre necklace adorned with elf fingers|9 gp|8
+The deed for a parcel of land in a realm unknown to you|A legal document for mysterious land ownership|14 gp|11
+A 1-ounce block made from an unknown material|A strange and weighty block of unknown material|11 gp|9
+A small cloth doll skewered with needles|A creepy cloth doll with needles protruding|5 gp|3
+A tooth from an unknown beast|A sharp tooth from an unidentified creature|7 gp|5
+An enormous scale, perhaps from a dragon|A massive scale that could be from a dragon|18 gp|16
+A bright green feather|A vibrant green feather|4 gp|2
+An old divination card bearing your likeness|A faded card with your image|6 gp|4
+A glass orb filled with moving smoke|A mesmerizing glass orb with swirling smoke|13 gp|11
+A 1-pound egg with a bright red shell|A heavy egg with a vivid red shell|9 gp|7
+A pipe that blows bubbles|A whimsical pipe that blows bubbles|8 gp|6
+A glass jar containing a weird bit of flesh|A disturbing jar with a strange preserved item|7 gp|5
+A tiny gnome-crafted music box|A charming music box crafted by gnomes|10 gp|8
+A small wooden statuette of a smug halfling|A wooden statuette of a smirking halfling|7 gp|5
+A brass orb etched with strange runes|A mysterious brass orb adorned with runes|10 gp|8
+A multicolored stone disk|A colorful stone disk with intricate patterns|6 gp|4
+A tiny silver icon of a raven|A small silver icon depicting a raven|5 gp|3
+A bag containing forty-seven humanoid teeth|A gruesome bag of humanoid teeth|8 gp|6
+A shard of obsidian that always feels warm|A shard of warm obsidian|7 gp|5
+A dragon's bony talon hanging from a leather necklace|A dragon's talon on a leather necklace|14 gp|12
+A pair of old socks|Well-worn pair of socks|3 gp|2
+A blank book that won't hold any markings|An empty book resistant to ink or markings|5 gp|3
+A silver badge in the shape of a five-pointed star|A silver badge with a star design|6 gp|4
+A knife that belonged to a relative|A sentimental knife with family history|8 gp|6
+A glass vial filled with nail clippings|A peculiar vial filled with nail clippings|4 gp|3
+A rectangular metal device that sparks when wet|A strange metal device that creates sparks when wet|7 gp|6
+A white, sequined glove sized for a human|A sequined glove in pristine white|6 gp|4
+A vest with one hundred tiny pockets|A vest adorned with numerous tiny pockets|8 gp|7
+A small, weightless stone block|A small stone block that feels weightless|5 gp|3
+A tiny sketch portrait of a goblin|A tiny portrait of a mischievous goblin|3 gp|2
+An empty glass vial that smells of perfume|A perfume-scented empty glass vial|4 gp|3
+A gemstone that looks like coal to others|A deceptive gemstone resembling coal|11 gp|9
+A scrap of cloth from an old banner|A scrap of cloth from an ancient banner|6 gp|4
+A rank insignia from a lost legionnaire|A lost legionnaire's rank insignia|7 gp|6
+A tiny silver bell without a clapper|A tiny silver bell with no clapper|4 gp|3
+A mechanical canary inside a gnomish lamp|A mechanical canary inside a gnomish lamp|9 gp|7
+A tiny chest carved to look like it has numerous feet|A tiny chest with feet carvings|6 gp|5
+A dead sprite inside a clear glass bottle|A dead sprite preserved in a glass bottle|7 gp|6
+A metal can filled with mysterious contents|A metal can filled with mysterious contents|5 gp|4
+A glass orb filled with water and a clockwork goldfish|A glass orb with a clockwork goldfish swimming|10 gp|9
+A silver spoon with an 'M' engraved on the handle|A silver spoon with an 'M' engraving|5 gp|4
+A whistle made from gold-colored wood|A gold-colored wooden whistle|4 gp|3
+A dead scarab beetle the size of your hand|A large dead scarab beetle|8 gp|7
+Two toy soldiers, one with a missing head|Two toy soldiers, one headless|4 gp|3
+A small box filled with different-sized buttons|A box filled with various-sized buttons|6 gp|5
+A candle that can't be lit|A non-lightable candle|3 gp|2
+A tiny cage with no door|A cage with no escape|4 gp|3
+An old key|A mysterious old key|5 gp|4
+An indecipherable treasure map|A puzzling, indecipherable treasure map|8 gp|7
+A hilt from a broken sword|A hilt from a broken sword|6 gp|5
+A rabbit's foot|A lucky rabbit's foot|5 gp|4
+A glass eye|A glass eye|5 gp|4
+A cameo carved in the likeness of a hideous person|A hideous cameo carving|7 gp|6
+A silver skull the size of a coin|A small silver skull|6 gp|5
+An alabaster mask|An alabaster mask|7 gp|6
+A pyramid of sticky black incense|A pyramid of potent black incense|9 gp|8
+A nightcap that gives pleasant dreams when worn|A dream-inducing nightcap|7 gp|6
+A single caltrop made from bone|A bone caltrop|5 gp|4
+A gold monocle frame without the lens|A gold monocle frame without the lens|5 gp|4
+A 1-inch cube with each side painted a different color|A colorful 1-inch cube|6 gp|5
+A crystal knob from a door|A crystal doorknob|5 gp|4
+A small packet filled with pink dust|A packet of pink dust|4 gp|3
+A fragment of a beautiful song written as musical notes|A fragment of a beautiful musical score|7 gp|6
+A silver teardrop earring made from a real teardrop|A teardrop-shaped silver earring|6 gp|5
+The shell of an egg painted with scenes of human misery in disturbing detail|A painted eggshell depicting disturbing scenes of human misery|10 gp|8
+A fan that, when unfolded, shows a sleeping cat|A folding fan with a sleeping cat illustration|8 gp|5
+A set of bone pipes|A set of pipes made from bones|6 gp|4
+A four-leaf clover pressed inside a book discussing manners and etiquette|A lucky four-leaf clover preserved in an etiquette book|9 gp|7
+A sheet of parchment upon which is drawn a complex mechanical contraption|A parchment with a complex mechanical drawing|7 gp|6
+An ornate scabbard that fits no blade you have found so far|A beautifully decorated scabbard without a matching blade|10 gp|8
+An invitation to a party where a murder happened|An eerie party invitation connected to a murder|6 gp|5
+A bronze pentacle with an etching of a rat's head in its center|A bronze pentacle with a rat's head etching|7 gp|6
+A purple handkerchief embroidered with the name of a powerful archmage|A purple handkerchief with the name of an archmage|5 gp|4
+Half of a floorplan for a temple, castle, or some other structure|Half of a mysterious floorplan for a structure|6 gp|5
+A bit of folded cloth that, when unfolded, turns into a stylish cap|A magical cloth that transforms into a stylish cap|8 gp|7
+A receipt of deposit at a bank in a far-flung city|A receipt from a distant city's bank deposit|5 gp|4
+A diary with seven missing pages|A diary with seven mysteriously missing pages|6 gp|5
+"An empty silver snuffbox bearing an inscription on the surface that says ""dreams"""|"An empty silver snuffbox with a ""dreams"" inscription"|5gp|4
+An iron holy symbol devoted to an unknown god|An iron holy symbol of an unknown deity|7gp|6
+A book that tells the story of a legendary hero's rise and fall, with the last chapter missing|A book about a legendary hero with a missing final chapter|8gp|7
+A vial of dragon blood|A vial containing the blood of a dragon|9gp|8
+An ancient arrow of elven design|An ancient elven-designed arrow|6gp|5
+A needle that never bends|A needle that remains straight|4gp|3
+An ornate brooch of dwarven design|An ornate brooch crafted in dwarven style|7gp|6
+"An empty wine bottle bearing a pretty label that says, ""The Wizard of Wines Winery, Red Dragon Crush, 331422-W"""|"An empty wine bottle with a label from ""The Wizard of Wines Winery, Red Dragon Crush, 331422-W"""|6gp|5
+A mosaic tile with a multicolored, glazed surface|A colorful mosaic tile with a glazed surface|5gp|4
+A petrified mouse|A petrified mouse|5gp|4
+A black pirate flag adorned with a dragon's skull and crossbones|A black pirate flag with a dragon skull and crossbones|8gp|7
+A tiny mechanical crab or spider that moves about when it's not being observed|A tiny mechanical crab or spider that moves autonomously|7gp|6
+"A glass jar containing lard with a label that reads, ""Griffon Grease"""|"A glass jar filled with lard labeled ""Griffon Grease"""|5gp|7
+A wooden box with a ceramic bottom that holds a living worm with a head on each end of its body|A wooden box with a living worm having two heads|6gp|8
+A metal urn containing the ashes of a hero|A metal urn holding the ashes of a hero|9gp|12
+Club|A simple club|1 sp|1
+Dagger|A small dagger|2 gp|2
+Greatclub|A large and crude club|2 sp|1
+Handaxe|A small handaxe|5 gp|2
+Javelin|A simple javelin|5 sp|1
+Light hammer|A lightweight hammer|2 gp|2
+Mace|A basic mace|5 gp|2
+Quarterstaff|A common quarterstaff|2 sp|1
+Sickle|A farming sickle|1 gp|2
+Spear|A standard spear|1 gp|1
+Crossbow, light|A light crossbow|25 gp|2
+Dart|A small throwing dart|5 cp|1
+Shortbow|A shortbow|25 gp|2
+Sling|A simple sling|1 sp|1
+Battleaxe|A battleaxe|10 gp|2
+Flail|A flail|10 gp|2
+Glaive|A glaive|20 gp|3
+Greataxe|A greataxe|30 gp|3
+Greatsword|A greatsword|50 gp|3
+Halberd|A halberd|20 gp|3
+Lance|A lance|10 gp|3
+Longsword|A longsword|15 gp|2
+Maul|A large maul|10 gp|3
+Morningstar|A morningstar|15 gp|2
+Pike|A pike|5 gp|3
+Rapier|A rapier|25 gp|2
+Scimitar|A scimitar|25 gp|2
+Shortsword|A shortsword|10 gp|2
+Trident|A trident|5 gp|2
+War pick|A war pick|5 gp|2
+Warhammer|A warhammer|15 gp|2
+Whip|A whip|2 gp|2
+Blowgun|A blowgun|10 gp|2
+Crossbow, hand|A hand crossbow|75 gp|2
+Crossbow, heavy|A heavy crossbow|50 gp|3
+Longbow|A longbow|50 gp|3
+Net|A fishing net|1 gp|1
+Arrows (20)|A quiver of arrows|1 gp|1
+Blowgun needles (50)|A bundle of blowgun needles|1 gp|1
+Crossbow bolts (20)|A bundle of crossbow bolts|1 gp|1
+Sling bullets (20)|A pouch of sling bullets|4 cp|1
+Hoopak|A sturdy stick with a sling at one end and a pointed tip at the other.|1 gp|2
+Pistol|A firearm that fires a single shot.|250 gp|4
+Musket|A large firearm with a long barrel.|500 gp|5
+Bullets (10)|A pack of 10 bullets for firearms.|3 gp|2
+Bomb|A small explosive device.|150 gp|4
+Gunpowder, keg|A keg of gunpowder.|250 gp|4
+Gunpowder, powder horn|A powder horn filled with gunpowder.|35 gp|3
+Assassin's Blood Poison (Ingested)|A deadly poison that requires a DC 10 Constitution saving throw. On a failed save, the target takes 6 (1d12) poison damage and is poisoned for 24 hours. On a successful save, the target takes half damage and is not poisoned.|150 gp|4
+Burnt Othur Fumes Poison (Inhaled)|A poisonous gas that requires a DC 13 Constitution saving throw. On a failed save, the target takes 10 (3d6) poison damage and must repeat the saving throw at the start of each of its turns. On each successive failed save, the target takes 3 (1d6) poison damage. The poison ends after three successful saves.|500 gp|5
+Carrion Crawler Mucus (Ingested)|A paralyzing poison that must be harvested from a dead or incapacitated carrion crawler. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. The poisoned creature is paralyzed and can repeat the saving throw at the end of each of its turns to end the effect.|—|3
+Drow Poison (Injury)|A potent poison typically made by the drow, requiring a DC 13 Constitution saving throw. On a failed save, the target is poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned. The target wakes up if it takes damage or if another creature takes an action to shake it awake.|200 gp|4
+Essence of Ether Poison (Inhaled)|An unconscious-inducing poison requiring a DC 15 Constitution saving throw. On a failed save, the target becomes poisoned for 8 hours and is unconscious. The target wakes up if it takes damage or if another creature takes an action to shake it awake.|300 gp|4
+Malice Poison (Inhaled)|A blinding poison requiring a DC 15 Constitution saving throw. On a failed save, the target becomes poisoned for 1 hour and is blinded.|250 gp|4
+Midnight Tears Poison (Ingested)|A delayed-action poison that takes effect at midnight, requiring a DC 17 Constitution saving throw. On a failed save, the target takes 31 (9d6) poison damage, or half as much on a successful save.|1,500 gp|5
+Oil of Taggit Poison (Contact)|A poison requiring a DC 13 Constitution saving throw. On a failed save, the target becomes poisoned for 24 hours and is unconscious. The target wakes up if it takes damage.|400 gp|4
+Pale Tincture Poison (Ingested)|A debilitating poison requiring a DC 16 Constitution saving throw. On a failed save, the target takes 3 (1d6) poison damage and becomes poisoned. The poisoned target must repeat the saving throw every 24 hours, taking 3 (1d6) poison damage on a failed save. The damage can't be healed until the poison ends, which occurs after seven successful saving throws.|250 gp|4
+Purple Worm Poison (Injury)|A deadly poison that must be harvested from a dead or incapacitated purple worm. A creature subjected to this poison must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much on a successful one.|2,000 gp|5
+Serpent Venom Poison (Injury)|A venomous poison that must be harvested from a dead or incapacitated giant poisonous snake. A creature subjected to this poison must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much on a successful one.|200 gp|4
+Torpor Poison (Ingested)|An incapacitating poison requiring a DC 15 Constitution saving throw. On a failed save, the target becomes poisoned for 4d6 hours and is incapacitated.|600 gp|4
+Truth Serum Poison (Ingested)|A truth-inducing poison requiring a DC 11 Constitution saving throw. On a failed save, the target becomes poisoned for 1 hour and can't knowingly speak a lie, as if under the effect of a zone of truth spell.|150 gp|3
+Wyvern Poison (Injury)|A deadly poison that must be harvested from a dead or incapacitated wyvern. A creature subjected to this poison must make a DC 15 Constitution saving throw, taking|300gp|8
+Alchemist's supplies|Tools used by alchemists for creating potions and chemicals.|50 gp|2
+Brewer's supplies|Tools used by brewers for crafting beverages such as beer and ale.|20 gp|2
+Calligrapher's supplies|Tools used by calligraphers for artistic writing and lettering.|10 gp|2
+Carpenter's tools|Tools used by carpenters for woodworking and construction.|8 gp|2
+Cartographer's tools|Tools used by cartographers for mapmaking and navigation.|15 gp|2
+Cobbler's tools|Tools used by cobblers for shoe and leatherwork.|5 gp|2
+Cook's utensils|Utensils and tools used by cooks for preparing and serving food.|1 gp|1
+Glassblower's tools|Tools used by glassblowers for creating glass objects and art.|30 gp|2
+Jeweler's tools|Tools used by jewelers for crafting jewelry and gemwork.|25 gp|2
+Leatherworker's tools|Tools used by leatherworkers for crafting leather goods.|5 gp|2
+Mason's tools|Tools used by masons for stone and brickwork.|10 gp|2
+Painter's supplies|Supplies used by painters for creating artwork and paintings.|10 gp|2
+Potter's tools|Tools used by potters for crafting pottery and ceramics.|10 gp|2
+Smith's tools|Tools used by blacksmiths and metalworkers for forging and shaping metal.|20 gp|2
+Tinker's tools|Tools used by tinkerers for repairing and crafting small mechanical devices.|50 gp|2
+Weaver's tools|Tools used by weavers for creating textiles and fabrics.|1 gp|2
+Woodcarver's tools|Tools used by woodcarvers for carving wood and creating wooden objects.|1 gp|2
+Dice set|A set of dice used for various games and gambling.|1 sp|1
+Dragonchess set|A set of dragonchess pieces and board for playing dragonchess.|1 gp|2
+Playing card set|A set of playing cards for card games.|5 sp|1
+Three-Dragon Ante set|A set of cards and chips used for playing Three-Dragon Ante.|1 gp|2
+Bagpipes|A musical instrument consisting of a bag and pipes, often used in folk music.|30 gp|2
+Drum|A percussion instrument in the form of a drum.|6 gp|1
+Dulcimer|A stringed musical instrument known for its sweet sound.|25 gp|2
+Flute|A wind instrument with a melodious sound.|2 gp|1
+Lute|A stringed musical instrument used for classical and folk music.|35 gp|2
+Lyre|A stringed musical instrument with a lyre shape.|30 gp|2
+Horn|A wind instrument shaped like a horn.|3 gp|1
+Pan flute|A wind instrument made of pipes.|12 gp|1
+Shawm|A wind instrument similar to a medieval oboe.|2 gp|1
+Viol|A stringed musical instrument with a deep tone.|30 gp|1
+Disguise kit|A set of tools and materials for creating disguises and changing one's appearance.|25 gp|2
+Forgery kit|Tools used for creating forged documents and counterfeit items.|15 gp|2
+Herbalism kit|A kit used for harvesting and preparing herbs and plants for various purposes, including medicine and poisons.|5 gp|2
+Navigator's tools|Tools used by navigators and sailors for navigation and map reading.|25 gp|2
+Poisoner's kit|A set of tools and materials used for crafting and applying poisons.|50 gp|2
+Thieves' tools|Tools used by thieves and rogues for lock picking and disabling traps.|25 gp|2

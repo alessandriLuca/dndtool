@@ -1,200 +1,581 @@
-Item Name|Description|Value|Rarity
-A mummified goblin hand|A gruesome goblin hand preserved through mysterious means|10 gp|7
-A piece of crystal that faintly glows in the moonlight|A beautiful crystal that emits a soft, ethereal glow|15 gp|12
-A gold coin minted in an unknown land|A mysterious gold coin with strange markings|5 gp|5
-A diary written in a language you don't know|An old diary filled with unintelligible writings|3 gp|2
-A brass ring that never tarnishes|A shiny brass ring that retains its luster|8 gp|6
-An old chess piece made from glass|A delicate glass chess piece|7 gp|4
-A pair of knucklebone dice with skull symbols|Two dice with eerie skull symbols|6 gp|3
-A small idol depicting a nightmarish creature|A creepy idol that haunts your dreams|12 gp|10
-A rope necklace with mummified elf fingers|A macabre necklace adorned with elf fingers|9 gp|8
-The deed for a parcel of land in a realm unknown to you|A legal document for mysterious land ownership|14 gp|11
-A 1-ounce block made from an unknown material|A strange and weighty block of unknown material|11 gp|9
-A small cloth doll skewered with needles|A creepy cloth doll with needles protruding|5 gp|3
-A tooth from an unknown beast|A sharp tooth from an unidentified creature|7 gp|5
-An enormous scale, perhaps from a dragon|A massive scale that could be from a dragon|18 gp|16
-A bright green feather|A vibrant green feather|4 gp|2
-An old divination card bearing your likeness|A faded card with your image|6 gp|4
-A glass orb filled with moving smoke|A mesmerizing glass orb with swirling smoke|13 gp|11
-A 1-pound egg with a bright red shell|A heavy egg with a vivid red shell|9 gp|7
-A pipe that blows bubbles|A whimsical pipe that blows bubbles|8 gp|6
-A glass jar containing a weird bit of flesh|A disturbing jar with a strange preserved item|7 gp|5
-A tiny gnome-crafted music box|A charming music box crafted by gnomes|10 gp|8
-A small wooden statuette of a smug halfling|A wooden statuette of a smirking halfling|7 gp|5
-A brass orb etched with strange runes|A mysterious brass orb adorned with runes|10 gp|8
-A multicolored stone disk|A colorful stone disk with intricate patterns|6 gp|4
-A tiny silver icon of a raven|A small silver icon depicting a raven|5 gp|3
-A bag containing forty-seven humanoid teeth|A gruesome bag of humanoid teeth|8 gp|6
-A shard of obsidian that always feels warm|A shard of warm obsidian|7 gp|5
-A dragon's bony talon hanging from a leather necklace|A dragon's talon on a leather necklace|14 gp|12
-A pair of old socks|Well-worn pair of socks|3 gp|2
-A blank book that won't hold any markings|An empty book resistant to ink or markings|5 gp|3
-A silver badge in the shape of a five-pointed star|A silver badge with a star design|6 gp|4
-A knife that belonged to a relative|A sentimental knife with family history|8 gp|6
-A glass vial filled with nail clippings|A peculiar vial filled with nail clippings|4 gp|3
-A rectangular metal device that sparks when wet|A strange metal device that creates sparks when wet|7 gp|6
-A white, sequined glove sized for a human|A sequined glove in pristine white|6 gp|4
-A vest with one hundred tiny pockets|A vest adorned with numerous tiny pockets|8 gp|7
-A small, weightless stone block|A small stone block that feels weightless|5 gp|3
-A tiny sketch portrait of a goblin|A tiny portrait of a mischievous goblin|3 gp|2
-An empty glass vial that smells of perfume|A perfume-scented empty glass vial|4 gp|3
-A gemstone that looks like coal to others|A deceptive gemstone resembling coal|11 gp|9
-A scrap of cloth from an old banner|A scrap of cloth from an ancient banner|6 gp|4
-A rank insignia from a lost legionnaire|A lost legionnaire's rank insignia|7 gp|6
-A tiny silver bell without a clapper|A tiny silver bell with no clapper|4 gp|3
-A mechanical canary inside a gnomish lamp|A mechanical canary inside a gnomish lamp|9 gp|7
-A tiny chest carved to look like it has numerous feet|A tiny chest with feet carvings|6 gp|5
-A dead sprite inside a clear glass bottle|A dead sprite preserved in a glass bottle|7 gp|6
-A metal can filled with mysterious contents|A metal can filled with mysterious contents|5 gp|4
-A glass orb filled with water and a clockwork goldfish|A glass orb with a clockwork goldfish swimming|10 gp|9
-A silver spoon with an 'M' engraved on the handle|A silver spoon with an 'M' engraving|5 gp|4
-A whistle made from gold-colored wood|A gold-colored wooden whistle|4 gp|3
-A dead scarab beetle the size of your hand|A large dead scarab beetle|8 gp|7
-Two toy soldiers, one with a missing head|Two toy soldiers, one headless|4 gp|3
-A small box filled with different-sized buttons|A box filled with various-sized buttons|6 gp|5
-A candle that can't be lit|A non-lightable candle|3 gp|2
-A tiny cage with no door|A cage with no escape|4 gp|3
-An old key|A mysterious old key|5 gp|4
-An indecipherable treasure map|A puzzling, indecipherable treasure map|8 gp|7
-A hilt from a broken sword|A hilt from a broken sword|6 gp|5
-A rabbit's foot|A lucky rabbit's foot|5 gp|4
-A glass eye|A glass eye|5 gp|4
-A cameo carved in the likeness of a hideous person|A hideous cameo carving|7 gp|6
-A silver skull the size of a coin|A small silver skull|6 gp|5
-An alabaster mask|An alabaster mask|7 gp|6
-A pyramid of sticky black incense|A pyramid of potent black incense|9 gp|8
-A nightcap that gives pleasant dreams when worn|A dream-inducing nightcap|7 gp|6
-A single caltrop made from bone|A bone caltrop|5 gp|4
-A gold monocle frame without the lens|A gold monocle frame without the lens|5 gp|4
-A 1-inch cube with each side painted a different color|A colorful 1-inch cube|6 gp|5
-A crystal knob from a door|A crystal doorknob|5 gp|4
-A small packet filled with pink dust|A packet of pink dust|4 gp|3
-A fragment of a beautiful song written as musical notes|A fragment of a beautiful musical score|7 gp|6
-A silver teardrop earring made from a real teardrop|A teardrop-shaped silver earring|6 gp|5
-The shell of an egg painted with scenes of human misery in disturbing detail|A painted eggshell depicting disturbing scenes of human misery|10 gp|8
-A fan that, when unfolded, shows a sleeping cat|A folding fan with a sleeping cat illustration|8 gp|5
-A set of bone pipes|A set of pipes made from bones|6 gp|4
-A four-leaf clover pressed inside a book discussing manners and etiquette|A lucky four-leaf clover preserved in an etiquette book|9 gp|7
-A sheet of parchment upon which is drawn a complex mechanical contraption|A parchment with a complex mechanical drawing|7 gp|6
-An ornate scabbard that fits no blade you have found so far|A beautifully decorated scabbard without a matching blade|10 gp|8
-An invitation to a party where a murder happened|An eerie party invitation connected to a murder|6 gp|5
-A bronze pentacle with an etching of a rat's head in its center|A bronze pentacle with a rat's head etching|7 gp|6
-A purple handkerchief embroidered with the name of a powerful archmage|A purple handkerchief with the name of an archmage|5 gp|4
-Half of a floorplan for a temple, castle, or some other structure|Half of a mysterious floorplan for a structure|6 gp|5
-A bit of folded cloth that, when unfolded, turns into a stylish cap|A magical cloth that transforms into a stylish cap|8 gp|7
-A receipt of deposit at a bank in a far-flung city|A receipt from a distant city's bank deposit|5 gp|4
-A diary with seven missing pages|A diary with seven mysteriously missing pages|6 gp|5
-"An empty silver snuffbox bearing an inscription on the surface that says ""dreams"""|"An empty silver snuffbox with a ""dreams"" inscription"|5gp|4
-An iron holy symbol devoted to an unknown god|An iron holy symbol of an unknown deity|7gp|6
-A book that tells the story of a legendary hero's rise and fall, with the last chapter missing|A book about a legendary hero with a missing final chapter|8gp|7
-A vial of dragon blood|A vial containing the blood of a dragon|9gp|8
-An ancient arrow of elven design|An ancient elven-designed arrow|6gp|5
-A needle that never bends|A needle that remains straight|4gp|3
-An ornate brooch of dwarven design|An ornate brooch crafted in dwarven style|7gp|6
-"An empty wine bottle bearing a pretty label that says, ""The Wizard of Wines Winery, Red Dragon Crush, 331422-W"""|"An empty wine bottle with a label from ""The Wizard of Wines Winery, Red Dragon Crush, 331422-W"""|6gp|5
-A mosaic tile with a multicolored, glazed surface|A colorful mosaic tile with a glazed surface|5gp|4
-A petrified mouse|A petrified mouse|5gp|4
-A black pirate flag adorned with a dragon's skull and crossbones|A black pirate flag with a dragon skull and crossbones|8gp|7
-A tiny mechanical crab or spider that moves about when it's not being observed|A tiny mechanical crab or spider that moves autonomously|7gp|6
-"A glass jar containing lard with a label that reads, ""Griffon Grease"""|"A glass jar filled with lard labeled ""Griffon Grease"""|5gp|7
-A wooden box with a ceramic bottom that holds a living worm with a head on each end of its body|A wooden box with a living worm having two heads|6gp|8
-A metal urn containing the ashes of a hero|A metal urn holding the ashes of a hero|9gp|12
-Club|A simple club|1 sp|1
-Dagger|A small dagger|2 gp|2
-Greatclub|A large and crude club|2 sp|1
-Handaxe|A small handaxe|5 gp|2
-Javelin|A simple javelin|5 sp|1
-Light hammer|A lightweight hammer|2 gp|2
-Mace|A basic mace|5 gp|2
-Quarterstaff|A common quarterstaff|2 sp|1
-Sickle|A farming sickle|1 gp|2
-Spear|A standard spear|1 gp|1
-Crossbow, light|A light crossbow|25 gp|2
-Dart|A small throwing dart|5 cp|1
-Shortbow|A shortbow|25 gp|2
-Sling|A simple sling|1 sp|1
-Battleaxe|A battleaxe|10 gp|2
-Flail|A flail|10 gp|2
-Glaive|A glaive|20 gp|3
-Greataxe|A greataxe|30 gp|3
-Greatsword|A greatsword|50 gp|3
-Halberd|A halberd|20 gp|3
-Lance|A lance|10 gp|3
-Longsword|A longsword|15 gp|2
-Maul|A large maul|10 gp|3
-Morningstar|A morningstar|15 gp|2
-Pike|A pike|5 gp|3
-Rapier|A rapier|25 gp|2
-Scimitar|A scimitar|25 gp|2
-Shortsword|A shortsword|10 gp|2
-Trident|A trident|5 gp|2
-War pick|A war pick|5 gp|2
-Warhammer|A warhammer|15 gp|2
-Whip|A whip|2 gp|2
-Blowgun|A blowgun|10 gp|2
-Crossbow, hand|A hand crossbow|75 gp|2
-Crossbow, heavy|A heavy crossbow|50 gp|3
-Longbow|A longbow|50 gp|3
-Net|A fishing net|1 gp|1
-Arrows (20)|A quiver of arrows|1 gp|1
-Blowgun needles (50)|A bundle of blowgun needles|1 gp|1
-Crossbow bolts (20)|A bundle of crossbow bolts|1 gp|1
-Sling bullets (20)|A pouch of sling bullets|4 cp|1
-Hoopak|A sturdy stick with a sling at one end and a pointed tip at the other.|1 gp|2
-Pistol|A firearm that fires a single shot.|250 gp|4
-Musket|A large firearm with a long barrel.|500 gp|5
-Bullets (10)|A pack of 10 bullets for firearms.|3 gp|2
-Bomb|A small explosive device.|150 gp|4
-Gunpowder, keg|A keg of gunpowder.|250 gp|4
-Gunpowder, powder horn|A powder horn filled with gunpowder.|35 gp|3
-Assassin's Blood Poison (Ingested)|A deadly poison that requires a DC 10 Constitution saving throw. On a failed save, the target takes 6 (1d12) poison damage and is poisoned for 24 hours. On a successful save, the target takes half damage and is not poisoned.|150 gp|4
-Burnt Othur Fumes Poison (Inhaled)|A poisonous gas that requires a DC 13 Constitution saving throw. On a failed save, the target takes 10 (3d6) poison damage and must repeat the saving throw at the start of each of its turns. On each successive failed save, the target takes 3 (1d6) poison damage. The poison ends after three successful saves.|500 gp|5
-Carrion Crawler Mucus (Ingested)|A paralyzing poison that must be harvested from a dead or incapacitated carrion crawler. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. The poisoned creature is paralyzed and can repeat the saving throw at the end of each of its turns to end the effect.|—|3
-Drow Poison (Injury)|A potent poison typically made by the drow, requiring a DC 13 Constitution saving throw. On a failed save, the target is poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned. The target wakes up if it takes damage or if another creature takes an action to shake it awake.|200 gp|4
-Essence of Ether Poison (Inhaled)|An unconscious-inducing poison requiring a DC 15 Constitution saving throw. On a failed save, the target becomes poisoned for 8 hours and is unconscious. The target wakes up if it takes damage or if another creature takes an action to shake it awake.|300 gp|4
-Malice Poison (Inhaled)|A blinding poison requiring a DC 15 Constitution saving throw. On a failed save, the target becomes poisoned for 1 hour and is blinded.|250 gp|4
-Midnight Tears Poison (Ingested)|A delayed-action poison that takes effect at midnight, requiring a DC 17 Constitution saving throw. On a failed save, the target takes 31 (9d6) poison damage, or half as much on a successful save.|1,500 gp|5
-Oil of Taggit Poison (Contact)|A poison requiring a DC 13 Constitution saving throw. On a failed save, the target becomes poisoned for 24 hours and is unconscious. The target wakes up if it takes damage.|400 gp|4
-Pale Tincture Poison (Ingested)|A debilitating poison requiring a DC 16 Constitution saving throw. On a failed save, the target takes 3 (1d6) poison damage and becomes poisoned. The poisoned target must repeat the saving throw every 24 hours, taking 3 (1d6) poison damage on a failed save. The damage can't be healed until the poison ends, which occurs after seven successful saving throws.|250 gp|4
-Purple Worm Poison (Injury)|A deadly poison that must be harvested from a dead or incapacitated purple worm. A creature subjected to this poison must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much on a successful one.|2,000 gp|5
-Serpent Venom Poison (Injury)|A venomous poison that must be harvested from a dead or incapacitated giant poisonous snake. A creature subjected to this poison must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much on a successful one.|200 gp|4
-Torpor Poison (Ingested)|An incapacitating poison requiring a DC 15 Constitution saving throw. On a failed save, the target becomes poisoned for 4d6 hours and is incapacitated.|600 gp|4
-Truth Serum Poison (Ingested)|A truth-inducing poison requiring a DC 11 Constitution saving throw. On a failed save, the target becomes poisoned for 1 hour and can't knowingly speak a lie, as if under the effect of a zone of truth spell.|150 gp|3
-Wyvern Poison (Injury)|A deadly poison that must be harvested from a dead or incapacitated wyvern. A creature subjected to this poison must make a DC 15 Constitution saving throw, taking|300gp|8
-Alchemist's supplies|Tools used by alchemists for creating potions and chemicals.|50 gp|2
-Brewer's supplies|Tools used by brewers for crafting beverages such as beer and ale.|20 gp|2
-Calligrapher's supplies|Tools used by calligraphers for artistic writing and lettering.|10 gp|2
-Carpenter's tools|Tools used by carpenters for woodworking and construction.|8 gp|2
-Cartographer's tools|Tools used by cartographers for mapmaking and navigation.|15 gp|2
-Cobbler's tools|Tools used by cobblers for shoe and leatherwork.|5 gp|2
-Cook's utensils|Utensils and tools used by cooks for preparing and serving food.|1 gp|1
-Glassblower's tools|Tools used by glassblowers for creating glass objects and art.|30 gp|2
-Jeweler's tools|Tools used by jewelers for crafting jewelry and gemwork.|25 gp|2
-Leatherworker's tools|Tools used by leatherworkers for crafting leather goods.|5 gp|2
-Mason's tools|Tools used by masons for stone and brickwork.|10 gp|2
-Painter's supplies|Supplies used by painters for creating artwork and paintings.|10 gp|2
-Potter's tools|Tools used by potters for crafting pottery and ceramics.|10 gp|2
-Smith's tools|Tools used by blacksmiths and metalworkers for forging and shaping metal.|20 gp|2
-Tinker's tools|Tools used by tinkerers for repairing and crafting small mechanical devices.|50 gp|2
-Weaver's tools|Tools used by weavers for creating textiles and fabrics.|1 gp|2
-Woodcarver's tools|Tools used by woodcarvers for carving wood and creating wooden objects.|1 gp|2
-Dice set|A set of dice used for various games and gambling.|1 sp|1
-Dragonchess set|A set of dragonchess pieces and board for playing dragonchess.|1 gp|2
-Playing card set|A set of playing cards for card games.|5 sp|1
-Three-Dragon Ante set|A set of cards and chips used for playing Three-Dragon Ante.|1 gp|2
-Bagpipes|A musical instrument consisting of a bag and pipes, often used in folk music.|30 gp|2
-Drum|A percussion instrument in the form of a drum.|6 gp|1
-Dulcimer|A stringed musical instrument known for its sweet sound.|25 gp|2
-Flute|A wind instrument with a melodious sound.|2 gp|1
-Lute|A stringed musical instrument used for classical and folk music.|35 gp|2
-Lyre|A stringed musical instrument with a lyre shape.|30 gp|2
-Horn|A wind instrument shaped like a horn.|3 gp|1
-Pan flute|A wind instrument made of pipes.|12 gp|1
-Shawm|A wind instrument similar to a medieval oboe.|2 gp|1
-Viol|A stringed musical instrument with a deep tone.|30 gp|1
-Disguise kit|A set of tools and materials for creating disguises and changing one's appearance.|25 gp|2
-Forgery kit|Tools used for creating forged documents and counterfeit items.|15 gp|2
-Herbalism kit|A kit used for harvesting and preparing herbs and plants for various purposes, including medicine and poisons.|5 gp|2
-Navigator's tools|Tools used by navigators and sailors for navigation and map reading.|25 gp|2
-Poisoner's kit|A set of tools and materials used for crafting and applying poisons.|50 gp|2
-Thieves' tools|Tools used by thieves and rogues for lock picking and disabling traps.|25 gp|2
+Name|Price|Description|Rarity
+Club|1 sp|1d4 Bludgeon - 2 lb. - Light|16
+Dagger|2 gp|1d4 Piercing - 1 lb. - Finesse Light Thrown (20/60)|15
+Greatclub|2 sp|1d8 Bludgeon - 10 lb. - Two-handed|13
+Handaxe|5 gp|1d6 Slashing - 2 lb. - Light Thrown (20/60)|15
+Javelin|5 sp|1d6 Piercing - 2 lb. - Thrown (30/120)|15
+Light hammer|2 gp|1d4 Bludgeon - 2 lb. - Light Thrown (20/60)|14
+Mace|5 gp|1d6 Bludgeon - 5 lb. - -|15
+Quarterstaff|2 sp|1d6 Bludgeon - 5 lb. - Versatile (1d8)|16
+Sickle|1 gp|1d4 Slashing - 2 lb. - Light|16
+Spear|1 gp|1d6 Piercing - 3 lb. - Thrown (20/60) Versatile (1d8)|14
+Crossbow light|25 gp|1d6 Piercing - 5 lb. - Ammunition (80/320) Loading Two-handed|16
+Dart|5 cp|1d4 Piercing - .25 lb. - Finesse Thrown (20/60)|14
+Shortbow|25 gp|1d6 Piercing - 2 lb. - Ammunition (80/320) Two-handed|15
+Sling|1 sp|1d4 Bludgeon - - - Ammunition (30/120)|15
+Battleaxe|10 gp|1d8 Slashing - 4 lb. - Versatile (1d10)|15
+Flail|10 gp|1d8 Bludgeon - 2 lb. - -|16
+Glaive|20 gp|1d10 Slashing - 6 lb. - Heavy Reach Two-handed|14
+Greataxe|30 gp|1d12 Slashing - 7 lb. - Heavy Two-handed|15
+Greatsword|50 gp|2d6 Slashing - 6 lb. - Heavy Two-handed|14
+Halberd|20 gp|1d10 Slashing - 6 lb. - Heavy Reach Two-handed|13
+Lance|10 gp|1d12 Piercing - 6 lb. - Reach Special|16
+Longsword|15 gp|1d8 Slashing - 3 lb. - Versatile (1d10)|15
+Maul|10 gp|2d6 Bludgeon - 10 lb. - Heavy Two-handed|14
+Morningstar|15 gp|1d8 Piercing - 4 lb. - -|15
+Pike|5 gp|1d10 Piercing - 18 lb. - Heavy Reach Two-handed|15
+Rapier|25 gp|1d8 Piercing - 2 lb. - Finesse|14
+Scimitar|25 gp|1d6 Slashing - 3 lb. - Finesse Light|16
+Shortsword|10 gp|1d6 Slashing - 2 lb. - Finesse Light|16
+Trident|5 gp|1d6 Piercing - 5 lb. - Thrown (20/60) Versatile (1d8)|16
+War pick|5 gp|1d8 Piercing - 2 lb. - -|14
+Warhammer|15 gp|1d8 Bludgeon - 2 lb. - Versatile (1d10)|14
+Whip|2 gp|1d4 Slashing - 3 lb. - Finesse Reach|15
+Blowgun|10 gp|1 Piercing - 1 lb. - Ammunition (25/100) Loading|16
+Crossbow hand|75 gp|1d6 Piercing - 3 lb. - Ammunition (30/120) Loading Light|14
+Crossbow heavy|50 gp|1d10 Piercing - 18 lb. - Ammunition (100/400) Loading Two-handed Heavy|15
+Longbow|50 gp|1d8 Piercing - 2 lb. - Ammunition (150/600) Heavy Two-handed|13
+Net|1 gp|- - 3 lb. - Special Thrown (5/15)|14
+Padded|5 gp||14
+Leather|10 gp||13
+Studded Leather|45 gp||13
+Hide|10 gp||13
+Chain Shirt|50 gp||16
+Scail Mail|50 gp||14
+Breastplate|400 gp||16
+Half Plate|750 gp||13
+Ring Mail|30 gp||13
+Chain Mail|75 gp|16 - 55 lb. - Strength require  13|15
+Splint|200 gp|17 - 60 lb. - Strength require  15|14
+Plate|1500 gp|18 - 65 lb. - Strength require  15|13
+Abacus|2 gp||16
+Acid (vial)|25 gp||14
+Alchemist's Fire (flask)|50 gp||13
+Arrows (20)|1 gp||13
+Blowgun Needle (50)|1 gp||13
+Crossbow Bolts (20)|1 gp||15
+Sling Bullets (20)|4 cp||14
+Crystal|10 gp||13
+Orb|20 gp||15
+Rod|10 gp||15
+Staff|5 gp||14
+Wand|10 gp||15
+Backpack|2 gp||16
+Ball Bearings (bag of 1000)|1 gp||16
+Barrel|2 gp||13
+Basket|4 sp||13
+Bedroll|1 gp||16
+Bell|1 gp||13
+Blanket|5 sp||13
+Block and Tackle|1 gp||14
+Book|25 gp||15
+Bottle Glass|2 gp||13
+Bucket|5 cp||16
+Caltrops (bag of 20)|1 gp||13
+Candle|1 cp||15
+Case Crossbow Bolt|1 gp||16
+Case Map and Scroll|1 gp||13
+Chain (10ft)|5 gp||15
+Chalk (1 piece)|1 cp||14
+Chest|5 gp||14
+Climber's kit|25 gp||16
+Clothes Common|5 sp||13
+Clothes Costume|5 gp||14
+Clothes Fine|15 gp||14
+Clothes Traveler's|2 gp||16
+Component Pouch|25 gp||15
+Crowbar|2 gp||14
+Sprig of Mistletoe|1 gp||15
+Totem|1 gp||15
+Wooden Staff|5 gp||14
+Yew Wand|10 gp||14
+Flask or Tankard|1 gp||14
+Flask or Tankard|2 cp||15
+Grappling Hook|2 gp||16
+Hammer|1 gp||15
+Hammer Sledge|2 gp||13
+Healer's kit|5 gp||16
+Amulet |5 gp||15
+Emblem | 5 gp||15
+Reliquary |5 gp||13
+Holy water (flask)|25 gp||13
+Hourglass |25 gp||13
+Hunting Trap|5 gp||15
+Ink (1 ounce bottle)|10 gp||13
+Ink pen|2 cp||15
+Jug or pitcher|2 cp||13
+Ladder (10-foot)|1 sp||14
+Lamp|5 sp||15
+Lantern Bullseye|10 gp||15
+Lantern hooded|5 gp||13
+Lock|10 gp||15
+Magnifying glass|100 gp||14
+Manacles|2 gp||14
+Mess ki|2 sp||16
+Mirror steel|5 gp||14
+Oil (flask)|1 sp||15
+Paper (one sheet)|2 sp||15
+Parchment (one sheet)|1 sp||13
+Perfume (vial)|5 gp||15
+Pick miner's|2 gp||13
+Piton|5 cp||13
+Poison basic (vial)|100 gp||15
+Pole (10-foot)|5 cp||14
+Pot iron|2 gp||15
+Potion of healing|50 gp||16
+Pouch|5 sp||16
+Quiver|1 gp||15
+Ram portable|4 gp||13
+Rations (l day)|5 sp||16
+Robes|1 gp||15
+Rope hempen (50 feet)|1 gp||15
+Rope silk (50 feet)|10 gp||14
+Sack|1 cp||13
+Scale merchant's|5 gp||14
+Sealing wax|5 sp||14
+Shovel|2 gp||13
+Signal whistle|5 cp||16
+Signe! ring|5 gp||16
+Soap|2 cp||15
+Spellbook|50 gp||15
+Spikes iron (10)|1 gp||14
+Spyglass|1000 gp||16
+Tent two-person|2 gp||14
+Tinderbox|5 sp||15
+Torch|1 cp||13
+Vial|1 gp||16
+Waterskin|2 sp||13
+Whetstone|1 cp||13
+Alchemist's supplies|50 gp||16
+Brewer's supplies|20 gp||15
+Calligrapher's supplies|10 gp||16
+Painter's supplies|10 gp||14
+Cartographer's tools|15 gp||15
+Cobbler's tools|5 gp||15
+Cook's utensils|1 gp||14
+Glassblower's tools|30 gp||14
+Jeweler's tools|25 gp||14
+Leatherworker's tools|5 gp||16
+Mason's tools|10 gp||13
+Carpenter's tools|8 gp||13
+Potter's tools|10 gp||14
+Smith's tools|20 gp||16
+Tinker's tools|50 gp||13
+Weaver's tools|1 gp||16
+Navigator's tools|25 gp||16
+Woodcarver's tools|1 gp||13
+Thieves' tools|25 gp||16
+Poisoner's kit|50 gp||16
+Herbalism kit|5 gp||14
+Disguise kit|25 gp||16
+Forgery kit|15 gp||14
+Dice set|1 sp||15
+Dragonchess set|1 gp||15
+Playing card set|5 gp||13
+Three-Dragon Ante set|1 gp||15
+Bagpipe|30 gp||13
+Drum|6 gp||16
+Dulcimer|25 gp||16
+Flute|2 gp||15
+Lute|35 gp||13
+Lyre|30 gp||13
+Horn|3 gp||13
+Pan Flute|12 gp||16
+Shawm|2 gp||15
+Viol|30 gp||15
+Potion of Healing|50 gp|You regain 2d4 + 2 hit points when you drink this potion.  The potion's red liquid glimmers when agitated.|16
+Potion of Greater Healing|150 gp|You regain 4d4 + 4 hit points when you drink this potion.  The potion's red liquid glimmers when agitated.|15
+Potion of Superior Healing|450 gp |You regain 8d4 + 8 hit points when you drink this potion.  The potion's red liquid glimmers when agitated.|10
+Potion of Supreme Healing|1350 gp|You regain 10d4 + 20 hit points when you drink this potion.  The potion's red liquid glimmers when agitated.|7
+Elixir of Health|120 gp|When you drink this potion it cures any disease afflicting you and it removes the blinded deafened paralyzed and poisoned conditions.  The clear red liquid has tiny bubbles of light in it.|9
+Potion of Poison|100 gp|If you drink it you take 3d6 poison damage and you must succeed on a DC 13 Constitution saving throw or be poisoned. At the start of each of your turns while you are poisoned in this way you take 3d6 poison damage. At the end of each of your turns you can repeat the saving throw. On a successful save the poison damage you take on your subsequent turns decreases by 1d6. The poison ends when the damage decreases to 0. This concoction looks smells and tastes like a potion of healing or other beneficial potion. However it is actually poison masked by illusion magic. An identify spell reveals its true nature.|14
+Philter of Love|90 gp|The next time you see a creature within 10 minutes after drinking this philter you become charmed by that creature for 1 hour. If the creature is of a species and gender you are normally attracted to you regard it as your true love while you are charmed. This potion's rose-hued effervescent liquid contains one easy-to-miss bubble shaped like a heart.|13
+Potion of Fire Breath|150 gp|fter drinking this potion you can use a bonus action to exhale fire at a target within 30 feet of you. The target must make a DC 13 Dexterity saving throw taking 4d6 fire damage on a failed save or half as much damage on a successful one. The effect ends after you exhale the fire three times or when 1 hour has passed.  This potion's orange liquid flickers and smoke fills the top of the container and wafts out whenever it is opened.|16
+Potion of Climbing|180 gp|When you drink this potion you gain a climbing speed equal to your walking speed for 1 hour. During this time you have advantage on Strength (Athletics) checks you make to climb.  The potion is separated into brown silver and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors.|17
+Potion of Heroism|180 gp|You gain 10 temporary hit points that last for 1 hour. For the same duration you are under the effect of the bless spell (no concentration required).  This blue potion bubbles and steams as if boiling.|12
+Potion of Invisibility|180 gp|When you drink it you become invisible for 1 hour. Anything you wear or carry is invisible with you. The effect ends early if you attack or cast a spell. This potion's container looks empty but feels as though it holds liquid.|7
+Potion of Mind Reading|180 gp|When you drink this potion you gain the effect of the detect thoughts spell (save DC 13).  The potion's dense purple liquid has an ovoid cloud of pink floating in it.|11
+Potion of Water Breathing|180 gp|You can breathe underwater for 1 hour after drinking this potion.  Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it.|15
+Potion of Animal Friendship|200 gp|When you drink this potion you can cast the animal friendship spell (save DC 13) for 1 hour at will.  Agitating this muddy liquid brings little bits into view: a fish scale a hummingbird tongue a cat claw or a squirrel hair.|14
+Potion of Diminution|270 gp|"When you drink this potion you gain the ""reduce"" effect of the enlarge/reduce spell for 1d4 hours (no concentration required).  The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process."|10
+Potion of Growth|270 gp|"When you drink this potion you gain the ""enlarge"" effect of the enlarge/reduce spell for 1d4 hours (no concentration required).  The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process."|14
+Potion of Gaseous Form|300 gp|When you drink this potion you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action.  This potion's container seems to hold fog that moves and pours like water.|9
+Potion of Resistance|300 gp|When you drink this potion you gain resistance to 1 type of damage for 1 hour.(The resistance is pre-determined)|16
+Potion of Speed|400 gp|When you drink this potion you gain the effect of the haste spell for 1 minute (no concentration required).  The potion's yellow fluid is streaked with black and swirl on its own.|6
+Potion of Flying|500 gp|When you drink this potion you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off you fall unless you have some other means of staying aloft.  This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.|8
+Potion of Clairvoyance|960 gp|When you drink this potion you gain the effect of the clairvoyance spell.  An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.|10
+Potion of Vitality|960 gp|When you drink this potion it removes any exhaustion you are suffering and cures any disease or poison affecting you. For the next 24 hours you regain the maximum number of hit points for any Hit Die you spend.  The potion's crimson liquid regularly pulses with dull light calling to mind a heartbeat.|6
+Potion of Invulnerability|3840 gp|For 1 minute after you drink this potion you have resistance to all damage.  The potion's syrupy liquid looks like liquefied iron.|7
+Oil of Etherealness|1920 gp|Beads of this cloudy gray oil form on the outside of its container and quickly evaporate. The oil can cover a Medium or smaller creature along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the etherealness spell for 1 hour.|12
+Oil of Sharpness|3200 gp|This clear gelatinous oil sparkles with tiny ultrathin silver shards. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour the coated item is magical and has a +3 bonus to attack and damage rolls.|8
+Oil of Slipperiness|480 gp|This sticky black unguent is thick and heavy in the container but it flows quickly when poured. The oil can cover a Medium or smaller creature along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a freedom of movement spell for 8 hours. Alternatively the oil can be poured on the ground as an action where it covers a 10-foot square duplicating the effect of the grease spell in that area for 8 hours.|15
+Potion of Longevity|9000 gp|When you drink this potion your physical age is reduced by 1d6 + 6 years (If you are under 13 years of age this potion has no effect) Each time you subsequently drink a potion of longevity there is 10 percent cumulative chance that you instead age by 1d6 + 6 years.  Suspended in this amber liquid are a scorpion's tail an adder's fang a dead spider and a tiny heart that against all reason is still beating. These ingredients vanish when the potion is opened.|7
+Potion of Hill Giant Strength|400 gp|When you drink this potion your Strength score changes to 21 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score. This potion's transparent liquid has floating in it a sliver of fingernail from a hill giant.|13
+Potion of Frost Giant Strength|750 gp|When you drink this potion your Strength score changes to 23 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score. This potion's transparent liquid has floating in it a sliver of fingernail from a frost giant.|12
+Potion of Fire Giant Strength|1300 gp|When you drink this potion your Strength score changes to 25 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score. This potion's transparent liquid has floating in it a sliver of fingernail from a fire giant.|11
+Potion of Cloud Giant Strength|1990 gp|When you drink this potion your Strength score changes to 27 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score. This potion's transparent liquid has floating in it a sliver of fingernail from a cloud giant.|7
+Potion of Storm Giant Strength|3000 gp|When you drink this potion your Strength score changes to 29 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score. This potion's transparent liquid has floating in it a sliver of fingernail from a storm giant.|3
+Assassin's blood|150 gp|Combined_Column|11
+Truth serum|150 gp|Ingested - A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save it takes 6 (1d12) poison damage and is poisoned for 24 hours. On a successful save the creature takes half damage and isnt poisoned.|14
+Carrion crawler mucus|200 gp|Contact - A creature subjected to this poison must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. The poisoned creature cant knowingly speak a lie as if under the effect of a zone of truth spell.|9
+Drow poison|200 gp|Injury - This poison must be harvested from a dead or incapacitated crawler. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. The poisoned creature is paralyzed. The creature can repeat the saving throw at the end of each of its turns ending the effect on itself on a success.|6
+Serpent venom|200 gp|Injury - This poison is typically made only by the drow and only in a place far removed from sunlight. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more the creature is also unconscious while poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.|14
+Malice|250 gp|Inhaled - This poison must be harvested from a dead or incapacitated giant poisonous snake. A creature subjected to this poison must succeed on a DC 11 Constitution saving throw taking 10 (3d6) poison damage on a failed save or half as much damage on a successful one.|11
+Pale tincture|250 gp|Ingested - A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 1 hour. The poisoned creature is blinded.|16
+Essence of ether|300 gp|Inhaled - A creature subjected to this poison must succeed on a DC 16 Constitution saving throw or take 3 (1d6) poison damage and become poisoned. The poisoned creature must repeat the saving throw every 24 hours taking 3 (1d6) poison damage on a failed save. Until this poison ends the damage the poison deals cant be healed by any means. After seven successful saving throws the effect ends and the creature can heal normally.|14
+Oil of taggit|400 gp|Contact - A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 8 hours. The poisoned creature is unconscious. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.|11
+Burnt othur fumes|500 gp|Inhaled - A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or become poisoned for 24 hours. The poisoned creature is unconscious. The creature wakes up if it takes damage.|7
+Torpor|600 gp|Ingested - A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage and must repeat the saving throw at the start of each of its turns. On each successive failed save the character takes 3 (1d6) poison damage. After three successful saves the poison ends.|10
+Wyvern poison|1200 gp|Injury - A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 4d6 hours. The poisoned creature is incapacitated.|1
+Midnight tears|1500 gp|Ingested - This poison must be harvested from a dead or incapacitated wyvern. A creature subjected to this poison must make a DC 15 Constitution saving throw taking 24 (7d6) poison damage on a failed save or half as much damage on a successful one.|7
+Purple worm poison|2000 gp|Injury - A creature that ingests this poison suffers no effect until the stroke of midnight. If the poison has not been neutralized before then the creature must succeed on a DC 17 Constitution saving throw taking 31 (9d6) poison damage on a failed save or half as much damage on a successful one.|3
+Antitoxin|50 gp|Ingested - This poison must be harvested from a dead or incapacitated purple worm. A creature subjected to this poison must make a DC 19 Constitution saving throw taking 42 (12d6) poison damage on a failed save or half as much damage on a successful one.|17
+Basic Poison|100 gp|Contact - A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to Undead or constructs.|17
+Oak Plank| 1 sp| Sturdy construction and repair|13
+Flint Shard| 5 cp| Essential for fire starting|9
+Clear Glass Shard| 1 gp| Potion bottles and lenses|12
+Iron Ingot| 10 gp| Forged into weapons and armor|13
+Ruby Fragment| 50 gp| Enchants items with fire properties|16
+Troll Eye| 25 gp| Alchemical concoctions and curses|1
+Bloodgrass Bunch| 2 sp| Used in healing potions|15
+Goblin Teeth| 8 sp| Ingredient in hexing rituals|14
+Phoenix Feather| 100 gp| Key in resurrection spells|7
+Dragon Scale| 50 gp| Imbues items with great strength|8
+Silver Nugget| 5 gp| Wards off evil creatures|2
+Sapphire Dust| 25 gp| Enhances water-related spells|12
+Emerald Shard| 30 gp| For wealth attraction amulets|5
+Diamond Chip| 75 gp| Component in high-level enchantments|4
+Yew Stick| 1 sp| Wand and staff crafting|15
+Granite Chunk| 5 sp| Carved into durable statuary|12
+Marble Slab| 10 gp| Sought after by sculptors|5
+Obsidian Pebble| 2 gp| For sharp blades and dark rituals|18
+Copper Wire| 1 sp| Conducts magical energies|16
+Gold Leaf| 10 gp| Decorates magical tomes and artifacts|17
+Unicorn Hair| 200 gp| Binds elements of light magic|15
+Nightshade Petal| 5 sp| Potent poison or deep sleep spells|7
+Mandrake Root| 15 gp| Screams when pulled from the earth|19
+Elfweed Leaves| 3 gp| Eases pain and enhances senses|2
+Griffon Beak| 35 gp| Potion ingredient for flight|10
+Mermaid Scale| 45 gp| Grants water breathing in potions|12
+Basilisk Hide| 60 gp| Renders a petrifying gaze in armors|11
+Walnut Log| 2 sp| Carves into strong magical staffs|19
+Stained Glass Piece| 7 gp| Holds light-based spells|5
+Frosted Glass Pane| 5 sp| Channels cold energy|11
+Maple Branch| 1 gp| Whittles into musical instruments|10
+Gold Ingot| 20 gp| Crafts regal jewelry and crowns|3
+Platinum Leaf| 100 gp| For high-value currency and trading|18
+Hickory Stick| 2 cp| Carving and simple tool handles|19
+Basalt Rock| 1 cp| Rough construction and filling material|18
+Bottle Glass| 5 cp| Recycled for cheap glassware|17
+Tin Scrap| 3 cp| Used in low-grade metal goods|19
+Quartz Pebble| 4 cp| Decorative or minor magical focus|17
+Spider Silk| 6 cp| Strong thread for binding and clothing|20
+Dandelion Fluff| 1 cp| Alchemical base for floating potions|19
+Beeswax| 2 cp| Seals and preserves materials|18
+Copper Nugget| 3 cp| Smelted for basic wiring and components|17
+Iron Shavings| 4 cp| Filler in metallic mixtures|18
+Moss Clump| 1 cp| Ground into paste for healing salves|20
+Clay Lump| 2 cp| Molded for pottery and bricks|18
+Chalk Piece| 1 cp| Marking and temporary inscriptions|19
+Birch Bark| 3 cp| Lightweight writing material|19
+Ash Powder| 1 cp| Fertilizer or crude cleaning agent|19
+Feather Down| 4 cp| Insulation and padding|18
+Limestone Chip| 2 cp| Building material and pH balancer|19
+Slate Shard| 3 cp| Roofing and rustic flooring|19
+Rough Leather Strip| 5 cp| Binding and basic repairs|19
+Cotton Wad| 1 cp| Padding and stuffing|19
+Willow Twig| 2 cp| Wickerwork and basketry|20
+Jute Fiber| 1 cp| Rough textiles and sackcloth|18
+Bamboo Segment| 3 cp| Light construction and water conduits|18
+Wheat Straw| 1 cp| Thatching and fodder|17
+Rope Length| 5 cp| Binding and hoisting|18
+Tar Patch| 2 cp| Waterproofing and sealing|20
+Wool Tuft| 3 cp| Spun into warm  sturdy yarn|18
+Coarse Sand| 1 cp| Building and abrasive cleaning|20
+Oak Gall| 2 cp| Ink making and tanning|18
+Pine Resin| 4 cp| Adhesive and varnish|19
+Reed Bundle| 3 cp| Matting and thatching|17
+Animal Bone| 5 cp| Carved into tools and buttons|20
+Flax Bundle| 1 cp| Linen thread and fabric|17
+Hemp Twine| 2 cp| Strong  durable cordage|17
+Sisal Rope| 3 cp| Marine and agricultural use|19
+Fur Pelt| 6 cp| Warm clothing and blankets|19
+Alum Chunk| 1 cp| Mordant in dyeing  tanning|18
+Peat Brick| 2 cp| Fuel and soil conditioner|18
+Iron Ore| 5 cp| Smelting into pure iron|19
+Coral Piece| 3 cp| Decoration and minor jewelry|17
+Dolomite| 1 cp| Building material and ornamental stone|20
+Cedar Plank| 2 cp| Resistant to rot and insects|18
+Tallow Lump| 1 cp| Candle making and lubrication|18
+Lead Ingot| 5 cp| Weights and radiation shielding|19
+Zinc Fragment| 2 cp| Anti-corrosion and alloying|20
+Bee Pollen| 1 cp| Food supplement and mild healing|17
+Malted Barley| 2 cp| Brewing and distilling|20
+Pumice Stone| 1 cp| Abrasive cleaning and polish|19
+Sulfur Dust| 3 cp| Fungicide and gunpowder ingredient|18
+Saltpeter| 4 cp| Fertilizer and gunpowder component|17
+Coal Chunk| 1 cp| Heating and industrial fuel|20
+Flintlock| 5 cp| Basic fire-starting tool|19
+Obsidian Flake| 2 cp| Sharp cutting tools|19
+Rag Cloth| 1 cp| Cleaning and patching material|18
+Cork Stopper| 3 cp| Sealing bottles and jars|19
+Soybean Pod| 1 cp| Oil and food source|20
+Rawhide Piece| 2 cp| Drums and crude containers|19
+Pigment Powder| 3 cp| Paint and coloring agent|20
+Candle Wick| 1 cp| Candle making essential|18
+Soda Ash| 2 cp| Glassmaking and baking soda source|17
+Potash| 1 cp| Soap making and fertilizer|20
+Graphite Rod| 5 cp| Pencil lead and lubricant|17
+Sawdust Pile| 1 cp| Filler and spill absorbent|18
+Bone Meal| 2 cp| Fertilizer and feed supplement|19
+Brickbat| 1 cp| Construction and makeshift weapon|20
+Canvas Scrap| 3 cp| Sails and painting surfaces|20
+Vinegar Jug| 2 cp| Preservative and cleaning agent|20
+Poplar Board| 1 cp| Light and inexpensive woodwork|17
+Charred Wood| 5 cp| Smoky flavoring and filtration|19
+Sponge Block| 1 cp| Absorbing and cleaning|19
+Iron Nail| 2 cp| Essential in construction and crafts|18
+Stone Flake| 3 cp| Sharpening and scraping tools|18
+Kelp Frond| 1 cp| Food and agricultural use|19
+Chamois Leather| 4 cp| Polishing and cleaning|20
+Calcite Crystal| 2 cp| Teaching and decorative use|19
+Burlap Sack| 1 cp| Storage and transport|17
+Ochre Lump| 3 cp| Pigment for artists and decorators|18
+Driftwood Log| 1 cp| Carving and rustic decoration|20
+Tin Can| 2 cp| Storage and simple cooking pot|18
+Cattail Head| 1 cp| Insulation and tinder|17
+Mud Brick| 3 cp| Building in dry climates|19
+Straw Bale| 2 cp| Building  bedding  and mulch|18
+Acorn Cap| 1 cp| Whistles and small containers|17
+Nettle Fiber| 4 cp| Strong thread and cloth|19
+Pine Cone| 1 cp| Seed harvesting and kindling|17
+Seashell| 2 cp| Decoration and calcium source|18
+Gravel Pebble| 1 cp| Used for stable pathways and drainage|2
+Hemlock Needles| 2 cp| Fodder for livestock and garden mulch|16
+Iron Filings| 1 cp| Components in alchemy and smithing|11
+Beech Nut| 1 cp| Edible and used for oil pressing|15
+Slate Tile| 3 cp| Durable for roofing and rustic decoration|11
+Elderberry| 2 cp| Ingredient in wines and natural dyes|7
+Raw Wool| 1 cp| Spun into yarn or used for insulation|6
+Birch Sap| 1 cp| Sweetener for drinks and syrup making|10
+Cow Horn| 2 cp| Material for tools and blowing horns|9
+Elm Leaf| 1 cp| Herbal uses and soothing tea ingredient|15
+Rabbit Fur| 2 cp| Soft lining for garments and crafts|19
+River Stone| 1 cp| Smooth for landscaping and building|7
+Pine Tar| 2 cp| Sealant for ships and traditional medicine|4
+Mica Flake| 1 cp| Adds sparkle to paint and is a heat insulator|13
+Poppy Seeds| 1 cp| Culinary use and oil extraction|14
+Cedar Chips| 2 cp| Natural insect repellent and for smoking food|19
+Feldspar Chunk| 1 cp| In ceramics and as an abrasive|6
+Walnut Shell| 1 cp| Polishing material and in fillers|2
+Flour Sack| 2 cp| Baking and cooking staple|10
+Dried Peat| 1 cp| Burns for fuel and used in gardening|2
+Tallow Candle| 1 cp| Basic lighting and ritual use|4
+Charcoal| 2 cp| For drawing fuel and filtration|2
+Bone Button| 1 cp| Fasteners for clothing and decoration|6
+Straw Hat| 1 cp| Protection from sun and rain|10
+Cotton Thread| 2 cp| Sewing and weaving basic textiles|1
+Soap Bar| 1 cp| Cleaning and personal hygiene|16
+Clay Pot| 2 cp| Cooking and storage container|15
+Wax Seal| 1 cp| Secures letters and adds authenticity|5
+Wicker Basket| 1 cp| Carrying goods and storage|11
+Dried Herbs| 2 cp| Seasoning and minor medicinal uses|10
+Oak Acorn| 1 cp| Planting for future trees and small crafts|7
+Woven Mat| 1 cp| Simple floor covering and sitting|14
+Dolomite Powder| 2 cp| Soil treatment and manufacturing|4
+Knitting Needles| 1 cp| Tool for making garments and textiles|4
+Leather Scrap| 2 cp| Repairs and small projects|3
+Sulfur Lump| 1 cp| Alchemy and matches production|3
+Knotweed Stalk| 1 cp| Basket weaving and crafts|18
+Candlewick| 2 cp| Essential for candle making|8
+Turpentine| 1 cp| Paint thinner and cleaner|1
+Salt Pile| 1 cp| Preserves food and seasoning|9
+Brass Hook| 2 cp| For hanging items and as fasteners|6
+Dried Beans| 1 cp| Food staple and can be planted|14
+Iron Buckle| 2 cp| Used in belts and strapping|17
+Glass Bead| 1 cp| Decorative and for crafting jewelry|10
+Honeycomb| 1 cp| Sweetener and wax source|20
+Tin Foil| 2 cp| Wrapping and preserving food|3
+Ceramic Tile| 1 cp| Building material and in mosaics|9
+Mortar and Pestle| 1 cp| Grinding herbs and spices|5
+Burlap Cloth| 2 cp| Sack making and coarse textiles|9
+Yarn Ball| 1 cp| Used in knitting and crafting|12
+Straw Broom| 2 cp| Essential for cleaning|9
+Paper Sheet| 1 cp| Writing and drawing|6
+Cork Bung| 1 cp| Seals for barrels and bottles|13
+Leather Thong| 2 cp| Binding and simple repairs|13
+Vinegar Bottle| 1 cp| Cooking and cleaning|1
+Rock Salt| 2 cp| Ice melting and water softening|11
+Pitch Glue| 1 cp| Waterproof adhesive and sealant|2
+Canvas Roll| 1 cp| Sails and painting canvases|18
+Tales of Eldoria| 2 sp| Anthology of epic stories about heroes and monsters|6
+Arcane Grimoire| 5 gp| Magical manual for apprentice sorcerers|18
+The Chronicles of Valeria| 3 sp| History of a kingdom at war|8
+Legends of the Lost City| 1 gp| Tales of adventures in a lost city|11
+The Alchemist's Handbook| 4 gp| Guide to creating potions and elixirs|16
+The Art of Enchantment| 3 gp| Techniques for enchanting magical items|14
+Beastiary of Mythical Creatures| 5 sp| Catalog of legendary creatures|9
+Wizards and Warlocks| 4 gp| Biographies of famous wizards and warlocks|5
+The Ranger's Guide| 2 sp| Advice for survival in the wilderness|11
+The Bard's Songbook| 1 gp| Collection of songs and poems|20
+Tomes of Ancient Spells| 4 gp| Texts containing forgotten spells|18
+Knight's Code| 3 gp| Laws and ethics of knights|2
+Mysteries of the Abyss| 5 sp| Exploration of the deep sea abyss|11
+The Rogue's Handbook| 2 gp| Tricks and tactics for thieves|3
+Legends of the Elven Realms| 3 gp| Stories of elves and enchanted realms|7
+The Herbalist's Guide| 2 gp| Knowledge about medicinal herbs|18
+Tales of the Underdark| 4 gp| Adventures in the underground world|16
+The Paladin's Oath| 3 gp| Vows and principles of paladins|7
+Treatise on Magical Artifacts| 5 gp| Analysis of magical items|8
+Sorcerer's Secrets| 4 gp| Revelations of a powerful sorcerer|9
+Monsters of the Abyss| 2 gp| Catalog of dark creatures|20
+The Druid's Circle| 3 gp| Secrets of nature's guardians|8
+Guide to Astral Travel| 4 gp| Journeys in the astral plane|14
+The Barbarian's Saga| 3 gp| Exploits of barbarian warriors|8
+Infernal Codex| 5 gp| Knowledge about infernal realms|4
+The Art of Illusion| 4 gp| Creating magical illusions|5
+Tombs of the Ancients| 3 gp| Explorations of ancient tombs|6
+The Necromancer's Grimoire| 5 gp| Powers of souls and the undead|6
+Chronicles of the Feywild| 4 gp| Stories of the fae realms|9
+The Gnomish Inventions| 2 gp| Inventions and machines by gnomes|10
+Codex of Divine Beings| 5 gp| Knowledge about deities|17
+The Rogue's Gallery| 3 gp| Biographies of notorious criminals|5
+Secrets of Alchemy| 4 gp| Hidden alchemical discoveries|7
+The Celestial Atlas| 5 gp| Stars and celestial planes|12
+Witch's Brews| 3 gp| Recipes for mysterious potions|7
+Beastiary of the Elemental Planes| 4 gp| Creatures of elemental planes|10
+The Fighter's Manual| 2 gp| Tactics for warriors|4
+Enchanted Tomes| 3 gp| Magical and enchanted books|13
+Legends of the Dwarven Forge| 4 gp| Tales of dwarf blacksmiths|14
+The Warlock's Pact| 5 gp| Agreements between warriors and dark entities|13
+Wizardry Unveiled| 4 gp| Secrets of magic|5
+Tales of the Fey Beasts| 3 gp| Stories of mythical creatures|20
+The Book of Runes| 2 gp| Interpretation of runes|20
+Bestiary of the Shadow Realm| 5 gp| Creatures of the shadow realm|3
+The Art of Divination| 4 gp| Divination practices|20
+The Ranger's Journal| 2 sp| Explorations in the wilderness|3
+Scrolls of Time| 3 gp| Time travel and prophecies|10
+The Rogue's Code| 2 gp| Rules for thieves|5
+Mysteries of the Druids| 4 gp| Secrets of earth guardians|20
+The Paladin's Quest| 3 gp| Quests of paladins|16
+Legends of the Feywild| 4 gp| Tales of fae lands|4
+The Alchemist's Handbook| 5 gp| Guide to crafting potions|13
+Beastiary of Magical Creatures| 4 gp| Enchanted creature catalog|15
+The Art of Enchantment| 3 gp| Techniques for magical enchantments|16
+Wizards and Wonders| 4 gp| Notable wizards and magical artifacts|20
+The History of Dragons| 2 gp| Research on winged creatures|6
+Tomes of Forgotten Spells| 3 gp| Spells forgotten by time|10
+Knight's Creed| 4 gp| Beliefs and principles of knights|4
+Mysteries of the Deep| 5 sp| Explorations in the deep sea|11
+The Rogue's Handbook| 2 gp| Tricks and tactics for rogues|10
+Scrolls of Ancient Wisdom| 3 gp| Ancient texts with hidden knowledge|17
+The Druid's Wisdom| 4 gp| Wisdom of nature's protectors|18
+Guide to Planar Travel| 5 gp| Traveling between planes of existence|6
+The Barbarian's Valor| 4 gp| Courageous deeds of barbarian warriors|13
+Codex of Arcane Arts| 5 gp| Arcane knowledge and magical arts|3
+The Art of Illusion| 3 gp| Mastery of creating illusions|4
+Tombs of Forgotten Kings| 4 gp| Explorations of forgotten royal tombs|7
+The Necromancer's Secrets| 5 gp| Dark secrets of necromancers|1
+Chronicles of the Feywild| 4 gp| Tales of enchanting fae realms|18
+The Gnomish Contraptions| 3 gp| Amazing inventions by gnomes|17
+Codex of Celestial Beings| 4 gp| Knowledge of celestial beings|14
+The Rogue's Gallery| 3 gp| Notorious criminals and their stories|17
+Secrets of Alchemical Mastery| 5 gp| Mastery of alchemical secrets|18
+The Celestial Atlas| 4 gp| Celestial maps and star lore|8
+Witch's Potions| 3 gp| Potions and elixirs of witches|9
+Beastiary of the Elemental Realms| 4 gp| Creatures of elemental realms|10
+The Fighter's Handbook| 3 gp| Handbook for warriors|6
+Enchanted Tomes| 3 gp| Enchanted and mystical books|16
+Legends of the Dwarven Kingdoms| 4 gp| Tales of mighty dwarf kingdoms|5
+The Warlock's Covenant| 5 gp| Dark covenants of warlocks|16
+Wizardry Uncovered| 4 gp| Uncovering hidden secrets of magic|20
+Tales of Fey Creatures| 3 gp| Tales of enchanting fey creatures|12
+The Book of Glyphs| 2 gp| Understanding mystical glyphs|20
+Bestiary of Shadowy Beasts| 5 gp| Shadowy creatures catalog|17
+The Art of Divination| 3 gp| The art of divining the future|8
+The Ranger's Expedition| 2 sp| Expeditions into the wild|2
+Scrolls of Ancient Prophecies| 3 gp| Prophecies from ancient scrolls|7
+The Rogue's Handbook| 2 gp| Handbook for skilled rogues|16
+Mysteries of the Druidic Order| 4 gp| Secrets of the druidic order|14
+The Paladin's Honor| 3 gp| Honorable deeds of paladins|3
+Legends of the Feywild| 4 gp| Legends of the mystical Feywild|14
+The Alchemist's Compendium| 5 gp| Comprehensive guide to alchemy|16
+Beastiary of Enchanted Creatures| 4 gp| Enchanted creatures catalog|9
+The Art of Enchantment| 3 gp| Mastering the art of enchantment|3
+Wizards and Enigmas| 4 gp| Wizards and their enigmatic practices|6
+The History of Mythical Beasts| 2 gp| Mythical beasts throughout history|5
+Tomes of Arcane Knowledge| 3 gp| Arcane knowledge hidden in tomes|8
+Knight's Honor Code| 4 gp| The code of honor for knights|18
+Mysteries of the Underwater Abyss| 5 sp| Exploration of the underwater abyss|6
+The Rogue's Manual| 2 gp| A manual for rogue skills and tricks|16
+The Druid's Wisdom| 4 gp| Wisdom and insights of druids|6
+Guide to Interplanar Travel| 5 gp| Navigating the planes of existence|2
+The Barbarian's Valor| 4 gp| Valor and bravery of barbarian warriors|9
+Codex of Arcane Arts| 5 gp| Codex containing arcane secrets|14
+The Art of Illusion| 3 gp| Mastery of illusion magic|10
+Tombs of Ancient Kings| 4 gp| Exploration of ancient royal tombs|11
+The Necromancer's Secrets| 5 gp| Dark secrets of necromancy|4
+Chronicles of the Feywild| 4 gp| Chronicles of the mystical Feywild|15
+The Gnomish Contraptions| 3 gp| Amazing contraptions by gnomes|5
+Codex of Celestial Beings| 4 gp| Knowledge about celestial beings|4
+The Rogue's Gallery| 3 gp| Gallery of notorious rogues|19
+Secrets of Alchemical Mastery| 5 gp| Mastery of alchemical secrets|8
+The Celestial Atlas| 4 gp| Celestial maps and lore|5
+Witch's Potions| 3 gp| Potions and elixirs brewed by witches|14
+Beastiary of the Elemental Realms| 4 gp| Creatures of elemental realms|18
+The Fighter's Handbook| 3 gp| Handbook for fighters|13
+Enchanted Tomes| 3 gp| Enchanted books and tomes|14
+Legends of the Dwarven Kingdoms| 4 gp| Legends of mighty dwarven kingdoms|10
+The Warlock's Covenant| 5 gp| Covenants of dark warlocks|13
+Wizardry Uncovered| 4 gp| Uncovering the secrets of wizardry|16
+Tales of Fey Creatures| 3 gp| Tales of mystical fey creatures|8
+The Book of Glyphs| 2 gp| Understanding mystical glyphs|19
+Bestiary of Shadowy Beasts| 5 gp| Catalog of shadowy beasts|20
+The Art of Divination| 3 gp| The art of divining the future|4
+The Ranger's Expedition| 2 sp| Expeditions into the wilderness|6
+Scrolls of Ancient Prophecies| 3 gp| Ancient prophecies from scrolls|5
+The Rogue's Handbook| 2 gp| Handbook for skilled rogues|15
+Mysteries of the Druidic Order| 4 gp| Secrets of the druidic order|17
+The Paladin's Honor| 3 gp| Honorable deeds of paladins|20
+Legends of the Feywild| 4 gp| Legends of the mystical Feywild|9
+The Hapless Adventures of Sir Clumsyfoot | 5 gp | The comical mishaps of a bumbling knight |15
+The Goblin's Guide to Chaos Cooking | 3 gp | A goblin's chaotic culinary experiments |19
+The Quest for the Legendary Lost Sock | 2 gp | An epic quest to find a missing sock |10
+The Sorcerer's Comedic Conundrums | 5 gp | A sorcerer's hilarious magical mishaps |19
+Tales from the Giggling Grove | 3 gp | Amusing stories from a forest filled with laughter |5
+The Novice's Guide to Magical Mayhem | 2 gp | A novice mage's misadventures in magic |11
+The Grimoire of Giggles: A Laughter Spellbook | 5 gp | Spells that make you burst into laughter |3
+Legends of Goofy Heroes | 3 gp | Hilarious adventures of goofy heroes |12
+The Dancing Dwarves: Tap Dancing Warriors | 3 gp | Dwarves who tap dance their way into battle |3
+The Wizard Who Painted Everything Pink | 4 gp | A wizard's misadventures in painting things pink |3
+The Rogue's Handbook of Bungled Burglaries | 2 gp | A rogue's guide to hilariously failed heists |9
+Legends of the Narcoleptic Barbarian | 5 gp | The adventures of a barbarian with a knack for napping |14
+The Gnomish Comedy Revue | 3 gp | Gnomes showcasing their comedic talents |20
+The Misadventures of Sir Butterfingers | 3 gp | Sir Butterfingers' clumsy escapades |1
+The Rogue's Guide to Accidentally Unlocking Chests | 4 gp | A rogue's guide to accidental treasure unlocking |15
+The Bumbling Bard's Ballads of Misfortune | 2 gp | Bardic ballads of comically unfortunate events |8
+The Leprechaun's Misplaced Gold: A Comedy of Errors | 5 gp | A leprechaun's gold that keeps disappearing |19
+The Gnomish Invention Follies | 3 gp | Hilarious mishaps with gnomish contraptions |17
+The Rogue's Treasure Map to Nowhere | 2 gp | A treasure map leading to nowhere in particular |13
+Legends of the Clumsy Paladin | 5 gp | The adventures of a paladin with two left feet |10
+The Jester's Guide to Royal Pranks | 2 gp | Jesterly pranks in the royal court |4
+The Dancing Dwarves: Tap Dancing Diplomacy | 5 gp | Dwarves resolve disputes with tap dancing |18
+The Wizard Who Turned Everyone into Chickens | 3 gp | A wizard's fowl magical transformations |8
+The Rogue's Treasure Map to the Nearest Tavern | 4 gp | A treasure map that leads to the nearest taverns |11
+The Kobold Comedy Club: Laughter Underground | 2 gp | Underground kobold comedy at its finest |18
+The Rogue's Guide to Pocketing Your Own Pockets | 3 gp | A rogue's guide to pickpocketing oneself |15
+The Barbarian's Bungled Battles | 4 gp | Barbarian battles filled with hilarious mishaps |7
+The Gnomish Contraptions: Inventive Laughter | 2 gp | Gnomes and their inventive sources of laughter |12
+The Codex of Celestial Pranksters: Divine Humor | 5 gp | Divine pranksters and their celestial humor |8
+The Rogue's Gallery: Rogues and Ridiculousness | 3 gp | Portraits and stories of rogues in absurd situations |9
+The Alchemist's Formulas: Alchemical Antics | 4 gp | Crafting alchemical antics with unpredictable formulas |4
+The Celestial Atlas: Star Maps and Cosmic Chuckles | 2 gp | Star maps and cosmic humor in the universe |20
+The Witch's Brews: Potions and Pandemonium | 5 gp | Brewing potions that lead to magical pandemonium |14
+The Elemental Bestiary: Elemental Eclat | 3 gp | Descriptions of elemental creatures and their eccentricities |14
+The Fighter's Manual: Comical Combat | 4 gp | Comical combat strategies for warriors with a sense of humor |16
+The Enchanted Tomes: Chronicles of Chuckles | 2 gp | Chronicles that will have you chuckling |1
+The Lore of Dragons: Dragon Debacles | 5 gp | Dragon tales filled with comedic debacles |6
+The Runes of Power: Glyphs of Guffaws | 3 gp | Glyphs that bring forth uncontrollable laughter |12
+The Paladin's Pranks: Virtuous Vexations | 4 gp | Virtuous pranks by paladins with a mischievous side |17
+The Druid's Comedy of Nature | 2 gp | Nature's comedy and the laughter of druids |19
+The Guide to Planar Shenanigans: Multiverse Mischief | 5 gp | Multiverse mischief and hilarious shenanigans |17
