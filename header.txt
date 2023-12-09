@@ -41,4 +41,5 @@ loot:
     description: "A worn rabbit's foot that Larry believes brings him luck."
   - name: Lucky Coin
     description: "A tarnished coin that Larry flips for important decisions."
+Feel free to adjust the CR according to what you think the monster is strong.
 Please follow the same scheme, do not change the "-" with dots, you have to make a yaml file. Also with every effect you have to be specific about dice and the effect. Make me a character that is like the following :
