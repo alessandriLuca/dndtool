@@ -1,13 +1,53 @@
 import React, { useState, useEffect } from 'react';
 import './SecondPage.css';
+import { useAppContext } from './AppContext'; // Importa il contesto
 
 function SecondPage() {
+  const { data, updateData } = useAppContext(); // Accedi al contesto
+  const characters = data.characters || [];
   const [headers, setHeaders] = useState([]);
   const [items, setItems] = useState([]);
   const [currentItem, setCurrentItem] = useState({});
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [rarity, setRarity] = useState(0);
+  const [selectedCharacter, setSelectedCharacter] = useState('');
+
+const handleAddItemToCharacter = () => {
+  if (!selectedCharacter || !currentItem.Name) {
+    showMessage('Please select both a character and an item','error');
+    return;
+  }
+
+  const updatedCharacters = characters.map(char => {
+    if (char.name === selectedCharacter) {
+      const equipmentItems = char.equipment.split('\n'); // Dividi per riga
+      const nextItemNumber = equipmentItems.length + 1; // Calcola il prossimo numero
+
+      const newEquipmentItem = `${nextItemNumber}) ${currentItem.Name}`;
+      const newEquipment = char.equipment
+        ? `${char.equipment}\n${newEquipmentItem}` // Aggiungi con un ritorno a capo se c'è già dell'equipaggiamento
+        : newEquipmentItem; // Altrimenti, inizia la lista dell'equipaggiamento
+
+      return { ...char, equipment: newEquipment };
+    }
+    return char;
+  });
+
+  updateData({ ...data, characters: updatedCharacters });
+      showMessage('', 'Item added to Character '+selectedCharacter);
+};
+
+
+
+
+
+useEffect(() => {
+  if (characters.length === 1) {
+    setSelectedCharacter(characters[0].name);
+  }
+}, [characters]);
+
 
   useEffect(() => {
     loadDefaultDatabase();
@@ -32,6 +72,21 @@ function SecondPage() {
       showMessage(err.message, '');
     }
   };
+
+const handleMagicDatasetLoad = async () => {
+    try {
+      const response = await fetch('./magicDataset.txt'); // Assicurati che il percorso sia corretto
+      if (!response.ok) {
+        throw new Error('Unable to load the magic dataset');
+      }
+      const text = await response.text();
+      processDatabaseText(text);
+    } catch (error) {
+      setError(error.message);
+    }
+  };
+
+
 
   const handleRandomItem = () => {
     showMessage('', '');
@@ -108,6 +163,7 @@ function SecondPage() {
       <div className="button-container">
         <button onClick={handleRandomItem}>Random Item</button>
         <button onClick={loadDefaultDatabase}>Common Database</button>
+        <button onClick={handleMagicDatasetLoad}>Load Magic Database</button> {/* Aggiunto il nuovo bottone */}
         <label htmlFor="file-upload" className="custom-file-upload">
           Load Custom Database
         </label>
@@ -132,9 +188,26 @@ function SecondPage() {
   />
 </div>
       </div>
+<div className="select-container">
+  <label htmlFor="character-select" className="select-label">Choose a character:</label>
+  <div className="select-wrapper">
+    <select
+      id="character-select"
+      className="select-box"
+      onChange={e => setSelectedCharacter(e.target.value)}
+    >
+      {characters.map((char, index) => (
+        <option key={index} value={char.name}>{char.name}</option>
+      ))}
+    </select>
+    <button className="plus-button" onClick={handleAddItemToCharacter}>+</button>
+  </div>
+</div>
+
       {error && <div className="error-message">{error}</div>}
       {successMessage && <div className="success-message">{successMessage}</div>}
       {headers.length > 0 && Object.keys(currentItem).length > 0 && (
+
         <div className="table-container">
           <table>
             <thead>

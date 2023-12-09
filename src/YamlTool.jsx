@@ -35,6 +35,10 @@ function YamlTool() {
       setYamlData({});
     }
   };
+const handleClearText = () => {
+  setInputText(''); // Imposta lo stato inputText su una stringa vuota
+  setYamlData({});  // Imposta lo stato yamlData su un oggetto vuoto se desideri ripulire anche l'anteprima
+};
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
@@ -66,6 +70,26 @@ const handleDownloadAsPng = () => {
     });
   }
 };
+
+
+const handlePasteClipboard = () => {
+  navigator.clipboard.readText()
+    .then(text => {
+      setInputText(text); // Aggiorna lo stato con il testo appena copiato
+      try {
+        const parsedYaml = YAML.load(text); // Prova a fare il parse del testo come YAML
+        setYamlData(parsedYaml); // Aggiorna lo stato dei dati YAML
+      } catch (error) {
+        console.error('Error parsing YAML:', error);
+        // Qui puoi decidere se vuoi mostrare un messaggio di errore all'utente
+      }
+    })
+    .catch(error => {
+      console.error('Failed to read clipboard contents:', error);
+      // Qui puoi decidere se vuoi mostrare un messaggio di errore all'utente
+    });
+};
+
 
 const handleCopyToClipboard = () => {
   fetch('./header.txt')
@@ -107,28 +131,35 @@ const openChatGPTWindow = () => {
         </button>
       </div>
 
-      <div className="section">
-        <div className="section-title">YAML to Character sheet</div>
-        <div className="text-input-container">
-          <textarea
-            rows="16"
-            placeholder="Insert YAML text here..."
-            value={inputText}
-            onChange={handleInputChange}
-            className="text-input"
-          />
-        </div>
-          <label htmlFor="file-upload" className="custom-file-upload">
-            Upload Image
-          </label>
-          <input
-            id="file-upload"
-            type="file"
-            accept="image/*"
-            onChange={handleImageChange}
-            style={{ display: 'none' }}
-          />
-      </div>
+<div className="section">
+  <div className="section-title">YAML to Character sheet</div>
+  <div className="text-input-container">
+    <textarea
+      rows="16"
+      placeholder="Insert YAML text here..."
+      value={inputText}
+      onChange={handleInputChange}
+      className="text-input"
+    />
+  </div>
+  <label htmlFor="file-upload" className="custom-file-upload">
+    Upload Image
+  </label>
+  <input
+    id="file-upload"
+    type="file"
+    accept="image/*"
+    onChange={handleImageChange}
+    style={{ display: 'none' }}
+  />
+  <button onClick={handlePasteClipboard} className="custom-file-upload">
+    Paste Clipboard
+  </button>
+  <button onClick={handleClearText} className="custom-file-upload">
+    Clear Text
+  </button>
+</div>
+
       <div className="section">
         <div className="section-title">Preview and Download</div>
         {yamlData && (

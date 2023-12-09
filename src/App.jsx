@@ -6,6 +6,8 @@ import YamlTool from './YamlTool';
 import SecondPage from './SecondPage';
 import ThirdPage from './ThirdPage';
 import FourthPage from './FourthPage';
+import FifthPage from './FifthPage';
+import Home from './Home';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,10 +26,12 @@ function App() {
             </div>
             <ul className={isMenuOpen ? "nav-links showNav" : "nav-links"}>
               {/* Aggiorna i Link per usare i percorsi relativi */}
+              <li><Link to="/Home" onClick={toggleMenu}>Home</Link></li>
               <li><Link to="/yamlTool" onClick={toggleMenu}>Yaml To Character Sheet</Link></li>
               <li><Link to="/itemDatabaseGen" onClick={toggleMenu}>Item DatabaseGen</Link></li>
               <li><Link to="/itemManager" onClick={toggleMenu}>Item Manager</Link></li>
               <li><Link to="/CharacterManager" onClick={toggleMenu}>Character Manager</Link></li>
+              <li><Link to="/checker" onClick={toggleMenu}>Check Item or Spell</Link></li>
             </ul>
           </nav>
           <main>
@@ -37,8 +41,10 @@ function App() {
               <Route path="/itemDatabaseGen" element={<ThirdPage />} />
               <Route path="/itemManager" element={<SecondPage />} />
               <Route path="/CharacterManager" element={<FourthPage />} />
+              <Route path="/checker" element={<FifthPage />} />
+              <Route path="/Home" element={<Home />} />
               {/* Rotta di default che reindirizza a /yamlTool se l'URL è solo #/ */}
-              <Route path="/" element={<YamlTool />} />
+              <Route path="/" element={<Home />} />
             </Routes>
           </main>
         </AppContextProvider> {/* Chiudi il provider del contesto */}

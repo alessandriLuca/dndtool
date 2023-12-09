@@ -84,3 +84,43 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+.plus-button {
+  background-color: #007bff; /* Un blu simile a quello degli altri pulsanti */
+  color: white; /* Testo bianco */
+  border: none; /* Nessun bordo */
+  padding: 10px 15px; /* Spaziatura interna */
+  font-size: 16px; /* Dimensione del testo */
+  cursor: pointer; /* Cambia il cursore in una mano quando passi sopra */
+  border-radius: 5px; /* Angoli arrotondati */
+  margin-left: 10px; /* Margine a sinistra per distanziarlo dal select */
+  outline: none; /* Rimuove il contorno quando il pulsante è selezionato */
+}
+
+.plus-button:hover {
+  background-color: #0056b3; /* Un blu leggermente più scuro per l'hover */
+}
+
+
+
+
+.select-box {
+  padding: 0.625rem 2.5rem 0.625rem 1rem; /* Padding superiore/inferiore e destro/sinistro */
+  border: 1px solid #007bff; /* Colore del bordo */
+  border-radius: 0.5rem; /* Angoli arrotondati */
+  background-color: white; /* Colore di sfondo */
+  font-size: 1rem; /* Dimensione del testo */
+  cursor: pointer; /* Cursor */
+  position: relative; /* Per posizionamento assoluto di pseudo-elementi o figli */
+  transition: border-color 0.3s; /* Transizione fluida per il bordo */
+}
+
+.select-box:hover {
+  border-color: #0056b3; /* Colore del bordo al passaggio del mouse */
+}
+
+.select-box:focus {
+  border-color: #004085; /* Colore del bordo al focus */
+  outline: none; /* Rimuove il contorno di focus predefinito */
+}
+
