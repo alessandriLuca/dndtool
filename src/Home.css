@@ -58,8 +58,3 @@ th {
   font-size: 16px;
   margin-top: 10px;
 }
-
-/* Ensure all text is set to very dark gray, unless otherwise specified */
-* {
-  color: #222; /* Very dark gray */
-}
