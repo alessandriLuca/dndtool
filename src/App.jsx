@@ -27,9 +27,9 @@ function App() {
             <ul className={isMenuOpen ? "nav-links showNav" : "nav-links"}>
               {/* Aggiorna i Link per usare i percorsi relativi */}
               <li><Link to="/Home" onClick={toggleMenu}>Home</Link></li>
-              <li><Link to="/yamlTool" onClick={toggleMenu}>Yaml To Character Sheet</Link></li>
-              <li><Link to="/itemDatabaseGen" onClick={toggleMenu}>Item DatabaseGen</Link></li>
-              <li><Link to="/itemManager" onClick={toggleMenu}>Item Manager</Link></li>
+              <li><Link to="/yamlTool" onClick={toggleMenu}>Create Monster & NPC</Link></li>
+              <li><Link to="/itemDatabaseGen" onClick={toggleMenu}>Generate Database</Link></li>
+              <li><Link to="/itemManager" onClick={toggleMenu}>Random loot/spell through Database</Link></li>
               <li><Link to="/CharacterManager" onClick={toggleMenu}>Character Manager</Link></li>
               <li><Link to="/checker" onClick={toggleMenu}>Check Item or Spell</Link></li>
             </ul>

@@ -61,5 +61,5 @@ th {
 
 /* Ensure all text is set to very dark gray, unless otherwise specified */
 * {
-  color: #222; /* Very dark gray */
+  color: #ff0000;
 }
