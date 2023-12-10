@@ -13,6 +13,7 @@ function Home() {
 
   return (
 <div>
+<h1 style={{ color: '#222' }}>Welcome to Our RPG Management Website</h1>
       <h1>Welcome to Our RPG Management Website</h1>
       <p>
         This is a multifunctional web application designed to help you manage various aspects of your role-playing game (RPG) experience.
