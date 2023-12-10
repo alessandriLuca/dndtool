@@ -62,9 +62,7 @@ th {
   color: #555;
 }
 
-/* Imposta il colore del testo in base al tema */
-@media (prefers-color-scheme: dark) {
-  h2, h3, li, p, .no-results {
-    color: #222; /* Grigio molto scuro */
-  }
+/* Imposta il colore del testo come grigio molto scuro */
+h2, h3, li, p, .no-results {
+  color: #222; /* Grigio molto scuro */
 }
