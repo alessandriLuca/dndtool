@@ -115,6 +115,7 @@ const openChatGPTWindow = () => {
 
  return (
     <div className="app-container">
+    <h1 className="wild-surge-title">Create Monster & NPC</h1>
       <div className="section">
         <div className="section-title">YAML Generation</div>
         <div className="additional-text-container">

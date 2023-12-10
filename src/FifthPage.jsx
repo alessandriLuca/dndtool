@@ -71,6 +71,7 @@ function FifthPage() {
 
   return (
     <div className="fifth-page-container">
+      <h1 className="wild-surge-title">Item/Spell Lookup</h1>
       <input
         type="text"
         placeholder="Search items..."

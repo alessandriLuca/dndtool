@@ -100,6 +100,7 @@ function FourthPage() {
 
   return (
     <div className="fourth-page">
+    <h1 className="wild-surge-title">Character Manager</h1>
       <div className="button-container">
         <button onClick={addNewCharacter}>Add Character</button>
         <button onClick={downloadYaml}>Download YAML</button>

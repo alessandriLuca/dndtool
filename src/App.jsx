@@ -8,7 +8,7 @@ import ThirdPage from './ThirdPage';
 import FourthPage from './FourthPage';
 import FifthPage from './FifthPage';
 import Home from './Home';
-
+import WildSurgeLookup from './WildSurgeLookup';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -28,10 +28,12 @@ function App() {
               {/* Aggiorna i Link per usare i percorsi relativi */}
               <li><Link to="/Home" onClick={toggleMenu}>Home</Link></li>
               <li><Link to="/yamlTool" onClick={toggleMenu}>Create Monster & NPC</Link></li>
-              <li><Link to="/itemDatabaseGen" onClick={toggleMenu}>Generate Database</Link></li>
-              <li><Link to="/itemManager" onClick={toggleMenu}>Random loot/spell through Database</Link></li>
+              <li><Link to="/itemDatabaseGen" onClick={toggleMenu}>Database Generator</Link></li>
+              <li><Link to="/itemManager" onClick={toggleMenu}>Loot & Spell Randomizer</Link></li>
               <li><Link to="/CharacterManager" onClick={toggleMenu}>Character Manager</Link></li>
-              <li><Link to="/checker" onClick={toggleMenu}>Check Item or Spell</Link></li>
+              <li><Link to="/checker" onClick={toggleMenu}>Item/Spell Lookup</Link></li>
+              <li><Link to="/WildSurgeLookup" onClick={toggleMenu}>Wild Surge Lookup</Link></li>
+
             </ul>
           </nav>
           <main>
@@ -43,6 +45,7 @@ function App() {
               <Route path="/CharacterManager" element={<FourthPage />} />
               <Route path="/checker" element={<FifthPage />} />
               <Route path="/Home" element={<Home />} />
+              <Route path="/WildSurgeLookup" element={<WildSurgeLookup />} />
               {/* Rotta di default che reindirizza a /yamlTool se l'URL è solo #/ */}
               <Route path="/" element={<Home />} />
             </Routes>

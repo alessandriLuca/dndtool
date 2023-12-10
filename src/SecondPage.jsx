@@ -160,6 +160,7 @@ const handleMagicDatasetLoad = async () => {
 
   return (
     <div>
+            <h1 className="wild-surge-title">Loot & Spell Randomizer</h1>
       <div className="button-container">
         <button onClick={handleRandomItem}>Random Item</button>
         <button onClick={loadDefaultDatabase}>Common Database</button>

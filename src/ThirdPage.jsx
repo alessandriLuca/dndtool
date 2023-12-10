@@ -59,6 +59,7 @@ function ThirdPage() {
 
   return (
     <div className="third-page">
+      <h1 className="wild-surge-title">Database Generator</h1>
       <div className="section">
         <div className="section-title">Copy Text and Open ChatGPT</div>
         <textarea
