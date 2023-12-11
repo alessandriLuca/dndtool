@@ -49,9 +49,8 @@ const handleClearText = () => {
     }
   };
 
-const handleDownloadAsPng = () => {
+const handleDownloadAsJpg = () => {
   const element = previewRef.current;
-  // Usa la funzione replace() per rimuovere gli spazi
   const titleFromYaml = (yamlData.title || 'title').replace(/\s+/g, '');
 
   if (element) {
@@ -60,15 +59,36 @@ const handleDownloadAsPng = () => {
         document.querySelector('.preview-container').style.transform = 'none';
       },
     }).then((canvas) => {
-      const image = canvas.toDataURL('image/png');
-      const link = document.createElement('a');
-      link.href = image;
-      link.download = `${titleFromYaml}.png`; // Il titolo del file ora non avrà spazi
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      const pngDataUrl = canvas.toDataURL('image/png');
+      convertPngToJpg(pngDataUrl, titleFromYaml);
     });
   }
+};
+
+const convertPngToJpg = (pngDataUrl, titleFromYaml) => {
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  const img = new Image();
+  img.src = pngDataUrl;
+
+  img.onload = () => {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    ctx.drawImage(img, 0, 0);
+
+    // Converti l'immagine in formato JPG
+    const jpgDataUrl = canvas.toDataURL('image/jpeg');
+
+    // Crea un link per il download dell'immagine JPG
+    const link = document.createElement('a');
+    link.href = jpgDataUrl;
+    link.download = `${titleFromYaml}.jpg`;
+
+    // Aggiungi il link al documento e fai clic su di esso per avviare il download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 };
 
 
@@ -168,8 +188,8 @@ const openChatGPTWindow = () => {
             <Preview yamlData={yamlData} imageUrl={usingDefaultImage ? './larry.png' : imageUrl} />
           </div>
         )}
-        <button onClick={handleDownloadAsPng} className="custom-file-upload">
-          Download Preview as PNG
+        <button onClick={handleDownloadAsJpg} className="custom-file-upload">
+          Download Preview as JPG
         </button>
       </div>
     </div>
