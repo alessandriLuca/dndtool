@@ -1,0 +1,93 @@
+.sixth-page-container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Colore di sfondo chiaro */
+}
+
+.character-sheet-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; /* Testo scuro per migliorare la leggibilità */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333; /* Testo scuro */
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333; /* Testo scuro */
+  background-color: #fff; /* Sfondo bianco */
+}
+
+.characteristics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.characteristics-grid .label {
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+}
+
+.characteristic-input {
+  width: 100%; /* Adatta l'input alla colonna */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333; /* Testo scuro */
+  background-color: #fff; /* Sfondo bianco */
+  text-align: center;
+}
+
+.custom-bonus-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-bonus-selector select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333; /* Testo scuro */
+  background-color: #fff; /* Sfondo bianco */
+  text-align: center;
+}
+
+.custom-bonus-selector select:disabled {
+  background-color: #e0e0e0; /* Sfondo grigio chiaro per input disabilitati */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
