@@ -63,9 +63,9 @@
             "Darkvision. Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
             "Dwarven Resilience. You have advantage on saving throws against poison, and you have resistance against poison damage.",
             "Dwarven Combat Training. You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.",
-            "Tool Proficiency. You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.",
             "Stonecunning. Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
-          ]
+          ],
+          "skillP": ["History"]
         },
         {
           "name": "Mountain Dwarf",
@@ -77,9 +77,9 @@
             "Darkvision. Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
             "Dwarven Resilience. You have advantage on saving throws against poison, and you have resistance against poison damage.",
             "Dwarven Combat Training. You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.",
-            "Tool Proficiency. You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.",
             "Stonecunning. Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
-          ]
+          ],
+          "skillP": ["History"]
         },
         {
           "name": "Duergar",
@@ -92,11 +92,11 @@
             "Dwarven Resilience. You have advantage on saving throws against poison, and you have resistance against poison damage.",
             "Duergar Resilience. You have advantage on saving throws against illusions and against being charmed or paralyzed.",
             "Dwarven Combat Training. You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.",
-            "Tool Proficiency. You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.",
             "Stonecunning. Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.",
             "Duergar Magic. When you reach 3rd level, you can cast the Enlarge/Reduce spell on yourself once with this trait, using only the spell's enlarge option. When you reach 5th level, you can cast the Invisibility spell on yourself once with this trait. You don't need material components for either spell, and you can't cast them while you're in direct sunlight, although sunlight has no effect on them once cast. You regain the ability to cast these spells with this trait when you finish a long rest. Intelligence is your spellcasting ability for these spells.",
             "Sunlight Sensitivity. You have disadvantage on Attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
-          ]
+          ],
+          "skillP": ["History"]
         }
       ]
     },
@@ -128,7 +128,8 @@
         "Relentless Endurance. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.",
         "Savage Attacks. When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.",
         "Languages. You can speak, read, and write Common and Orc."
-      ]
+      ],
+      "skillP": ["Intimidation"]
     },
     {
       "name": "Human",
@@ -156,52 +157,55 @@
         "Keen Senses. You have proficiency in the Perception skill.",
         "Languages. You can speak, read, and write Common and Elven."
       ],
-      "subraces": [
-        {
-          "name": "Dark Elf",
-          "abilityScoreIncrease": {
-            "Charisma": 1
-          },
-          "traits": [
-            "Superior Darkvision. Your darkvision has a range of 120 feet, instead of 60.",
-            "Sunlight Sensitivity. You have disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of the attack, or whatever you are trying to perceive is in direct sunlight.",
-            "Drow Magic. You know the Dancing Lights cantrip. When you reach 3rd level, you can cast the Faerie Fire spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the Darkness spell once and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.",
-            "Drow Weapon Training. You have proficiency with rapiers, shortswords, and hand crossbows."
-          ]
-        },
-        {
-          "name": "Pallid Elf",
-          "abilityScoreIncrease": {
-            "Wisdom": 1
-          },
-          "traits": [
-            "Incisive Sense. You have advantage on Investigation and Insight checks.",
-            "Blessing of the Moonweaver. You know the Light cantrip. When you reach 3rd level, you can cast Sleep once, and it recharges after a long rest. When you reach 5th level, you can cast Invisibility (Self Only) once, and it recharges after a long rest. You do not need the material components required of the spells. Wisdom is your spellcasting ability for these spells."
-          ]
-        },
-        {
-          "name": "High Elf",
-          "abilityScoreIncrease": {
-            "Intelligence": 1
-          },
-          "traits": [
-            "Cantrip. You know one cantrip of your choice from the Wizard spell list. Intelligence is your spellcasting ability for it.",
-            "Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.",
-            "Extra Language. You can read, speak, and write one additional language of your choice."
-          ]
-        },
-        {
-          "name": "Wood Elf",
-          "abilityScoreIncrease": {
-            "Wisdom": 1
-          },
-          "traits": [
-            "Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.",
-            "Fleet of Foot. Your base walking speed increases to 35 feet.",
-            "Mask of the Wild. You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
-          ]
-        }
-      ]
+      "skillP": ["Perception"]
+    },
+    {
+      "name": "Dark Elf",
+      "abilityScoreIncrease": {
+        "Charisma": 1
+      },
+      "traits": [
+        "Superior Darkvision. Your darkvision has a range of 120 feet, instead of 60.",
+        "Sunlight Sensitivity. You have disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of the attack, or whatever you are trying to perceive is in direct sunlight.",
+        "Drow Magic. You know the Dancing Lights cantrip. When you reach 3rd level, you can cast the Faerie Fire spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the Darkness spell once and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.",
+        "Drow Weapon Training. You have proficiency with rapiers, shortswords, and hand crossbows."
+      ],
+      "skillP": ["Perception"]
+    },
+    {
+      "name": "Pallid Elf",
+      "abilityScoreIncrease": {
+        "Wisdom": 1
+      },
+      "traits": [
+        "Incisive Sense. You have advantage on Investigation and Insight checks.",
+        "Blessing of the Moonweaver. You know the Light cantrip. When you reach 3rd level, you can cast Sleep once, and it recharges after a long rest. When you reach 5th level, you can cast Invisibility (Self Only) once, and it recharges after a long rest. You do not need the material components required of the spells. Wisdom is your spellcasting ability for these spells."
+      ],
+      "skillP": ["Perception"]
+    },
+    {
+      "name": "High Elf",
+      "abilityScoreIncrease": {
+        "Intelligence": 1
+      },
+      "traits": [
+        "Cantrip. You know one cantrip of your choice from the Wizard spell list. Intelligence is your spellcasting ability for it.",
+        "Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.",
+        "Extra Language. You can read, speak, and write one additional language of your choice."
+      ],
+      "skillP": ["Perception"]
+    },
+    {
+      "name": "Wood Elf",
+      "abilityScoreIncrease": {
+        "Wisdom": 1
+      },
+      "traits": [
+        "Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.",
+        "Fleet of Foot. Your base walking speed increases to 35 feet.",
+        "Mask of the Wild. You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+      ],
+      "skillP": ["Perception"]
     }
   ]
 }
