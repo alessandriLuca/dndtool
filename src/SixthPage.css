@@ -171,3 +171,21 @@ button:hover {
   font-weight: bold;
   color: #333;
 }
+.class-level-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.class-level-row label {
+  margin-right: 10px;
+}
+
+.class-level-row select {
+  margin-right: 10px;
+}
+
+.class-level-row button {
+  margin-left: 10px;
+}

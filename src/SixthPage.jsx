@@ -30,7 +30,7 @@ function SixthPage() {
   const [subraces, setSubraces] = useState([]);
   const [selectedSubrace, setSelectedSubrace] = useState('');
   const [classes, setClasses] = useState([]);
-  const [selectedClass, setSelectedClass] = useState('');
+  const [classLevels, setClassLevels] = useState([]);
   const [baseCharacteristics, setBaseCharacteristics] = useState({
     Strength: 0,
     Dexterity: 0,
@@ -54,7 +54,7 @@ function SixthPage() {
   const [completedCombination, setCompletedCombination] = useState(false);
   const [characterName, setCharacterName] = useState('');
   const [characterImage, setCharacterImage] = useState('');
-  const [level, setLevel] = useState(1);
+  const [skillProficiencies, setSkillProficiencies] = useState([]);
 
   useEffect(() => {
     const fetchRaces = async () => {
@@ -84,6 +84,7 @@ function SixthPage() {
     setValidCombinations([]);
     setOriginalCombinations([]);
     setCompletedCombination(false);
+    setSkillProficiencies(selectedRaceData.skillP || []);
     if (selectedRaceData) {
       let newBonusCharacteristics = {
         Strength: 0,
@@ -144,6 +145,7 @@ function SixthPage() {
         }
       }
       setBonusCharacteristics(newBonusCharacteristics);
+      setSkillProficiencies(selectedSubraceData.skillP || []);
     }
   };
 
@@ -189,8 +191,23 @@ function SixthPage() {
     }
   };
 
-  const handleLevelChange = (event) => {
-    setLevel(parseInt(event.target.value));
+  const handleClassLevelChange = (index, field, value) => {
+    const newClassLevels = [...classLevels];
+    newClassLevels[index] = { ...newClassLevels[index], [field]: value };
+    setClassLevels(newClassLevels);
+  };
+
+  const addClassLevel = () => {
+    setClassLevels([...classLevels, { class: '', level: 1 }]);
+  };
+
+  const removeClassLevel = (index) => {
+    const newClassLevels = classLevels.filter((_, i) => i !== index);
+    setClassLevels(newClassLevels);
+  };
+
+  const getTotalLevel = () => {
+    return classLevels.reduce((total, classLevel) => total + classLevel.level, 0);
   };
 
   const getOptionsForSelect = (index) => {
@@ -203,7 +220,7 @@ function SixthPage() {
       if (combo.length === 2 && combo.includes(2) && combo.includes(1)) {
         return "Increase one ability score by 2 and increase a different one by 1.";
       }
-      if (combo.length === 3 && combo.every(val => val === 1)) {
+      if (combo.length === 3 && combo.every(val == 1)) {
         return "Increase three different scores by 1.";
       }
       return "";
@@ -304,33 +321,6 @@ function SixthPage() {
         </div>
       )}
       <div className="form-group">
-        <label htmlFor="class-select">Class:</label>
-        <select
-          id="class-select"
-          value={selectedClass}
-          onChange={(e) => setSelectedClass(e.target.value)}
-        >
-          <option value="">Select a class</option>
-          {classes.map((classItem, index) => (
-            <option key={index} value={classItem}>
-              {classItem}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div className="form-group">
-        <label htmlFor="level-select">Level:</label>
-        <select
-          id="level-select"
-          value={level}
-          onChange={handleLevelChange}
-        >
-          {Array.from({ length: 20 }, (_, i) => i + 1).map(lvl => (
-            <option key={lvl} value={lvl}>{lvl}</option>
-          ))}
-        </select>
-      </div>
-      <div className="form-group">
         <label htmlFor="image-upload">Character Image:</label>
         <input
           id="image-upload"
@@ -339,6 +329,37 @@ function SixthPage() {
           onChange={handleImageUpload}
         />
       </div>
+      <div className="form-group">
+        <button onClick={addClassLevel} disabled={getTotalLevel() >= 20}>Add Class</button>
+      </div>
+      {classLevels.map((classLevel, index) => (
+        <div className="form-group class-level-row" key={index}>
+          <label htmlFor={`class-select-${index}`}>Class:</label>
+          <select
+            id={`class-select-${index}`}
+            value={classLevel.class}
+            onChange={(e) => handleClassLevelChange(index, 'class', e.target.value)}
+          >
+            <option value="">Select a class</option>
+            {classes.map((classItem, idx) => (
+              <option key={idx} value={classItem} disabled={classLevels.some(cl => cl.class === classItem)}>
+                {classItem}
+              </option>
+            ))}
+          </select>
+          <label htmlFor={`level-select-${index}`}>Level:</label>
+          <select
+            id={`level-select-${index}`}
+            value={classLevel.level}
+            onChange={(e) => handleClassLevelChange(index, 'level', parseInt(e.target.value))}
+          >
+            {Array.from({ length: 20 - getTotalLevel() + classLevel.level }, (_, i) => i + 1).map(lvl => (
+              <option key={lvl} value={lvl}>{lvl}</option>
+            ))}
+          </select>
+          <button onClick={() => removeClassLevel(index)}>Remove</button>
+        </div>
+      ))}
       <div className="characteristics-grid">
         <div className="label"></div>
         <div className="label">Increase</div>
@@ -401,7 +422,8 @@ function SixthPage() {
         characteristics={characteristics}
         characterName={characterName}
         characterImage={characterImage}
-        level={level}
+        classLevels={classLevels}
+        skillProficiencies={skillProficiencies}
       />
     </div>
   );

@@ -10,7 +10,8 @@
             "Strength": 2,
             "Charisma": 1
           },
-          "traits": ["Damage Resistance. You have resistance to the damage type associated with your ancestry."]
+          "traits": ["Damage Resistance. You have resistance to the damage type associated with your ancestry."],
+          "Speed": 30
         },
         {
           "name": "Draconblood",
@@ -21,7 +22,8 @@
           "traits": [
             "Darkvision. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
             "Forceful Presence. When you make an Intimidation or Persuasion check, you can do so with advantage once per long rest."
-          ]
+          ],
+          "Speed": 30
         },
         {
           "name": "Ravenite",
@@ -32,7 +34,8 @@
           "traits": [
             "Darkvision. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
             "Vengeful Assault. When you take damage from a creature in range of a weapon you are wielding, you can use your reaction to make an attack against that creature. You can do this once per short or long rest."
-          ]
+          ],
+          "Speed": 30
         },
         {
           "name": "Chromatic Dragonborn",
@@ -43,9 +46,9 @@
           "traits": [
             "Type. You are a Humanoid.",
             "Size. You are Medium.",
-            "Speed. Your walking speed is 30 feet.",
             "Chromatic Ancestry. You trace your ancestry to a chromatic dragon, granting you a special magical affinity. Choose one type of dragon from the Chromatic Ancestry table. This determines the damage type for your other traits as shown in the table."
-          ]
+          ],
+          "Speed": 30
         }
       ]
     },
@@ -65,7 +68,8 @@
             "Dwarven Combat Training. You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.",
             "Stonecunning. Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
           ],
-          "skillP": ["History"]
+          "skillP": ["History"],
+          "Speed": 25
         },
         {
           "name": "Mountain Dwarf",
@@ -79,7 +83,8 @@
             "Dwarven Combat Training. You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.",
             "Stonecunning. Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
           ],
-          "skillP": ["History"]
+          "skillP": ["History"],
+          "Speed": 25
         },
         {
           "name": "Duergar",
@@ -96,7 +101,8 @@
             "Duergar Magic. When you reach 3rd level, you can cast the Enlarge/Reduce spell on yourself once with this trait, using only the spell's enlarge option. When you reach 5th level, you can cast the Invisibility spell on yourself once with this trait. You don't need material components for either spell, and you can't cast them while you're in direct sunlight, although sunlight has no effect on them once cast. You regain the ability to cast these spells with this trait when you finish a long rest. Intelligence is your spellcasting ability for these spells.",
             "Sunlight Sensitivity. You have disadvantage on Attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
           ],
-          "skillP": ["History"]
+          "skillP": ["History"],
+          "Speed": 25
         }
       ]
     },
@@ -113,7 +119,8 @@
         "Primal Intuition. You have proficiency in two of the following skills of your choice: Animal Handling, Insight, Intimidation, Medicine, Nature, Perception, and Survival.",
         "Powerful Build. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
         "Languages. You can speak, read, and write Common and Orc."
-      ]
+      ],
+      "Speed": 30
     },
     {
       "name": "Half-Orc",
@@ -129,7 +136,8 @@
         "Savage Attacks. When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.",
         "Languages. You can speak, read, and write Common and Orc."
       ],
-      "skillP": ["Intimidation"]
+      "skillP": ["Intimidation"],
+      "Speed": 30
     },
     {
       "name": "Human",
@@ -142,7 +150,8 @@
         "Skills. You gain proficiency in one skill of your choice.",
         "Feat. You gain one Feat of your choice.",
         "Languages. You can speak, read, and write Common and one extra language of your choice."
-      ]
+      ],
+      "Speed": 30
     },
     {
       "name": "Elf",
@@ -157,55 +166,80 @@
         "Keen Senses. You have proficiency in the Perception skill.",
         "Languages. You can speak, read, and write Common and Elven."
       ],
-      "skillP": ["Perception"]
+      "skillP": ["Perception"],
+      "Speed": 30,
+      "subraces": [
+        {
+          "name": "Dark Elf",
+          "abilityScoreIncrease": {
+            "Charisma": 1
+          },
+          "traits": [
+            "Superior Darkvision. Your darkvision has a range of 120 feet, instead of 60.",
+            "Sunlight Sensitivity. You have disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of the attack, or whatever you are trying to perceive is in direct sunlight.",
+            "Drow Magic. You know the Dancing Lights cantrip. When you reach 3rd level, you can cast the Faerie Fire spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the Darkness spell once and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.",
+            "Drow Weapon Training. You have proficiency with rapiers, shortswords, and hand crossbows."
+          ],
+          "skillP": ["Perception"],
+          "Speed": 30
+        },
+        {
+          "name": "Pallid Elf",
+          "abilityScoreIncrease": {
+            "Wisdom": 1
+          },
+          "traits": [
+            "Incisive Sense. You have advantage on Investigation and Insight checks.",
+            "Blessing of the Moonweaver. You know the Light cantrip. When you reach 3rd level, you can cast Sleep once, and it recharges after a long rest. When you reach 5th level, you can cast Invisibility (Self Only) once, and it recharges after a long rest. You do not need the material components required of the spells. Wisdom is your spellcasting ability for these spells."
+          ],
+          "skillP": ["Perception"],
+          "Speed": 30
+        },
+        {
+          "name": "High Elf",
+          "abilityScoreIncrease": {
+            "Intelligence": 1
+          },
+          "traits": [
+            "Cantrip. You know one cantrip of your choice from the Wizard spell list. Intelligence is your spellcasting ability for it.",
+            "Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.",
+            "Extra Language. You can read, speak, and write one additional language of your choice."
+          ],
+          "skillP": ["Perception"],
+          "Speed": 30
+        },
+        {
+          "name": "Wood Elf",
+          "abilityScoreIncrease": {
+            "Wisdom": 1
+          },
+          "traits": [
+            "Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.",
+            "Fleet of Foot. Your base walking speed increases to 35 feet.",
+            "Mask of the Wild. You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+          ],
+          "skillP": ["Perception"],
+          "Speed": 35
+        }
+      ]
     },
     {
-      "name": "Dark Elf",
+      "name": "Giff",
+      "description": "Giff are tall, broad-shouldered folk with hippo-like features. Some have smooth skin, while others have short bristles on their faces and the tops of their heads. As beings of impressive size and unforgettable appearance, giff are noticed wherever they go. Most giff believe they originated on one world, but their home world is now the stuff of legend, because no living giff has seen it or knows where it is. The divine beings who created giff have likewise been forgotten. Their titanic petrified bodies drift on the Astral Sea, isolated and unrecognizable in their current form. Although they don't realize it, giff are drawn to the Astral Plane because, on a deep psychic level, they remain connected to their creator gods, who have just enough divine spark left in them to imbue giff with sparks of their own, which giff have learned to channel through their weapons. Most giff have no idea where this so-called astral spark comes from, but they feel its presence most strongly when they are in Wildspace or the Astral Sea. Giff are split into two camps concerning how their name is pronounced. Half of them say it with a hard g, half with a soft g. Disagreements over the correct pronunciation often blossom into hard feelings, loud arguments, and head-butting contests, but they rarely escalate beyond that.",
       "abilityScoreIncrease": {
-        "Charisma": 1
+        "Custom": true,
+        "options": [[2, 1], [1, 1, 1]]
       },
       "traits": [
-        "Superior Darkvision. Your darkvision has a range of 120 feet, instead of 60.",
-        "Sunlight Sensitivity. You have disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of the attack, or whatever you are trying to perceive is in direct sunlight.",
-        "Drow Magic. You know the Dancing Lights cantrip. When you reach 3rd level, you can cast the Faerie Fire spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the Darkness spell once and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.",
-        "Drow Weapon Training. You have proficiency with rapiers, shortswords, and hand crossbows."
+        "Creature Type. You are a Humanoid.",
+        "Size. You are Medium.",
+        "Astral Spark. Your psychic connection to the Astral Plane enables you to mystically access a spark of divine power, which you can channel through your weapons. When you hit a target with a simple or martial weapon, you can cause the target to take extra force damage equal to your proficiency bonus. You can use this trait a number of times equal to your proficiency bonus, but you can use it no more than once per turn. You regain all expended uses when you finish a long rest.",
+        "Firearms Mastery. You have a mystical connection to firearms that traces back to the gods of the giff, who delighted in such weapons. You have proficiency with all firearms and ignore the loading property of any firearm. In addition, attacking at long range with a firearm doesn't impose disadvantage on your attack roll.",
+        "Hippo Build. You have advantage on Strength-based ability checks and Strength saving throws. In addition, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
+        "Languages. You can speak, read, and write Common and one other language that you and your DM agree is appropriate."
       ],
-      "skillP": ["Perception"]
-    },
-    {
-      "name": "Pallid Elf",
-      "abilityScoreIncrease": {
-        "Wisdom": 1
-      },
-      "traits": [
-        "Incisive Sense. You have advantage on Investigation and Insight checks.",
-        "Blessing of the Moonweaver. You know the Light cantrip. When you reach 3rd level, you can cast Sleep once, and it recharges after a long rest. When you reach 5th level, you can cast Invisibility (Self Only) once, and it recharges after a long rest. You do not need the material components required of the spells. Wisdom is your spellcasting ability for these spells."
-      ],
-      "skillP": ["Perception"]
-    },
-    {
-      "name": "High Elf",
-      "abilityScoreIncrease": {
-        "Intelligence": 1
-      },
-      "traits": [
-        "Cantrip. You know one cantrip of your choice from the Wizard spell list. Intelligence is your spellcasting ability for it.",
-        "Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.",
-        "Extra Language. You can read, speak, and write one additional language of your choice."
-      ],
-      "skillP": ["Perception"]
-    },
-    {
-      "name": "Wood Elf",
-      "abilityScoreIncrease": {
-        "Wisdom": 1
-      },
-      "traits": [
-        "Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.",
-        "Fleet of Foot. Your base walking speed increases to 35 feet.",
-        "Mask of the Wild. You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
-      ],
-      "skillP": ["Perception"]
+      "savThrowP": ["Strength"],
+      "Speed": 30
     }
   ]
 }

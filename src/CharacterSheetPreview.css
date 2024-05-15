@@ -51,8 +51,8 @@
   padding: 10px;
   border-radius: 10px;
   position: relative;
-  height: 120px; /* Ridotto l'altezza */
-  width: 100px;  /* Ridotto la larghezza */
+  height: 120px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,22 +60,22 @@
 }
 
 .preview-name {
-  font-size: 16px; /* Ridotto la dimensione del testo */
+  font-size: 16px;
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
 }
 
 .preview-modifier {
-  font-size: 20px; /* Ridotto la dimensione del testo */
+  font-size: 20px;
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
 }
 
 .preview-circle {
-  width: 30px;  /* Ridotto la dimensione */
-  height: 30px; /* Ridotto la dimensione */
+  width: 30px;
+  height: 30px;
   border: 2px solid #333;
   border-radius: 50%;
   display: flex;
@@ -85,7 +85,7 @@
 }
 
 .preview-total {
-  font-size: 14px; /* Ridotto la dimensione del testo */
+  font-size: 14px;
   font-weight: bold;
   color: #333;
 }
@@ -136,13 +136,13 @@
 }
 
 .saving-throw-value {
-  font-size: 12px; /* Ridotto la dimensione del testo */
+  font-size: 12px;
   font-weight: bold;
   margin-right: 5px;
 }
 
 .saving-throw-name {
-  font-size: 12px; /* Ridotto la dimensione del testo */
+  font-size: 12px;
 }
 
 .skills {
@@ -152,7 +152,7 @@
 .skill-item {
   display: flex;
   align-items: center;
-  margin-bottom: 5px; /* Ridotto il margine */
+  margin-bottom: 5px;
 }
 
 .skill-circle {
@@ -161,19 +161,17 @@
   border: 2px solid #333;
   border-radius: 50%;
   margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skill-value {
-  font-size: 12px; /* Ridotto la dimensione del testo */
+  font-size: 12px;
   font-weight: bold;
   margin-right: 5px;
 }
 
 .skill-name {
-  font-size: 12px; /* Ridotto la dimensione del testo */
-}
-
-.skill-attribute {
-  font-size: 10px;
-  color: grey;
+  font-size: 12px;
 }

@@ -35,8 +35,9 @@ const skills = [
   { name: 'Survival', attribute: 'Wisdom' },
 ];
 
-const CharacterSheetPreview = ({ characteristics, characterName, characterImage, level, selectedClass }) => {
-  const proficiencyBonus = getProficiencyBonus(level);
+const CharacterSheetPreview = ({ characteristics, characterName, characterImage, classLevels, skillProficiencies }) => {
+  const totalLevel = classLevels.reduce((total, classLevel) => total + classLevel.level, 0);
+  const proficiencyBonus = getProficiencyBonus(totalLevel);
 
   const calculateSkillValues = () => {
     const totalCharacteristics = characteristics.reduce((acc, curr) => {
@@ -47,7 +48,8 @@ const CharacterSheetPreview = ({ characteristics, characterName, characterImage,
     return skills.map(skill => ({
       name: skill.name,
       attribute: skill.attribute,
-      value: calculateModifier(totalCharacteristics[skill.attribute]),
+      value: calculateModifier(totalCharacteristics[skill.attribute]) + (skillProficiencies.includes(skill.name) ? proficiencyBonus : 0),
+      proficient: skillProficiencies.includes(skill.name),
     }));
   };
 
@@ -57,7 +59,11 @@ const CharacterSheetPreview = ({ characteristics, characterName, characterImage,
     <div className="character-sheet-preview">
       <h2>Character Sheet Preview</h2>
       {characterName && <h3>{characterName}</h3>}
-      {selectedClass && <h4>Class: {selectedClass}</h4>}
+      {classLevels.length > 0 && (
+        <h4>
+          Classes: {classLevels.map((cl, index) => `${cl.class} (Level ${cl.level})`).join(', ')}
+        </h4>
+      )}
       {characterImage && <img src={characterImage} alt="Character" className="character-image" />}
       <div className="preview-columns">
         <div className="characteristics-column">
@@ -94,12 +100,12 @@ const CharacterSheetPreview = ({ characteristics, characterName, characterImage,
           </div>
           <div className="skills">
             <h3>Skills</h3>
-            {skillValues.map(({ name, value, attribute }) => (
+            {skillValues.map(({ name, value, proficient }) => (
               <div key={name} className="skill-item">
-                <div className="skill-circle"></div>
+                <div className="skill-circle">{proficient ? 'P' : ''}</div>
                 <div className="skill-value">{value >= 0 ? '+' : ''}{value}</div>
                 <div className="skill-name">
-                  {name} <span className="skill-attribute">({attribute})</span>
+                  {name}
                 </div>
               </div>
             ))}
