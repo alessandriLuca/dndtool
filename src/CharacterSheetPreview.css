@@ -17,6 +17,11 @@
   color: #333;
 }
 
+.character-sheet-preview h4 {
+  margin-top: 5px;
+  color: #333;
+}
+
 .character-image {
   width: 150px;
   height: 150px;
@@ -24,16 +29,21 @@
   margin-bottom: 20px;
 }
 
-.preview-grid {
+.preview-columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.characteristics-column {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
 }
 
 .preview-item {
   text-align: center;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .preview-rectangle {
@@ -41,8 +51,8 @@
   padding: 10px;
   border-radius: 10px;
   position: relative;
-  height: 150px;
-  width: 120px;
+  height: 120px; /* Ridotto l'altezza */
+  width: 100px;  /* Ridotto la larghezza */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,20 +60,47 @@
 }
 
 .preview-name {
-  font-size: 18px;
+  font-size: 16px; /* Ridotto la dimensione del testo */
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
 }
 
 .preview-modifier {
-  font-size: 24px;
+  font-size: 20px; /* Ridotto la dimensione del testo */
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
 }
 
 .preview-circle {
+  width: 30px;  /* Ridotto la dimensione */
+  height: 30px; /* Ridotto la dimensione */
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.preview-total {
+  font-size: 14px; /* Ridotto la dimensione del testo */
+  font-weight: bold;
+  color: #333;
+}
+
+.saves-skills-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.proficiency-bonus {
+  margin-bottom: 20px;
+}
+
+.proficiency-circle {
   width: 40px;
   height: 40px;
   border: 2px solid #333;
@@ -74,8 +111,69 @@
   background-color: #fff;
 }
 
-.preview-total {
+.proficiency-value {
   font-size: 18px;
   font-weight: bold;
   color: #333;
+}
+
+.saving-throws {
+  margin-bottom: 20px;
+}
+
+.saving-throw-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.saving-throw-circle {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.saving-throw-value {
+  font-size: 12px; /* Ridotto la dimensione del testo */
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.saving-throw-name {
+  font-size: 12px; /* Ridotto la dimensione del testo */
+}
+
+.skills {
+  margin-top: 20px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Ridotto il margine */
+}
+
+.skill-circle {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.skill-value {
+  font-size: 12px; /* Ridotto la dimensione del testo */
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.skill-name {
+  font-size: 12px; /* Ridotto la dimensione del testo */
+}
+
+.skill-attribute {
+  font-size: 10px;
+  color: grey;
 }

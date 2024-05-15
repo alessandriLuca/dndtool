@@ -3,6 +3,27 @@ import './SixthPage.css';
 import { initializeCombinations, recalculateValidCombinations, isCombinationComplete, getAvailableOptions } from './bonusLogic';
 import CharacterSheetPreview from './CharacterSheetPreview';
 
+const skills = [
+  { name: 'Acrobatics', attribute: 'Dexterity' },
+  { name: 'Animal Handling', attribute: 'Wisdom' },
+  { name: 'Arcana', attribute: 'Intelligence' },
+  { name: 'Athletics', attribute: 'Strength' },
+  { name: 'Deception', attribute: 'Charisma' },
+  { name: 'History', attribute: 'Intelligence' },
+  { name: 'Insight', attribute: 'Wisdom' },
+  { name: 'Intimidation', attribute: 'Charisma' },
+  { name: 'Investigation', attribute: 'Intelligence' },
+  { name: 'Medicine', attribute: 'Wisdom' },
+  { name: 'Nature', attribute: 'Intelligence' },
+  { name: 'Perception', attribute: 'Wisdom' },
+  { name: 'Performance', attribute: 'Charisma' },
+  { name: 'Persuasion', attribute: 'Charisma' },
+  { name: 'Religion', attribute: 'Intelligence' },
+  { name: 'Sleight of Hand', attribute: 'Dexterity' },
+  { name: 'Stealth', attribute: 'Dexterity' },
+  { name: 'Survival', attribute: 'Wisdom' },
+];
+
 function SixthPage() {
   const [races, setRaces] = useState([]);
   const [selectedRace, setSelectedRace] = useState('');
@@ -33,6 +54,7 @@ function SixthPage() {
   const [completedCombination, setCompletedCombination] = useState(false);
   const [characterName, setCharacterName] = useState('');
   const [characterImage, setCharacterImage] = useState('');
+  const [level, setLevel] = useState(1);
 
   useEffect(() => {
     const fetchRaces = async () => {
@@ -167,6 +189,10 @@ function SixthPage() {
     }
   };
 
+  const handleLevelChange = (event) => {
+    setLevel(parseInt(event.target.value));
+  };
+
   const getOptionsForSelect = (index) => {
     return getAvailableOptions(originalCombinations, selectedCustomBonuses);
   };
@@ -293,6 +319,18 @@ function SixthPage() {
         </select>
       </div>
       <div className="form-group">
+        <label htmlFor="level-select">Level:</label>
+        <select
+          id="level-select"
+          value={level}
+          onChange={handleLevelChange}
+        >
+          {Array.from({ length: 20 }, (_, i) => i + 1).map(lvl => (
+            <option key={lvl} value={lvl}>{lvl}</option>
+          ))}
+        </select>
+      </div>
+      <div className="form-group">
         <label htmlFor="image-upload">Character Image:</label>
         <input
           id="image-upload"
@@ -363,6 +401,7 @@ function SixthPage() {
         characteristics={characteristics}
         characterName={characterName}
         characterImage={characterImage}
+        level={level}
       />
     </div>
   );
