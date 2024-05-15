@@ -1,0 +1,81 @@
+.character-sheet-preview {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.character-sheet-preview h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.character-sheet-preview h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.character-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.preview-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.preview-item {
+  text-align: center;
+  position: relative;
+}
+
+.preview-rectangle {
+  border: 2px solid #333;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  height: 150px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.preview-modifier {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.preview-circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.preview-total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}

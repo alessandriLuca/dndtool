@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './SixthPage.css';
+import { initializeCombinations, recalculateValidCombinations, isCombinationComplete, getAvailableOptions } from './bonusLogic';
+import CharacterSheetPreview from './CharacterSheetPreview';
 
 function SixthPage() {
   const [races, setRaces] = useState([]);
@@ -27,7 +29,10 @@ function SixthPage() {
   const [customBonus, setCustomBonus] = useState([]);
   const [selectedCustomBonuses, setSelectedCustomBonuses] = useState(Array(6).fill(0));
   const [validCombinations, setValidCombinations] = useState([]);
+  const [originalCombinations, setOriginalCombinations] = useState([]);
   const [completedCombination, setCompletedCombination] = useState(false);
+  const [characterName, setCharacterName] = useState('');
+  const [characterImage, setCharacterImage] = useState('');
 
   useEffect(() => {
     const fetchRaces = async () => {
@@ -55,8 +60,8 @@ function SixthPage() {
     setCustomBonus([]);
     setSelectedCustomBonuses(Array(6).fill(0));
     setValidCombinations([]);
+    setOriginalCombinations([]);
     setCompletedCombination(false);
-    // Reset bonus characteristics to base race's ability score increase
     if (selectedRaceData) {
       let newBonusCharacteristics = {
         Strength: 0,
@@ -91,22 +96,27 @@ function SixthPage() {
         Charisma: 0,
       };
 
-      // Eredita le caratteristiche della razza principale
       if (selectedRaceData.abilityScoreIncrease) {
         Object.keys(selectedRaceData.abilityScoreIncrease).forEach(key => {
           newBonusCharacteristics[key] = selectedRaceData.abilityScoreIncrease[key];
         });
       }
 
-      // Applica le caratteristiche della sottorazza
       if (selectedSubraceData.abilityScoreIncrease) {
         if (!selectedSubraceData.abilityScoreIncrease.Custom) {
           Object.keys(selectedSubraceData.abilityScoreIncrease).forEach(key => {
             newBonusCharacteristics[key] += selectedSubraceData.abilityScoreIncrease[key];
           });
+          setCustomBonus([]);
+          setSelectedCustomBonuses(Array(6).fill(0));
+          setValidCombinations([]);
+          setOriginalCombinations([]);
+          setCompletedCombination(false);
         } else {
-          setValidCombinations(selectedSubraceData.abilityScoreIncrease.options);
-          setCustomBonus(selectedSubraceData.abilityScoreIncrease.options.flat());
+          const combinations = selectedSubraceData.abilityScoreIncrease.options;
+          setValidCombinations(initializeCombinations(combinations));
+          setOriginalCombinations(initializeCombinations(combinations));
+          setCustomBonus(combinations.flat());
           setSelectedCustomBonuses(Array(6).fill(0));
           setCompletedCombination(false);
         }
@@ -120,49 +130,58 @@ function SixthPage() {
     const newSelectedCustomBonuses = [...selectedCustomBonuses];
     newSelectedCustomBonuses[index] = value;
 
-    const currentSelections = newSelectedCustomBonuses.filter(val => val !== 0);
-    const isComplete = validCombinations.some(combo => {
-      const comboCopy = [...combo];
-      currentSelections.forEach(val => {
-        const idx = comboCopy.indexOf(val);
-        if (idx !== -1) comboCopy.splice(idx, 1);
-      });
-      return comboCopy.length === 0;
-    });
+    console.log(`Selezionato ${value} per ${Object.keys(baseCharacteristics)[index]}`);
+
+    if (value === 0) {
+      const tempCombos = recalculateValidCombinations(originalCombinations, newSelectedCustomBonuses);
+      setValidCombinations(tempCombos);
+    } else {
+      const tempCombos = recalculateValidCombinations(originalCombinations, newSelectedCustomBonuses);
+      const isComplete = isCombinationComplete(tempCombos);
+
+      setValidCombinations(tempCombos);
+      setCompletedCombination(isComplete);
+    }
 
     setSelectedCustomBonuses(newSelectedCustomBonuses);
-    setCompletedCombination(isComplete);
   };
 
-  const getAvailableOptions = (index) => {
-    if (completedCombination) return [0, selectedCustomBonuses[index]];
+  const handleResetBonuses = () => {
+    setSelectedCustomBonuses(Array(6).fill(0));
+    setValidCombinations(initializeCombinations(originalCombinations));
+    setCompletedCombination(false);
+  };
 
-    const currentSelections = selectedCustomBonuses.filter(val => val !== 0);
+  const handleNameChange = (event) => {
+    setCharacterName(event.target.value);
+  };
 
-    // Filtra le combinazioni rimanenti rimuovendo le combinazioni non possibili
-    const remainingCombinations = validCombinations.filter(combo => {
-      const comboCopy = [...combo];
-      currentSelections.forEach(val => {
-        const idx = comboCopy.indexOf(val);
-        if (idx !== -1) comboCopy.splice(idx, 1);
-      });
-      return comboCopy.length > 0;
-    });
+  const handleImageUpload = (event) => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setCharacterImage(reader.result);
+    };
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  };
 
-    let availableOptions = new Set();
+  const getOptionsForSelect = (index) => {
+    return getAvailableOptions(originalCombinations, selectedCustomBonuses);
+  };
 
-    // Calcola le opzioni disponibili rimanenti
-    remainingCombinations.forEach(combo => {
-      const comboCopy = [...combo];
-      currentSelections.forEach(val => {
-        const idx = comboCopy.indexOf(val);
-        if (idx !== -1) comboCopy.splice(idx, 1);
-      });
-      comboCopy.forEach(option => availableOptions.add(option));
-    });
-
-    // Aggiungi sempre l'opzione +0
-    return [0, ...Array.from(availableOptions)];
+  const getCombinationDescription = () => {
+    const uniqueCombinations = [...new Set(originalCombinations.map(JSON.stringify))].map(JSON.parse);
+    return uniqueCombinations.map(combo => {
+      if (combo.length === 2 && combo.includes(2) && combo.includes(1)) {
+        return "Increase one ability score by 2 and increase a different one by 1.";
+      }
+      if (combo.length === 3 && combo.every(val => val === 1)) {
+        return "Increase three different scores by 1.";
+      }
+      return "";
+    }).join(" or ");
   };
 
   const rollDice = () => {
@@ -205,10 +224,27 @@ function SixthPage() {
   };
 
   const totalCharacteristics = getTotalCharacteristics();
+  const characteristics = [
+    { name: 'Strength', value: totalCharacteristics.Strength },
+    { name: 'Dexterity', value: totalCharacteristics.Dexterity },
+    { name: 'Constitution', value: totalCharacteristics.Constitution },
+    { name: 'Intelligence', value: totalCharacteristics.Intelligence },
+    { name: 'Wisdom', value: totalCharacteristics.Wisdom },
+    { name: 'Charisma', value: totalCharacteristics.Charisma }
+  ];
 
   return (
     <div className="sixth-page-container">
       <h1 className="character-sheet-title">Character Sheet</h1>
+      <div className="form-group">
+        <label htmlFor="name-input">Character Name:</label>
+        <input
+          id="name-input"
+          type="text"
+          value={characterName}
+          onChange={handleNameChange}
+        />
+      </div>
       <div className="form-group">
         <label htmlFor="race-select">Race:</label>
         <select
@@ -256,6 +292,15 @@ function SixthPage() {
           ))}
         </select>
       </div>
+      <div className="form-group">
+        <label htmlFor="image-upload">Character Image:</label>
+        <input
+          id="image-upload"
+          type="file"
+          accept="image/*"
+          onChange={handleImageUpload}
+        />
+      </div>
       <div className="characteristics-grid">
         <div className="label"></div>
         <div className="label">Increase</div>
@@ -269,10 +314,17 @@ function SixthPage() {
               <select
                 value={selectedCustomBonuses[index]}
                 onChange={(e) => handleCustomBonusSelection(index, e)}
-                disabled={customBonus.length === 0}
+                disabled={customBonus.length === 0 || completedCombination}
+                style={{
+                  backgroundColor: (customBonus.length === 0 || completedCombination) ? '#e0e0e0' : (selectedCustomBonuses[index] !== 0 ? '#b3d4fc' : '#fff'),
+                  color: (customBonus.length === 0 || completedCombination) ? '#a0a0a0' : '#000'
+                }}
               >
-                {getAvailableOptions(index).map((option, i) => (
-                  <option key={i} value={option}>{`+${option}`}</option>
+                <option value={selectedCustomBonuses[index]}>
+                  {selectedCustomBonuses[index] !== 0 ? `+${selectedCustomBonuses[index]} selected` : 'Select'}
+                </option>
+                {getOptionsForSelect(index).map((option, i) => (
+                  option !== selectedCustomBonuses[index] && <option key={i} value={option}>{`+${option}`}</option>
                 ))}
               </select>
             </div>
@@ -300,9 +352,18 @@ function SixthPage() {
           </React.Fragment>
         ))}
       </div>
+      <div className="combination-description">
+        {getCombinationDescription()}
+      </div>
       <div className="buttons">
         <button onClick={rollDice}>Roll for Characteristics</button>
+        <button onClick={handleResetBonuses}>Reset Bonuses</button>
       </div>
+      <CharacterSheetPreview
+        characteristics={characteristics}
+        characterName={characterName}
+        characterImage={characterImage}
+      />
     </div>
   );
 }
