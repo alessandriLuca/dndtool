@@ -35,9 +35,8 @@ const skills = [
   { name: 'Survival', attribute: 'Wisdom' },
 ];
 
-const CharacterSheetPreview = ({ characteristics, characterName, characterImage, classLevels, skillProficiencies }) => {
-  const totalLevel = classLevels.reduce((total, classLevel) => total + classLevel.level, 0);
-  const proficiencyBonus = getProficiencyBonus(totalLevel);
+const CharacterSheetPreview = ({ characteristics, characterName, characterImage, classLevels, skillProficiencies, savingThrowProficiencies, speed, raceTraits }) => {
+  const proficiencyBonus = getProficiencyBonus(classLevels.reduce((acc, cl) => acc + cl.level, 0));
 
   const calculateSkillValues = () => {
     const totalCharacteristics = characteristics.reduce((acc, curr) => {
@@ -49,21 +48,25 @@ const CharacterSheetPreview = ({ characteristics, characterName, characterImage,
       name: skill.name,
       attribute: skill.attribute,
       value: calculateModifier(totalCharacteristics[skill.attribute]) + (skillProficiencies.includes(skill.name) ? proficiencyBonus : 0),
-      proficient: skillProficiencies.includes(skill.name),
+      proficient: skillProficiencies.includes(skill.name)
     }));
   };
 
   const skillValues = calculateSkillValues();
 
+  const savingThrowValues = characteristics.map(({ name, value }) => ({
+    name,
+    value: calculateModifier(value) + (savingThrowProficiencies.includes(name) ? proficiencyBonus : 0),
+    proficient: savingThrowProficiencies.includes(name)
+  }));
+
   return (
     <div className="character-sheet-preview">
       <h2>Character Sheet Preview</h2>
       {characterName && <h3>{characterName}</h3>}
-      {classLevels.length > 0 && (
-        <h4>
-          Classes: {classLevels.map((cl, index) => `${cl.class} (Level ${cl.level})`).join(', ')}
-        </h4>
-      )}
+      {classLevels.map((classLevel, index) => (
+        <h4 key={index}>Class: {classLevel.class} (Level {classLevel.level})</h4>
+      ))}
       {characterImage && <img src={characterImage} alt="Character" className="character-image" />}
       <div className="preview-columns">
         <div className="characteristics-column">
@@ -90,25 +93,39 @@ const CharacterSheetPreview = ({ characteristics, characterName, characterImage,
           </div>
           <div className="saving-throws">
             <h3>Saving Throws</h3>
-            {characteristics.map(({ name, value }) => (
+            {savingThrowValues.map(({ name, value, proficient }) => (
               <div key={name} className="saving-throw-item">
-                <div className="saving-throw-circle"></div>
-                <div className="saving-throw-value">{calculateModifier(value) >= 0 ? '+' : ''}{calculateModifier(value)}</div>
+                <div className="saving-throw-circle">{proficient && 'P'}</div>
+                <div className="saving-throw-value">{value >= 0 ? '+' : ''}{value}</div>
                 <div className="saving-throw-name">{name}</div>
               </div>
             ))}
           </div>
           <div className="skills">
             <h3>Skills</h3>
-            {skillValues.map(({ name, value, proficient }) => (
+            {skillValues.map(({ name, value, attribute, proficient }) => (
               <div key={name} className="skill-item">
-                <div className="skill-circle">{proficient ? 'P' : ''}</div>
+                <div className="skill-circle">{proficient && 'P'}</div>
                 <div className="skill-value">{value >= 0 ? '+' : ''}{value}</div>
                 <div className="skill-name">
-                  {name}
+                  {name} <span className="skill-attribute">({attribute})</span>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+        <div className="speed-traits-column">
+          <div className="speed-box">
+            <div className="speed-title">Speed</div>
+            <div className="speed-value">{speed} ft</div>
+          </div>
+          <div className="traits-box">
+            <div className="traits-title">Race Traits</div>
+            <div className="traits-list">
+              {raceTraits.map((trait, index) => (
+                <div key={index} className="trait-item">{trait}</div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

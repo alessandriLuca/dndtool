@@ -55,6 +55,9 @@ function SixthPage() {
   const [characterName, setCharacterName] = useState('');
   const [characterImage, setCharacterImage] = useState('');
   const [skillProficiencies, setSkillProficiencies] = useState([]);
+  const [savingThrowProficiencies, setSavingThrowProficiencies] = useState([]);
+  const [speed, setSpeed] = useState(30); // Default speed
+  const [raceTraits, setRaceTraits] = useState([]);
 
   useEffect(() => {
     const fetchRaces = async () => {
@@ -85,6 +88,11 @@ function SixthPage() {
     setOriginalCombinations([]);
     setCompletedCombination(false);
     setSkillProficiencies(selectedRaceData.skillP || []);
+    setSavingThrowProficiencies(selectedRaceData.savThrowP || []);
+    setSpeed(selectedRaceData.Speed || 30); // Default speed
+
+    let raceTraits = selectedRaceData.traits || [];
+
     if (selectedRaceData) {
       let newBonusCharacteristics = {
         Strength: 0,
@@ -94,13 +102,29 @@ function SixthPage() {
         Wisdom: 0,
         Charisma: 0,
       };
+
       if (selectedRaceData.abilityScoreIncrease) {
-        Object.keys(selectedRaceData.abilityScoreIncrease).forEach(key => {
-          newBonusCharacteristics[key] = selectedRaceData.abilityScoreIncrease[key];
-        });
+        if (!selectedRaceData.abilityScoreIncrease.Custom) {
+          Object.keys(selectedRaceData.abilityScoreIncrease).forEach(key => {
+            newBonusCharacteristics[key] = selectedRaceData.abilityScoreIncrease[key];
+          });
+        } else {
+          let combinations = selectedRaceData.abilityScoreIncrease.options;
+          // Ensure combinations is an array of arrays
+          if (!Array.isArray(combinations[0])) {
+            combinations = [combinations];
+          }
+          setValidCombinations(initializeCombinations(combinations));
+          setOriginalCombinations(initializeCombinations(combinations));
+          setCustomBonus(combinations.flat());
+          setSelectedCustomBonuses(Array(6).fill(0));
+          setCompletedCombination(false);
+        }
       }
+
       setBonusCharacteristics(newBonusCharacteristics);
     }
+    setRaceTraits(raceTraits);
   };
 
   const handleSubraceChange = (event) => {
@@ -136,7 +160,11 @@ function SixthPage() {
           setOriginalCombinations([]);
           setCompletedCombination(false);
         } else {
-          const combinations = selectedSubraceData.abilityScoreIncrease.options;
+          let combinations = selectedSubraceData.abilityScoreIncrease.options;
+          // Ensure combinations is an array of arrays
+          if (!Array.isArray(combinations[0])) {
+            combinations = [combinations];
+          }
           setValidCombinations(initializeCombinations(combinations));
           setOriginalCombinations(initializeCombinations(combinations));
           setCustomBonus(combinations.flat());
@@ -146,6 +174,11 @@ function SixthPage() {
       }
       setBonusCharacteristics(newBonusCharacteristics);
       setSkillProficiencies(selectedSubraceData.skillP || []);
+      setSavingThrowProficiencies(selectedSubraceData.savThrowP || []);
+      setSpeed(selectedSubraceData.Speed || selectedRaceData.Speed || 30); // Default speed
+
+      const raceTraits = [...(selectedRaceData.traits || []), ...(selectedSubraceData.traits || [])];
+      setRaceTraits(raceTraits);
     }
   };
 
@@ -220,7 +253,7 @@ function SixthPage() {
       if (combo.length === 2 && combo.includes(2) && combo.includes(1)) {
         return "Increase one ability score by 2 and increase a different one by 1.";
       }
-      if (combo.length === 3 && combo.every(val == 1)) {
+      if (combo.length === 3 && combo.every(val => val === 1)) { // Fixed here
         return "Increase three different scores by 1.";
       }
       return "";
@@ -424,6 +457,9 @@ function SixthPage() {
         characterImage={characterImage}
         classLevels={classLevels}
         skillProficiencies={skillProficiencies}
+        savingThrowProficiencies={savingThrowProficiencies}
+        speed={speed}
+        raceTraits={raceTraits}
       />
     </div>
   );
