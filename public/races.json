@@ -3,6 +3,7 @@
     {
       "name": "Dragonborn",
       "description": "The dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids.",
+      "languages": [2],
       "subraces": [
         {
           "name": "Standard Dragonborn",
@@ -23,7 +24,8 @@
             "Darkvision. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
             "Forceful Presence. When you make an Intimidation or Persuasion check, you can do so with advantage once per long rest."
           ],
-          "Speed": 30
+          "Speed": 30,
+          "skillP": ["Intimidation", "Persuasion"]
         },
         {
           "name": "Ravenite",
@@ -55,6 +57,7 @@
     {
       "name": "Dwarf",
       "description": "The dwarves are a short, stocky race, known for their skill in warfare, their ability to withstand physical and magical punishment, their knowledge of the earth's secrets, and their hard work.",
+      "languages": ["Dwarvish", 1],
       "subraces": [
         {
           "name": "Hill Dwarf",
@@ -113,13 +116,14 @@
         "Strength": 2,
         "Constitution": 1
       },
+      "languages": ["Common", "Orc"],
       "traits": [
         "Darkvision. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
         "Aggressive. As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started.",
         "Primal Intuition. You have proficiency in two of the following skills of your choice: Animal Handling, Insight, Intimidation, Medicine, Nature, Perception, and Survival.",
-        "Powerful Build. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
-        "Languages. You can speak, read, and write Common and Orc."
+        "Powerful Build. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
       ],
+      "skillP": ["Choose 2: Animal Handling, Insight, Intimidation, Medicine, Nature, Perception, Survival"],
       "Speed": 30
     },
     {
@@ -129,12 +133,12 @@
         "Strength": 2,
         "Constitution": 1
       },
+      "languages": ["Common", "Orc"],
       "traits": [
         "Darkvision. Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
         "Menacing. You gain proficiency in the Intimidation skill.",
         "Relentless Endurance. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.",
-        "Savage Attacks. When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.",
-        "Languages. You can speak, read, and write Common and Orc."
+        "Savage Attacks. When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
       ],
       "skillP": ["Intimidation"],
       "Speed": 30
@@ -146,11 +150,13 @@
         "Custom": true,
         "options": [1, 1]
       },
+      "languages": [1, 1],
       "traits": [
         "Skills. You gain proficiency in one skill of your choice.",
-        "Feat. You gain one Feat of your choice.",
-        "Languages. You can speak, read, and write Common and one extra language of your choice."
+        "Feat. You gain one Feat of your choice."
       ],
+      "feat": [1],
+      "skillP": ["Choose 1"],
       "Speed": 30
     },
     {
@@ -159,12 +165,12 @@
       "abilityScoreIncrease": {
         "Dexterity": 2
       },
+      "languages": ["Elven", 1],
       "traits": [
         "Darkvision. Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
         "Fey Ancestry. You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
         "Trance. Elves do not sleep. Instead they meditate deeply, remaining semi-conscious, for 4 hours a day. The Common word for this meditation is 'trance.' While meditating, you dream after a fashion; such dreams are actually mental exercises that have become reflexive after years of practice. After resting in this way, you gain the same benefit a human would from 8 hours of sleep.",
-        "Keen Senses. You have proficiency in the Perception skill.",
-        "Languages. You can speak, read, and write Common and Elven."
+        "Keen Senses. You have proficiency in the Perception skill."
       ],
       "skillP": ["Perception"],
       "Speed": 30,
@@ -230,13 +236,13 @@
         "Custom": true,
         "options": [[2, 1], [1, 1, 1]]
       },
+      "languages": ["Common", 1],
       "traits": [
         "Creature Type. You are a Humanoid.",
         "Size. You are Medium.",
         "Astral Spark. Your psychic connection to the Astral Plane enables you to mystically access a spark of divine power, which you can channel through your weapons. When you hit a target with a simple or martial weapon, you can cause the target to take extra force damage equal to your proficiency bonus. You can use this trait a number of times equal to your proficiency bonus, but you can use it no more than once per turn. You regain all expended uses when you finish a long rest.",
         "Firearms Mastery. You have a mystical connection to firearms that traces back to the gods of the giff, who delighted in such weapons. You have proficiency with all firearms and ignore the loading property of any firearm. In addition, attacking at long range with a firearm doesn't impose disadvantage on your attack roll.",
-        "Hippo Build. You have advantage on Strength-based ability checks and Strength saving throws. In addition, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
-        "Languages. You can speak, read, and write Common and one other language that you and your DM agree is appropriate."
+        "Hippo Build. You have advantage on Strength-based ability checks and Strength saving throws. In addition, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
       ],
       "savThrowP": ["Strength"],
       "Speed": 30

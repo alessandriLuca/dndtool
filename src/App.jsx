@@ -7,7 +7,7 @@ import SecondPage from './SecondPage';
 import ThirdPage from './ThirdPage';
 import FourthPage from './FourthPage';
 import FifthPage from './FifthPage';
-import SixthPage from './SixthPage';
+import SixthPage from './SixthPage/SixthPage';
 import Home from './Home';
 import WildSurgeLookup from './WildSurgeLookup';
 function App() {
@@ -34,7 +34,7 @@ function App() {
               <li><Link to="/CharacterManager" onClick={toggleMenu}>Character Manager</Link></li>
               <li><Link to="/checker" onClick={toggleMenu}>Item/Spell Lookup</Link></li>
               <li><Link to="/WildSurgeLookup" onClick={toggleMenu}>Wild Surge Lookup</Link></li>
-              <li><Link to="/SixthPage" onClick={toggleMenu}>Character sheet</Link></li>
+              <li><Link to="/SixthPage/SixthPage" onClick={toggleMenu}>Character sheet</Link></li>
             </ul>
           </nav>
           <main>
@@ -47,7 +47,7 @@ function App() {
               <Route path="/checker" element={<FifthPage />} />
               <Route path="/Home" element={<Home />} />
               <Route path="/WildSurgeLookup" element={<WildSurgeLookup />} />
-              <Route path="/SixthPage" element={<SixthPage />} />
+              <Route path="/SixthPage/SixthPage" element={<SixthPage />} />
               {/* Rotta di default che reindirizza a /yamlTool se l'URL è solo #/ */}
               <Route path="/" element={<Home />} />
             </Routes>
